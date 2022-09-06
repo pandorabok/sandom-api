@@ -1,0 +1,32 @@
+[
+  {
+    "name": "curve-sonic-sceth-frxeth",
+    "pool": "0x346704605c72d9f5f9F02D651e5A3DccE6964F3d",
+    "gauge": "0xc5bA4D9201F66973F50B628fcd83212577196AEA",
+    "tokens": [
+      {
+        "oracleId": "scETH",
+        "decimals": "1e18"
+      },
+      {
+        "oracleId": "frxETH",
+        "decimals": "1e18"
+      }
+    ]
+  },
+  {
+    "name": "curve-sonic-scusd-frxusd",
+    "pool": "0xF1232a1aB5661aBdD6E02c6D8Ac9940a23Bb0b84",
+    "gauge": "0x677B4aE98F312BfE87f23B0C19e72552D8171bCA",
+    "tokens": [
+      {
+        "oracleId": "scUSD",
+        "decimals": "1e6"
+      },
+      {
+        "oracleId": "frxUSD",
+        "decimals": "1e18"
+      }
+    ]
+  }
+]
