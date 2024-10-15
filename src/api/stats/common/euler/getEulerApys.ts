@@ -65,7 +65,7 @@ const getPoolsApys = async (chainId, pools) => {
 export interface EulerPool {
   name: string;
   address: string;
-  beefyFee?: number;
+  samiFee?: number;
 }
 
 export interface EulerApyParams {

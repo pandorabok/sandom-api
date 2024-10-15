@@ -1,7 +1,7 @@
 import { Address, type Client, getAddress } from 'viem';
 import { isDefined, isNonEmptyArray, NonEmptyArray } from '../../../utils/array';
 import type { GetContractReturnType } from 'viem/_types/actions/getContract';
-import { IBeefyRewardPool } from '../../../abis/IBeefyRewardPool';
+import { ISamiRewardPool } from '../../../abis/ISamiRewardPool';
 import { TokenWithId } from '../../../../packages/address-book/src/types/token';
 import BigNumber from 'bignumber.js';
 import { BIG_ONE, BIG_ZERO, fromWei, toBigNumber } from '../../../utils/big-number';
@@ -55,7 +55,7 @@ type RewardConfigInfo = RewardConfigPrice & {
   rewardRate: bigint;
 };
 
-export type BeefyRewardPoolV2Config = {
+export type SamiRewardPoolV2Config = {
   oracleId: string;
   address: Address;
   stakedToken: StakedToken;
@@ -70,8 +70,8 @@ export type RewardApr = RewardConfigPrice & {
   apr: number;
 };
 
-export type BeefyRewardPoolV2Result = Pick<
-  BeefyRewardPoolV2Config,
+export type SamiRewardPoolV2Result = Pick<
+  SamiRewardPoolV2Config,
   'oracleId' | 'address' | 'stakedToken'
 > & {
   chainId: ChainId;
@@ -80,16 +80,16 @@ export type BeefyRewardPoolV2Result = Pick<
 };
 
 /**
- * gets apr for beefy V2 reward pools with multi token support
+ * gets apr for sami V2 reward pools with multi token support
  * @param chainId
  * @param pools if you provide rewards array it will use those instead of fetching from contract
  * @returns successful results only
  */
-export const getBeefyRewardPoolV2Aprs = async (
+export const getSamiRewardPoolV2Aprs = async (
   chainId: ChainId,
-  pools: BeefyRewardPoolV2Config[]
-): Promise<BeefyRewardPoolV2Result[]> => {
-  const results = await Promise.allSettled(pools.map(pool => getBeefyRewardPoolV2Apr(chainId, pool)));
+  pools: SamiRewardPoolV2Config[]
+): Promise<SamiRewardPoolV2Result[]> => {
+  const results = await Promise.allSettled(pools.map(pool => getSamiRewardPoolV2Apr(chainId, pool)));
   return results
     .filter(isResultFulfilled)
     .map(result => result.value)
@@ -97,15 +97,15 @@ export const getBeefyRewardPoolV2Aprs = async (
 };
 
 /**
- * gets apr for beefy V2 reward pools with multi token support
+ * gets apr for sami V2 reward pools with multi token support
  * @param chainId
  * @param pool if you provide rewards array it will use those instead of fetching from contract
  * @returns successful result or undefined
  */
-export const getBeefyRewardPoolV2Apr = async (
+export const getSamiRewardPoolV2Apr = async (
   chainId: ChainId,
-  pool: BeefyRewardPoolV2Config
-): Promise<BeefyRewardPoolV2Result | undefined> => {
+  pool: SamiRewardPoolV2Config
+): Promise<SamiRewardPoolV2Result | undefined> => {
   try {
     const [yearlyRewardsInUsd, totalStakedInUsd] = await Promise.all([
       getYearlyRewardsInUsd(chainId, pool),
@@ -127,14 +127,14 @@ export const getBeefyRewardPoolV2Apr = async (
       rewardsApr,
     };
   } catch (err) {
-    console.error(`> getBeefyRewardPoolV2Apr error for ${pool.oracleId}: ${err.message}`);
+    console.error(`> getSamiRewardPoolV2Apr error for ${pool.oracleId}: ${err.message}`);
     return undefined;
   }
 };
 
 async function getRewardConfigsFromContract(
-  pool: BeefyRewardPoolV2Config,
-  rewardPoolContract: GetContractReturnType<typeof IBeefyRewardPool, Client>,
+  pool: SamiRewardPoolV2Config,
+  rewardPoolContract: GetContractReturnType<typeof ISamiRewardPool, Client>,
   tokenAddressMap: Record<string, TokenWithId>
 ): Promise<RewardConfig[]> {
   const earned = await rewardPoolContract.read.earned([ZERO_ADDRESS] as const);
@@ -186,7 +186,7 @@ async function getRewardConfigsFromContract(
 }
 
 async function getRewardConfigsPrices(
-  pool: BeefyRewardPoolV2Config,
+  pool: SamiRewardPoolV2Config,
   rewards: NonEmptyArray<RewardConfig>
 ): Promise<RewardConfigPrice[] | undefined> {
   const prices = await Promise.allSettled(rewards.map(reward => getAmmPrice(reward.oracleId)));
@@ -226,9 +226,9 @@ async function getRewardConfigsPrices(
 }
 
 async function getRewardConfigsInfo(
-  pool: BeefyRewardPoolV2Config,
+  pool: SamiRewardPoolV2Config,
   rewards: NonEmptyArray<RewardConfigPrice>,
-  rewardPoolContract: GetContractReturnType<typeof IBeefyRewardPool, Client>
+  rewardPoolContract: GetContractReturnType<typeof ISamiRewardPool, Client>
 ): Promise<RewardConfigInfo[]> {
   const rewardsInfo = await Promise.allSettled(
     rewards.map(reward => rewardPoolContract.read.rewardInfo([BigInt(reward.id)]))
@@ -281,9 +281,9 @@ async function getRewardConfigsInfo(
 
 async function getYearlyRewardsInUsd(
   chainId: ChainId,
-  pool: BeefyRewardPoolV2Config
+  pool: SamiRewardPoolV2Config
 ): Promise<RewardYearlyUsd[]> {
-  const rewardPoolContract = fetchContract(pool.address, IBeefyRewardPool, chainId);
+  const rewardPoolContract = fetchContract(pool.address, ISamiRewardPool, chainId);
   const rewardConfigs =
     pool.rewards && pool.rewards.length > 0
       ? pool.rewards
@@ -314,7 +314,7 @@ async function getYearlyRewardsInUsd(
   }));
 }
 
-async function getTotalStakedInUsd(chainId: ChainId, pool: BeefyRewardPoolV2Config): Promise<BigNumber> {
+async function getTotalStakedInUsd(chainId: ChainId, pool: SamiRewardPoolV2Config): Promise<BigNumber> {
   const stakedTokenContract = fetchContract(pool.stakedToken.address, ERC20Abi, chainId);
 
   const [price, totalStaked] = await Promise.all([

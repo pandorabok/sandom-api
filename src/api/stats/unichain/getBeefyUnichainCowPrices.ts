@@ -1,5 +1,5 @@
-import { getBeefyCowcentratedVaultPrices } from '../common/getBeefyCowcentratedVaultPrices';
+import { getSamiCowcentratedVaultPrices } from '../common/getSamiCowcentratedVaultPrices';
 
-export const getBeefyCowUnichainPrices = async tokenPrices => {
-  return await getBeefyCowcentratedVaultPrices('unichain', tokenPrices);
+export const getSamiCowUnichainPrices = async tokenPrices => {
+  return await getSamiCowcentratedVaultPrices('unichain', tokenPrices);
 };

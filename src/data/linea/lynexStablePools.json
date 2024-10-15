@@ -5,7 +5,7 @@
     "gauge": "0xB301DB65B71589d2fFDa38B2BECFBDdf584D538E",
     "decimals": "1e18",
     "chainId": 59144,
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "lp0": {
       "address": "0x93F4d0ab6a8B4271f4a28Db399b5E30612D21116",
       "oracle": "tokens",
@@ -25,7 +25,7 @@
     "gauge": "0xe9E48c99C9cb2b5a5deb85E913f52A22e5B53026",
     "decimals": "1e18",
     "chainId": 59144,
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "lp0": {
       "address": "0x176211869cA2b568f2A7D4EE941E073a821EE1ff",
       "oracle": "tokens",
@@ -45,7 +45,7 @@
     "gauge": "0x388eE0012B9A5987689703Af37922551983168FE",
     "decimals": "1e18",
     "chainId": 59144,
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "lp0": {
       "address": "0x176211869cA2b568f2A7D4EE941E073a821EE1ff",
       "oracle": "tokens",
@@ -65,7 +65,7 @@
     "gauge": "0x0E48FBA6e0aF346BBD9227f1Ea134937ffD032ab",
     "decimals": "1e18",
     "chainId": 59144,
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "lp0": {
       "address": "0xB5beDd42000b71FddE22D3eE8a79Bd49A568fC8F",
       "oracle": "tokens",
@@ -85,7 +85,7 @@
     "gauge": "0x19468fAea74029e5DCF86e5f78c99e44a5Ddf3e3",
     "decimals": "1e18",
     "chainId": 59144,
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "lp0": {
       "address": "0x176211869cA2b568f2A7D4EE941E073a821EE1ff",
       "oracle": "tokens",

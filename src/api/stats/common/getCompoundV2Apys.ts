@@ -115,8 +115,8 @@ const getPoolLeveragedApy = (
       pool.borrowRate
     );
   const totalComp = leveragedSupplyComp.plus(leveragedBorrowComp);
-  const shareAfterBeefyPerformanceFee = 1 - getTotalPerformanceFeeForVault(pool.name);
-  const compoundedComp = compound(totalComp, BASE_HPY, 1, shareAfterBeefyPerformanceFee);
+  const shareAfterSamiPerformanceFee = 1 - getTotalPerformanceFeeForVault(pool.name);
+  const compoundedComp = compound(totalComp, BASE_HPY, 1, shareAfterSamiPerformanceFee);
   const apy = leveragedSupplyBase.minus(leveragedBorrowBase).plus(compoundedComp);
 
   return apy;
@@ -277,7 +277,7 @@ export interface CompoundV2Pool {
   borrowRate: number;
   platform?: string;
   depositFee?: number;
-  beefyFee?: number;
+  samiFee?: number;
   lsUrl?: string;
   lsAprFactor?: number;
   dataPath?: string;

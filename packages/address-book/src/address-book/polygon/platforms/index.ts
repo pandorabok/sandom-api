@@ -1,4 +1,4 @@
-export { beefyfinance } from './beefyfinance.js';
+export { samifinance } from './samifinance.js';
 export { chainlink } from './chainlink.js';
 export { cometh } from './cometh.js';
 export { dfyn } from './dfyn.js';

@@ -2,11 +2,11 @@ const getLendleApys = require('./getLendleApys');
 const getMoeApys = require('./getMoeApys');
 const getmShardsApys = require('./getmShardsApys');
 const getStargateMantleApys = require('./getStargateMantleApys');
-const { getBeefyCowMantleApys } = require('./getBeefyCowMantleApys');
+const { getSamiCowMantleApys } = require('./getSamiCowMantleApys');
 const { getMantleCompoundV3Apys } = require('./getMantleCompoundV3Apys');
 
 const getApys = [
-  getBeefyCowMantleApys,
+  getSamiCowMantleApys,
   getStargateMantleApys,
   getmShardsApys,
   getLendleApys,

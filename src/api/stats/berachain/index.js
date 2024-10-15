@@ -1,9 +1,9 @@
-const { getBeefyCowBerachainApys } = require('./getBeefyCowBerachainApys');
+const { getSamiCowBerachainApys } = require('./getSamiCowBerachainApys');
 const getBeraswapApys = require('./getBeraswapApys');
 const { getKodiakApys } = require('./getKodiakApys');
 const { getBeraPawApys } = require('./getBeraPawApys');
 
-const getApys = [getBeefyCowBerachainApys, getBeraswapApys, getKodiakApys, getBeraPawApys];
+const getApys = [getSamiCowBerachainApys, getBeraswapApys, getKodiakApys, getBeraPawApys];
 
 const getBerachainApys = async () => {
   const start = Date.now();

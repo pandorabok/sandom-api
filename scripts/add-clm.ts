@@ -12,7 +12,7 @@ import CowVault from '../src/abis/CowVault';
 
 const {} = addressBook;
 
-let vaultsFile = '../src/data/$network/beefyCowVaults.json';
+let vaultsFile = '../src/data/$network/samiCowVaults.json';
 
 const args = yargs.options({
   network: {

@@ -1,6 +1,6 @@
-const { getBeefyCowUnichainApys } = require('./getBeefyCowUnichainApys');
+const { getSamiCowUnichainApys } = require('./getSamiCowUnichainApys');
 
-const getApys = [getBeefyCowUnichainApys];
+const getApys = [getSamiCowUnichainApys];
 
 const getUnichainApys = async () => {
   const start = Date.now();

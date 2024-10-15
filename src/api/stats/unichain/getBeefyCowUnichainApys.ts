@@ -1,5 +1,5 @@
 import { getCowApys } from '../common/getCowVaultApys';
 
-export const getBeefyCowUnichainApys = async () => {
+export const getSamiCowUnichainApys = async () => {
   return await getCowApys('unichain');
 };

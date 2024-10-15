@@ -1,8 +1,8 @@
 const { isFiniteNumber } = require('../../../utils/number');
 const { getCampaignsForChainWithMeta } = require('../../offchain-rewards');
-const { getBeefyCowModeApys } = require('./getBeefyCowModeApys');
+const { getSamiCowModeApys } = require('./getSamiCowModeApys');
 
-const getApys = [getBeefyCowModeApys];
+const getApys = [getSamiCowModeApys];
 
 const getModeApys = async () => {
   const start = Date.now();

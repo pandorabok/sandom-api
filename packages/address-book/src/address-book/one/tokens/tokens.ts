@@ -32,19 +32,19 @@ export const tokens = {
   FEES: ONE,
   ONE,
   WONE: ONE,
-  oldBIFI: {
+  oldSAMI: {
     chainId: 1666600000,
     address: '0x6aB6d61428fde76768D7b45D8BFeec19c6eF91A8',
     decimals: 18,
-    name: 'Beefy.Finance',
-    symbol: 'oldBIFI',
-    oracleId: 'oldBIFI',
-    website: 'https://www.beefy.finance/',
+    name: 'Sami.Finance',
+    symbol: 'oldSAMI',
+    oracleId: 'oldSAMI',
+    website: 'https://www.sami.finance/',
     description:
-      'Beefy Finance is a Decentralized, Multi-Chain Yield Optimizer platform that allows its users to earn compound interest on their crypto holdings.',
+      'Sami Finance is a Decentralized, Multi-Chain Yield Optimizer platform that allows its users to earn compound interest on their crypto holdings.',
     logoURI:
-      'https://raw.githubusercontent.com/beefyfinance/beefy-app/prod/src/images/single-assets/BIFI.png',
-    documentation: 'https://docs.beefy.finance/',
+      'https://raw.githubusercontent.com/samifinance/sami-app/prod/src/images/single-assets/SAMI.png',
+    documentation: 'https://docs.sami.finance/',
   },
   CRV: {
     chainId: 1666600000,
@@ -228,15 +228,15 @@ export const tokens = {
     description:
       'Wrapped Bitcoin (WBTC) is the first ERC20 token backed 1:1 with Bitcoin. Completely transparent. 100% verifiable. Community led.',
   },
-  'oldBIFI-WONE LP': {
-    name: 'oldBIFI-WONE LP',
-    symbol: 'oldBIFI-WONE LP',
+  'oldSAMI-WONE LP': {
+    name: 'oldSAMI-WONE LP',
+    symbol: 'oldSAMI-WONE LP',
     address: '0x27f3b2Df4a81382202E87EE40429e0212ecc7d3F',
     chainId: 1666600000,
     decimals: 18,
     logoURI: '',
-    website: 'https://app.beefy.com/',
-    oracleId: 'sushi-one-bifi-wone',
+    website: 'https://app.sami.com/',
+    oracleId: 'sushi-one-sami-wone',
     oracle: 'lps',
   },
 } as const satisfies Record<string, Token>;

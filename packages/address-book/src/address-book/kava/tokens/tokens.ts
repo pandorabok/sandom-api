@@ -178,19 +178,19 @@ export const tokens = {
       'https://raw.githubusercontent.com/equilibre-finance/token-images/blob/main/assets/VARA.png',
     bridge: 'native',
   },
-  oldBIFI: {
-    name: 'Beefy.Finance',
-    symbol: 'kmultioldBIFI',
-    oracleId: 'oldBIFI',
+  oldSAMI: {
+    name: 'Sami.Finance',
+    symbol: 'kmultioldSAMI',
+    oracleId: 'oldSAMI',
     address: '0xC19281F22A075E0F10351cd5D6Ea9f0AC63d4327',
     chainId: 2222,
     decimals: 18,
-    website: 'https://beefy.com',
+    website: 'https://sami.com',
     description:
-      'Beefy Finance is a Decentralized, Multi-Chain Yield Optimizer platform that allows its users to earn compound interest on their crypto holdings.',
+      'Sami Finance is a Decentralized, Multi-Chain Yield Optimizer platform that allows its users to earn compound interest on their crypto holdings.',
     logoURI:
-      'https://raw.githubusercontent.com/beefyfinance/beefy-app/prod/src/images/single-assets/BIFI.png',
-    documentation: 'https://docs.beefy.finance/',
+      'https://raw.githubusercontent.com/samifinance/sami-app/prod/src/images/single-assets/SAMI.png',
+    documentation: 'https://docs.sami.finance/',
     bridge: 'multichain',
   },
   MAI: {

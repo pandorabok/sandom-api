@@ -1,4 +1,4 @@
-import { IBeefyRewardPool } from '../../../abis/IBeefyRewardPool';
+import { ISamiRewardPool } from '../../../abis/ISamiRewardPool';
 import { fetchContract } from '../../rpc/client';
 import ERC20Abi from '../../../abis/ERC20Abi';
 import { addressBook } from '../../../../packages/address-book/src/address-book';
@@ -11,9 +11,9 @@ const secondsPerYear = 31536000;
 const {
   ethereum: {
     platforms: {
-      beefyfinance: { rewardPool },
+      samifinance: { rewardPool },
     },
-    tokens: { BIFI },
+    tokens: { SAMI },
   },
 } = addressBook;
 
@@ -25,7 +25,7 @@ const rewards = [
   },
 ];
 
-export const getBifiMaxiApy = async () => {
+export const getsamiMaxiApy = async () => {
   const [yearlyRewardsInUsd, totalStakedInUsd] = await Promise.all([
     getYearlyRewardsInUsd(),
     getTotalStakedInUsd(),
@@ -34,13 +34,13 @@ export const getBifiMaxiApy = async () => {
 
   return getApyBreakdown([
     {
-      vaultId: 'bifi-vault',
-      beefyFee: 0.005,
+      vaultId: 'sami-vault',
+      samiFee: 0.005,
       vault: apr,
     },
     {
-      vaultId: 'bifi-pool',
-      beefyFee: 0,
+      vaultId: 'sami-pool',
+      samiFee: 0,
       rewardPool: apr,
     },
   ]);
@@ -48,7 +48,7 @@ export const getBifiMaxiApy = async () => {
 
 const getYearlyRewardsInUsd = async () => {
   let yearlyRewards = new BigNumber(0);
-  const rewardPoolContract = fetchContract(rewardPool, IBeefyRewardPool, ETH_CHAIN_ID);
+  const rewardPoolContract = fetchContract(rewardPool, ISamiRewardPool, ETH_CHAIN_ID);
   for (let i = 0; i < rewards.length; ++i) {
     const rewardPrice = await fetchPrice({ oracle: 'tokens', id: rewards[i].symbol });
     const rewardInfo = await rewardPoolContract.read.rewardInfo([rewards[i].id]);
@@ -64,9 +64,9 @@ const getYearlyRewardsInUsd = async () => {
 };
 
 const getTotalStakedInUsd = async () => {
-  const tokenContract = fetchContract(BIFI.address, ERC20Abi, ETH_CHAIN_ID);
+  const tokenContract = fetchContract(SAMI.address, ERC20Abi, ETH_CHAIN_ID);
   const totalStaked = new BigNumber((await tokenContract.read.balanceOf([rewardPool])).toString());
-  const tokenPrice = await fetchPrice({ oracle: 'tokens', id: 'BIFI' });
+  const tokenPrice = await fetchPrice({ oracle: 'tokens', id: 'SAMI' });
 
   return totalStaked.times(tokenPrice).dividedBy('1e18');
 };

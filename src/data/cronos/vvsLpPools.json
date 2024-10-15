@@ -95,7 +95,7 @@
     }
   },
   {
-    "name": "vvs-cro-bifi",
+    "name": "vvs-cro-sami",
     "address": "0x1803E360393A472beC6E1A688BDF7048d3076b1A",
     "decimals": "1e18",
     "poolId": 11,
@@ -109,7 +109,7 @@
     "lp1": {
       "address": "0xe6801928061CDbE32AC5AD0634427E140EFd05F9",
       "oracle": "tokens",
-      "oracleId": "oldBIFI",
+      "oracleId": "oldSAMI",
       "decimals": "1e18"
     }
   },

@@ -1,4 +1,4 @@
-const BeefyUniswapPositionHelperAbi = [
+const SamiUniswapPositionHelperAbi = [
   {
     inputs: [
       { internalType: 'uint256', name: 'posId', type: 'uint256' },
@@ -16,4 +16,4 @@ const BeefyUniswapPositionHelperAbi = [
   },
 ] as const;
 
-export default BeefyUniswapPositionHelperAbi;
+export default SamiUniswapPositionHelperAbi;

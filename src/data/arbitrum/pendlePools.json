@@ -53,7 +53,7 @@
     "oracleId": "USDC",
     "decimals": "1e6",
     "chainId": 42161,
-    "beefyFee": 0.095
+    "samiFee": 0.095
   },
   {
     "name": "pendle-arb-gusdc-26jun25",
@@ -63,7 +63,7 @@
     "oracleId": "USDC",
     "decimals": "1e6",
     "chainId": 42161,
-    "beefyFee": 0.095
+    "samiFee": 0.095
   },
   {
     "name": "pendle-arb-rseth-26jun25",
@@ -132,7 +132,7 @@
     "oracleId": "mPENDLE",
     "decimals": "1e18",
     "chainId": 42161,
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "rewards": [
       {
         "token": "0x2ac2b254bc18cd4999f64773a966e4f4869c34ee",
@@ -147,7 +147,7 @@
     "oracleId": "USDe",
     "decimals": "1e18",
     "chainId": 42161,
-    "beefyFee": 0.095
+    "samiFee": 0.095
   },
   {
     "name": "pendle-arb-gusdc-26dec24",
@@ -156,7 +156,7 @@
     "oracleId": "USDC",
     "decimals": "1e6",
     "chainId": 42161,
-    "beefyFee": 0.095
+    "samiFee": 0.095
   },
   {
     "name": "pendle-arb-unieth-26dec24",
@@ -165,7 +165,7 @@
     "oracleId": "ETH",
     "decimals": "1e18",
     "chainId": 42161,
-    "beefyFee": 0.095
+    "samiFee": 0.095
   },
   {
     "name": "pendle-arb-dusdc-26sep24",
@@ -174,7 +174,7 @@
     "oracleId": "USDC",
     "decimals": "1e6",
     "chainId": 42161,
-    "beefyFee": 0.095
+    "samiFee": 0.095
   },
   {
     "name": "pendle-arb-rseth-26sep24",
@@ -183,7 +183,7 @@
     "oracleId": "ETH",
     "decimals": "1e18",
     "chainId": 42161,
-    "beefyFee": 0.095
+    "samiFee": 0.095
   },
   {
     "name": "pendle-arb-eeth-26sep24",
@@ -192,7 +192,7 @@
     "oracleId": "ETH",
     "decimals": "1e18",
     "chainId": 42161,
-    "beefyFee": 0.095
+    "samiFee": 0.095
   },
   {
     "name": "pendle-arb-ezeth-26sep24",
@@ -202,7 +202,7 @@
     "oracleId": "ETH",
     "decimals": "1e18",
     "chainId": 42161,
-    "beefyFee": 0.095
+    "samiFee": 0.095
   },
   {
     "name": "pendle-arb-usde-29aug24",
@@ -211,6 +211,6 @@
     "oracleId": "USDe",
     "decimals": "1e18",
     "chainId": 42161,
-    "beefyFee": 0.095
+    "samiFee": 0.095
   }
 ]

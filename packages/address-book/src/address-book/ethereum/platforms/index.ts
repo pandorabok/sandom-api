@@ -1,4 +1,4 @@
-export { beefyfinance } from './beefyfinance.js';
+export { samifinance } from './samifinance.js';
 export { balancer } from './balancer.js';
 export { aura } from './aura.js';
 export { sushi } from './sushi.js';

@@ -1,6 +1,6 @@
 const BigNumber = require('bignumber.js');
 import { fetchContract } from '../../rpc/client';
-import BeefyUniswapPositionHelperAbi from '../../../abis/BeefyUniswapPositionHelper';
+import SamiUniswapPositionHelperAbi from '../../../abis/SamiUniswapPositionHelper';
 
 const getUniV3PositionPrices = async params => {
   let prices = {};
@@ -40,13 +40,13 @@ const getPrice = async (pool, positionTokens, tokenPrices) => {
 };
 
 const getPoolData = async params => {
-  const beefyHelperContract = fetchContract(
-    params.beefyHelper,
-    BeefyUniswapPositionHelperAbi,
+  const samiHelperContract = fetchContract(
+    params.samiHelper,
+    SamiUniswapPositionHelperAbi,
     params.chainId
   );
   const calls = params.pools.map(pool =>
-    beefyHelperContract.read.getPositionTokens([pool.nftId, pool.address, params.nftManager])
+    samiHelperContract.read.getPositionTokens([pool.nftId, pool.address, params.nftManager])
   );
   return await Promise.all(calls);
 };

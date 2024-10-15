@@ -56,8 +56,8 @@ const getPoolApy = async (supplyBase, borrowBase, supplyVxs, borrowVxs, pool) =>
     );
 
   const totalVxs = leveragedSupplyVxs.plus(leveragedBorrowVxs);
-  const shareAfterBeefyPerformanceFee = 1 - getTotalPerformanceFeeForVault(pool.name);
-  const compoundedVxs = compound(totalVxs, BASE_HPY, 1, shareAfterBeefyPerformanceFee);
+  const shareAfterSamiPerformanceFee = 1 - getTotalPerformanceFeeForVault(pool.name);
+  const compoundedVxs = compound(totalVxs, BASE_HPY, 1, shareAfterSamiPerformanceFee);
   const apy = leveragedSupplyBase.minus(leveragedBorrowBase).plus(compoundedVxs).toNumber();
   // console.log(pool.name, apy);
   return { [pool.name]: apy };

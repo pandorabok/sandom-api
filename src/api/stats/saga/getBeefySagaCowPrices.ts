@@ -1,5 +1,5 @@
-import { getBeefyCowcentratedVaultPrices } from '../common/getBeefyCowcentratedVaultPrices';
+import { getSamiCowcentratedVaultPrices } from '../common/getSamiCowcentratedVaultPrices';
 
-export const getBeefyCowSagaPrices = async tokenPrices => {
-  return await getBeefyCowcentratedVaultPrices('saga', tokenPrices);
+export const getSamiCowSagaPrices = async tokenPrices => {
+  return await getSamiCowcentratedVaultPrices('saga', tokenPrices);
 };

@@ -566,13 +566,13 @@ export const tokens = {
     address: '0x44e314190D9E4cE6d4C0903459204F8E21ff940A',
     chainId: 250,
     decimals: 18,
-    website: 'https://www.beefy.finance/',
+    website: 'https://www.sami.finance/',
     bridge: 'native',
     description:
-      'binSPIRIT is the Beefy wrapped version of inSPIRIT which boosts Spirit vaults on Beefy. binSPIRIT can be traded or minted 1:1 with SPIRIT.',
+      'binSPIRIT is the Sami wrapped version of inSPIRIT which boosts Spirit vaults on Sami. binSPIRIT can be traded or minted 1:1 with SPIRIT.',
     logoURI: 'https://app.spiritswap.finance/images/tokens/BINSPIRIT.png',
     documentation:
-      'https://docs.beefy.finance/beefy-products/beefy-escrowed-tokens/binspirit#what-is-binspirit',
+      'https://docs.sami.finance/sami-products/sami-escrowed-tokens/binspirit#what-is-binspirit',
   },
   CREDIT: {
     name: 'Creditum',
@@ -716,7 +716,7 @@ export const tokens = {
     description: 'A fork of tomb.finance, pegged to the price of 1 FTM via seigniorage.',
     bridge: 'native',
     logoURI:
-      'https://raw.githubusercontent.com/beefyfinance/beefy-app/prod/src/images/single-assets/2SHARES.png',
+      'https://raw.githubusercontent.com/samifinance/sami-app/prod/src/images/single-assets/2SHARES.png',
   },
   '2OMB': {
     name: '2OMB',
@@ -729,7 +729,7 @@ export const tokens = {
     description: 'A fork of tomb.finance, pegged to the price of 1 FTM via seigniorage.',
     bridge: 'native',
     logoURI:
-      'https://raw.githubusercontent.com/beefyfinance/beefy-app/prod/src/images/single-assets/2OMB.png',
+      'https://raw.githubusercontent.com/samifinance/sami-app/prod/src/images/single-assets/2OMB.png',
   },
   BRUSH: {
     name: 'PaintSwap',
@@ -1538,20 +1538,20 @@ export const tokens = {
     logoURI:
       'https://raw.githubusercontent.com/sushiswap/assets/master/blockchains/ethereum/assets/0x3472A5A71965499acd81997a54BBA8D852C6E53d/logo.png',
   },
-  oldBIFI: {
-    name: 'Beefy.Finance',
-    symbol: 'fmcoldBIFI',
-    oracleId: 'oldBIFI',
+  oldSAMI: {
+    name: 'Sami.Finance',
+    symbol: 'fmcoldSAMI',
+    oracleId: 'oldSAMI',
     address: '0xd6070ae98b8069de6B494332d1A1a81B6179D960',
     chainId: 250,
     decimals: 18,
-    website: 'https://www.beefy.finance/',
+    website: 'https://www.sami.finance/',
     bridge: 'multichain',
     description:
-      'Beefy Finance is a Decentralized, Multi-Chain Yield Optimizer platform that allows its users to earn compound interest on their crypto holdings.',
+      'Sami Finance is a Decentralized, Multi-Chain Yield Optimizer platform that allows its users to earn compound interest on their crypto holdings.',
     logoURI:
-      'https://raw.githubusercontent.com/beefyfinance/beefy-app/prod/src/images/single-assets/BIFI.png',
-    documentation: 'https://docs.beefy.finance/',
+      'https://raw.githubusercontent.com/samifinance/sami-app/prod/src/images/single-assets/SAMI.png',
+    documentation: 'https://docs.sami.finance/',
   },
   ANY: {
     name: 'AnySwap',
@@ -1886,18 +1886,18 @@ export const tokens = {
     bridge: 'native',
   },
   beFTM: {
-    name: 'Beefy Escrowed Fantom',
+    name: 'Sami Escrowed Fantom',
     symbol: 'beFTM',
     oracleId: 'beFTM',
     address: '0x7381eD41F6dE418DdE5e84B55590422a57917886',
     chainId: 250,
     decimals: 18,
     logoURI: '',
-    website: 'https://blog.beefy.finance/articles/introducing-beftm/',
+    website: 'https://blog.sami.finance/articles/introducing-beftm/',
     bridge: 'native',
     description:
-      'Beefy Escrowed Fantom is 1 year perpetually lock FTM that is delegated and locked to earn the maximum validator reward',
-    documentation: 'https://docs.beefy.finance/beefy-products/beefy-escrowed-tokens/beftm',
+      'Sami Escrowed Fantom is 1 year perpetually lock FTM that is delegated and locked to earn the maximum validator reward',
+    documentation: 'https://docs.sami.finance/sami-products/sami-escrowed-tokens/beftm',
   },
   sfUSDC: {
     name: 'Stargate USD Coin LP',
@@ -1977,7 +1977,7 @@ export const tokens = {
     address: '0xfDC9B5be032216315bBe8c06b1c4F563D1689b85',
     chainId: 250,
     decimals: 18,
-    website: 'https://app.mummy.finance/#/trade?ref=beefy',
+    website: 'https://app.mummy.finance/#/trade?ref=sami',
     bridge: 'native',
     description:
       'MLP consists of an index of assets used for swaps and leverage trading on Mummy Finance. MLP holders will make a profit when leverage traders make a loss and vice versa. Staked MLP also earns escrowed MMY rewards and 60% of platform fees distributed in FTM.',

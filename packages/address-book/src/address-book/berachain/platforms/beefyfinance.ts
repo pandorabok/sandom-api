@@ -1,7 +1,7 @@
 const devMultisig = '0x04db327e5d9A0c680622E2025B5Be7357fC757f0';
 const treasuryMultisig = '0x10E13f11419165beB0F456eC8a230899E4013BBD';
 
-export const beefyfinance = {
+export const samifinance = {
   devMultisig,
   treasuryMultisig,
   strategyOwner: '0x73F97432Adb2a1c39d0E1a6e554c7d4BbDaFC316',
@@ -11,11 +11,11 @@ export const beefyfinance = {
   launchpoolOwner: devMultisig,
   rewardPool: '0x0000000000000000000000000000000000000000',
   treasury: '0x0000000000000000000000000000000000000000',
-  beefyFeeRecipient: '0x02Ae4716B9D5d48Db1445814b0eDE39f5c28264B',
+  samiFeeRecipient: '0x02Ae4716B9D5d48Db1445814b0eDE39f5c28264B',
   multicall: '0x0D17eE2ed4e67b626B43C3695586E5aE6a039949',
-  bifiMaxiStrategy: '0x0000000000000000000000000000000000000000',
+  samiMaxiStrategy: '0x0000000000000000000000000000000000000000',
   voter: '0x5e1caC103F943Cd84A1E92dAde4145664ebf692A',
-  beefyFeeConfig: '0x2b0C9702A4724f2BFe7922DB92c4082098533c62',
+  samiFeeConfig: '0x2b0C9702A4724f2BFe7922DB92c4082098533c62',
   vaultFactory: '0x9818dF1Bdce8D0E79B982e2C3a93ac821b3c17e0',
   strategyFactory: '0x8e0B63846ebEFf857EE35eF3BD3A2df9EF7D6456',
   wrapperFactory: '0x0000000000000000000000000000000000000000',
@@ -29,10 +29,10 @@ export const beefyfinance = {
   clmRewardPoolFactory: '0x542Bf9f89c3Ba0edb7aE5EB4Cf582d349fCdC608',
   positionMulticall: '0xE6e5732245b3e886DD8897a93D21D29bb652d683',
 
-  /// Beefy Swapper Contracts
-  beefySwapper: '0xBC4a342B0c057501E081484A2d24e576E854F823',
-  beefyOracle: '0x448a3539a591dE3Fb9D5AAE407471D21d40cD315',
-  beefyOracleChainlink: '0x07f1ad98b725Af45485646aC431b7757f50C598A',
-  beefyOracleUniswapV2: '0x2AfB174c22D9eE334895C4e300ab93154d800aA0',
-  beefyOracleUniswapV3: '0xD19ab62F83380908D65E344567378cF104cE46c2',
+  /// Sami Swapper Contracts
+  samiSwapper: '0xBC4a342B0c057501E081484A2d24e576E854F823',
+  samiOracle: '0x448a3539a591dE3Fb9D5AAE407471D21d40cD315',
+  samiOracleChainlink: '0x07f1ad98b725Af45485646aC431b7757f50C598A',
+  samiOracleUniswapV2: '0x2AfB174c22D9eE334895C4e300ab93154d800aA0',
+  samiOracleUniswapV3: '0xD19ab62F83380908D65E344567378cF104cE46c2',
 } as const;

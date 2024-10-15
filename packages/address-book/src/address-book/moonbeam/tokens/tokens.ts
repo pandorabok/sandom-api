@@ -26,19 +26,19 @@ export const tokens = {
     // ERC20 interface to the native token (like METIS/CELO)
     address: '0x0000000000000000000000000000000000000802',
   },
-  oldBIFI: {
-    name: 'Beefy.Finance',
-    symbol: 'oldBIFI',
-    oracleId: 'oldBIFI',
+  oldSAMI: {
+    name: 'Sami.Finance',
+    symbol: 'oldSAMI',
+    oracleId: 'oldSAMI',
     address: '0x595c8481c48894771CE8FaDE54ac6Bf59093F9E8',
     chainId: 1284,
     decimals: 18,
-    website: 'https://www.beefy.finance/',
+    website: 'https://www.sami.finance/',
     description:
-      'Beefy Finance is a Decentralized, Multi-Chain Yield Optimizer platform that allows its users to earn compound interest on their crypto holdings.',
+      'Sami Finance is a Decentralized, Multi-Chain Yield Optimizer platform that allows its users to earn compound interest on their crypto holdings.',
     logoURI:
-      'https://raw.githubusercontent.com/beefyfinance/beefy-app/prod/src/images/single-assets/BIFI.png',
-    documentation: 'https://docs.beefy.finance/',
+      'https://raw.githubusercontent.com/samifinance/sami-app/prod/src/images/single-assets/SAMI.png',
+    documentation: 'https://docs.sami.finance/',
   },
   STELLA4POOL: {
     name: 'Stellaswap 4Pool',

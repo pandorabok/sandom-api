@@ -6,11 +6,11 @@ import { keyBy, omit } from 'lodash';
 import { retryPromiseWithBackOff } from '../../utils/promise';
 
 const SPACES = {
-  'beefydao.eth': {
+  'samidao.eth': {
     proposalUrl: (proposalId: string, _spaceId: string) =>
-      `https://vote.beefy.finance/#/proposal/${proposalId}`,
+      `https://vote.sami.finance/#/proposal/${proposalId}`,
   },
-  'profit.beefy.eth': {
+  'profit.sami.eth': {
     proposalUrl: (proposalId: string, spaceId: string) =>
       `https://snapshot.box/#/s:${spaceId}/proposal/${proposalId}`,
   },

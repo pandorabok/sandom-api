@@ -31,18 +31,18 @@ export const tokens = {
       'Rocket Pool is a decentralized Ethereum staking pool offering up to 4.33% APR for ETH2 staking. Users can join the Rocket Pool with its decentralized node operator network or run their own nodes with only 16 ETH. In the latter case, they can earn a commission from staking ETH and earn additional RPL rewards from providing RPL collateral, amounting to up to 6.36% APR for ETH and the additional RPL rewards.',
     logoURI: 'https://docs.rocketpool.net/images/logo.png',
   },
-  oldBIFI: {
-    name: 'Beefy.Finance',
-    symbol: 'oldBIFI',
-    oracleId: 'oldBIFI',
+  oldSAMI: {
+    name: 'Sami.Finance',
+    symbol: 'oldSAMI',
+    oracleId: 'oldSAMI',
     address: '0x99C409E5f62E4bd2AC142f17caFb6810B8F0BAAE',
     chainId: 42161,
     decimals: 18,
-    website: 'https://www.beefy.finance/',
+    website: 'https://www.sami.finance/',
     description:
-      'Beefy Finance is a Decentralized, Multi-Chain Yield Optimizer platform that allows its users to earn compound interest on their crypto holdings.',
+      'Sami Finance is a Decentralized, Multi-Chain Yield Optimizer platform that allows its users to earn compound interest on their crypto holdings.',
     logoURI:
-      'https://raw.githubusercontent.com/beefyfinance/beefy-app/prod/src/images/single-assets/BIFI.png',
+      'https://raw.githubusercontent.com/samifinance/sami-app/prod/src/images/single-assets/SAMI.png',
   },
   USDC: {
     name: 'USD Coin',
@@ -364,7 +364,7 @@ export const tokens = {
     address: '0x5402B5F40310bDED796c7D0F3FF6683f5C0cFfdf',
     chainId: 42161,
     decimals: 18,
-    website: 'https://app.gmx.io/#/trade/?ref=beefy',
+    website: 'https://app.gmx.io/#/trade/?ref=sami',
     description:
       'GLP consists of an index of assets used for swaps and leverage trading on GMX. GLP holders will make a profit when leverage traders make a loss and vice versa. Staked GLP also earns escrowed GMX rewards and 70% of platform fees distributed in ETH.',
     logoURI: 'https://github.com/gmx-io/gmx-assets/blob/main/GMX-Assets/SVG/GLP_LOGO%20ONLY.svg',
@@ -387,7 +387,7 @@ export const tokens = {
     address: '0xfc5A1A6EB076a2C7aD06eD22C90d7E710E35ad0a',
     chainId: 42161,
     decimals: 18,
-    website: 'https://app.gmx.io/#/trade/?ref=beefy',
+    website: 'https://app.gmx.io/#/trade/?ref=sami',
     description:
       'GMX is the utility and governance token of the GMX decentralized spot and perpetual exchange that supports low swap fees, zero price impact trades and up to 30x leverage. Staked GMX earns escrowed GMX and 30% of platform fees in the form of ETH.',
     logoURI: 'https://github.com/gmx-io/gmx-assets/blob/main/GMX-Assets/SVG/GMX_LOGO%20ONLY.svg',
@@ -547,15 +547,15 @@ export const tokens = {
     documentation: 'https://docs.mai.finance/',
     bridge: 'native',
   },
-  'oldBIFI-ETH LP': {
-    name: 'oldBIFI-ETH LP',
-    symbol: 'oldBIFI-ETH LP',
+  'oldSAMI-ETH LP': {
+    name: 'oldSAMI-ETH LP',
+    symbol: 'oldSAMI-ETH LP',
     address: '0xcDA9B8e5867b5746755fE6E505B6300a76b2fAc3',
     chainId: 42161,
     decimals: 18,
     logoURI: '',
-    website: 'https://app.beefy.com/',
-    oracleId: 'sushi-arb-weth-bifi',
+    website: 'https://app.sami.com/',
+    oracleId: 'sushi-arb-weth-sami',
     oracle: 'lps',
   },
   USDD: {
@@ -623,7 +623,7 @@ export const tokens = {
     description: 'Decentralized leverage trading platform on Polygon and Arbitrum.',
     bridge: 'layer-zero',
     logoURI:
-      'https://raw.githubusercontent.com/beefyfinance/beefy-app/prod/src/images/single-assets/GNS.png',
+      'https://raw.githubusercontent.com/samifinance/sami-app/prod/src/images/single-assets/GNS.png',
     documentation: 'https://gains-network.gitbook.io/docs-home/',
   },
   SLIZ: {
@@ -833,7 +833,7 @@ export const tokens = {
       'gDAI vault serves as a counterparty to all trading on GNS, a decentralized leverage trading platform on Polygon and Arbitrum.',
     bridge: 'native',
     logoURI:
-      'https://raw.githubusercontent.com/beefyfinance/beefy-app/prod/src/images/single-assets/GNS.png',
+      'https://raw.githubusercontent.com/samifinance/sami-app/prod/src/images/single-assets/GNS.png',
     documentation: 'https://gains-network.gitbook.io/docs-home/',
   },
   frxETH: {

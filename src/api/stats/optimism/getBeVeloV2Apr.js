@@ -28,10 +28,10 @@ const getBeVeloV2Apr = async () => {
 
   return {
     apys: {
-      'beefy-bevelo-v2-earnings': apr,
+      'sami-bevelo-v2-earnings': apr,
     },
     apyBreakdowns: {
-      'beefy-bevelo-v2-earnings': {
+      'sami-bevelo-v2-earnings': {
         vaultApr: apr,
       },
     },

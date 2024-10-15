@@ -21,10 +21,10 @@ const getBeOpxEarnApy = async () => {
 
   return {
     apys: {
-      'beefy-beopx-earnings': apr,
+      'sami-beopx-earnings': apr,
     },
     apyBreakdowns: {
-      'beefy-beopx-earnings': {
+      'sami-beopx-earnings': {
         vaultApr: apr,
       },
     },

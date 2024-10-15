@@ -5,13 +5,13 @@ import { fetchPrice } from '../../../utils/fetchPrice';
 import { fetchContract } from '../../rpc/client';
 import ERC20Abi from '../../../abis/ERC20Abi';
 
-export const getBifiGovApr = async (
+export const getsamiGovApr = async (
   chainId: ChainId,
   chain: string,
   rewardOracleId: string,
   rewardDecimals: string,
   rewardPoolAddress: `0x${string}`,
-  bifiAddress: `0x${string}`,
+  samiAddress: `0x${string}`,
   rewardRateNumerator: number,
   rewardRateDenominator: number,
   blocksPerDay: number
@@ -26,12 +26,12 @@ export const getBifiGovApr = async (
       rewardRateDenominator,
       rewardDecimals
     ),
-    getTotalStakedInUsd(chainId, bifiAddress, rewardPoolAddress),
+    getTotalStakedInUsd(chainId, samiAddress, rewardPoolAddress),
   ]);
 
   const apr = yearlyRewardsInUsd.dividedBy(totalStakedInUsd).toNumber();
-  //bsc bifi gov is named bifi-gov
-  const name = `${chain ? `${chain}-` : ''}bifi-gov`;
+  //bsc sami gov is named sami-gov
+  const name = `${chain ? `${chain}-` : ''}sami-gov`;
   return {
     apys: {
       [name]: apr,
@@ -68,13 +68,13 @@ const getYearlyRewardsInUsd = async (
 
 const getTotalStakedInUsd = async (
   chainId: ChainId,
-  bifiAddress: `0x${string}`,
+  samiAddress: `0x${string}`,
   rewardAddress: `0x${string}`
 ) => {
-  const tokenContract = fetchContract(bifiAddress, ERC20Abi, chainId);
+  const tokenContract = fetchContract(samiAddress, ERC20Abi, chainId);
   const totalStaked = new BigNumber(
     (await tokenContract.read.balanceOf([rewardAddress])).toString()
   );
-  const tokenPrice = await fetchPrice({ oracle: 'tokens', id: 'oldBIFI' });
+  const tokenPrice = await fetchPrice({ oracle: 'tokens', id: 'oldSAMI' });
   return totalStaked.times(tokenPrice).dividedBy('1e18');
 };

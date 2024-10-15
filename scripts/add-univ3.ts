@@ -100,7 +100,7 @@ async function main() {
     name: newPoolName,
     address: lp.address,
     strategy: lp.strategy,
-    beefyFee: 0.095,
+    samiFee: 0.095,
     poolFee: fees,
     chainId: chainId,
     lp0: {

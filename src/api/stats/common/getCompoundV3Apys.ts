@@ -108,7 +108,7 @@ export interface CompoundV3Pool {
   decimals: string;
   platform?: string;
   depositFee?: number;
-  beefyFee?: number;
+  samiFee?: number;
 }
 
 export interface CompoundV3ApyParams {

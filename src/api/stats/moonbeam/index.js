@@ -1,9 +1,9 @@
 const { getStellaswapApys } = require('./getStellaswapApys');
 const { getSolarFlareApys } = require('./getSolarFlareApys');
 const getMoonwellApys = require('./getMoonwellApys');
-const { getBeefyMoonbeamCowApys } = require('./getBeefyMoonbeamCowApys');
+const { getSamiMoonbeamCowApys } = require('./getSamiMoonbeamCowApys');
 
-const getApys = [getStellaswapApys, getSolarFlareApys, getMoonwellApys, getBeefyMoonbeamCowApys];
+const getApys = [getStellaswapApys, getSolarFlareApys, getMoonwellApys, getSamiMoonbeamCowApys];
 
 const getMoonbeamApys = async () => {
   const start = Date.now();

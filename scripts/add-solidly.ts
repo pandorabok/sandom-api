@@ -232,7 +232,7 @@ const args = yargs.options({
   newFee: {
     type: 'boolean',
     demandOption: true,
-    describe: 'If the beefy fee is 9.5% use true else use false',
+    describe: 'If the sami fee is 9.5% use true else use false',
   },
 }).argv;
 
@@ -309,7 +309,7 @@ async function main() {
     gauge: farm.newGauge,
     decimals: `1e${lp.decimals}`,
     chainId: chainId,
-    beefyFee: args['newFee'] ? 0.095 : 0.045,
+    samiFee: args['newFee'] ? 0.095 : 0.045,
     lp0: {
       address: token0.address,
       oracle: 'tokens',

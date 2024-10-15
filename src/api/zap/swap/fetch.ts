@@ -148,10 +148,10 @@ export async function fetchProviderSupportForChainTokens(
     );
   }
 
-  const beefyPrices = await getAmmAllPrices();
+  const samiPrices = await getAmmAllPrices();
   const native = getTokenNative(apiChain);
   const wnative = getTokenWrappedNative(apiChain);
-  const wnativePrice = beefyPrices[wnative.oracleId];
+  const wnativePrice = samiPrices[wnative.oracleId];
   if (!isFiniteNumber(wnativePrice) || wnativePrice <= 0) {
     return markTokensUnsupported(
       supportByAddress,
@@ -167,8 +167,8 @@ export async function fetchProviderSupportForChainTokens(
   // Check tokens have a price
   const wnativeWithPrice = { token: wnative, price: wnativePrice };
   const tokenPrices: (number | undefined)[] = tokensToCheck.map(token =>
-    token.oracleId && isFiniteNumber(beefyPrices[token.oracleId]) && beefyPrices[token.oracleId] > 0
-      ? beefyPrices[token.oracleId]
+    token.oracleId && isFiniteNumber(samiPrices[token.oracleId]) && samiPrices[token.oracleId] > 0
+      ? samiPrices[token.oracleId]
       : undefined
   );
 

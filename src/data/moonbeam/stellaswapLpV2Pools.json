@@ -3,7 +3,7 @@
     "name": "stellaswap-ethwh-wglmr",
     "address": "0x8577273FB3B72306F3A59E26ab77116f5D428DAa",
     "decimals": "1e18",
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "poolId": 29,
     "chainId": 1284,
     "lp0": {

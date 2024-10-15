@@ -1,4 +1,4 @@
-const BeefyEarningsPool = [
+const SamiEarningsPool = [
   {
     constant: true,
     inputs: [{ name: 'account', type: 'address' }],
@@ -268,4 +268,4 @@ const BeefyEarningsPool = [
   },
 ] as const;
 
-export default BeefyEarningsPool;
+export default SamiEarningsPool;

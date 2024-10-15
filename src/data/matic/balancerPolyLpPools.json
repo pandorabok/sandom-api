@@ -443,7 +443,7 @@
     "gauge": "0xdFFe97094394680362Ec9706a759eB9366d804C2",
     "vaultPoolId": "0xb20fc01d21a50d2c734c4a1262b4404d41fa7bf000000000000000000000075c",
     "decimals": "1e18",
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "composable": true,
     "bptIndex": 1,
     "rewards": [
@@ -666,7 +666,7 @@
     "gauge": "0x48534d027f8962692122dB440714fFE88Ab1fA85",
     "vaultPoolId": "0xC17636E36398602DD37BB5D1B3A9008C7629005F0002000000000000000004C4",
     "decimals": "1e18",
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "rewards": [
       {
         "stream": "0x7fFdEc1fE5FfcD4F80F535b4a992a8Df16c683bd",

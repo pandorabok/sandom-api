@@ -20,19 +20,19 @@ export const tokens = {
   FEES: METIS,
   METIS,
   WMETIS: METIS,
-  oldBIFI: {
-    name: 'Beefy.Finance',
-    symbol: 'oldBIFI',
-    oracleId: 'oldBIFI',
+  oldSAMI: {
+    name: 'Sami.Finance',
+    symbol: 'oldSAMI',
+    oracleId: 'oldSAMI',
     address: '0xe6801928061CDbE32AC5AD0634427E140EFd05F9',
     chainId: 1088,
     decimals: 18,
-    website: 'https://www.beefy.finance/',
+    website: 'https://www.sami.finance/',
     description:
-      'Beefy Finance is a Decentralized, Multi-Chain Yield Optimizer platform that allows its users to earn compound interest on their crypto holdings.',
+      'Sami Finance is a Decentralized, Multi-Chain Yield Optimizer platform that allows its users to earn compound interest on their crypto holdings.',
     logoURI:
-      'https://raw.githubusercontent.com/beefyfinance/beefy-app/prod/src/images/single-assets/BIFI.png',
-    documentation: 'https://docs.beefy.finance/',
+      'https://raw.githubusercontent.com/samifinance/sami-app/prod/src/images/single-assets/SAMI.png',
+    documentation: 'https://docs.sami.finance/',
   },
   WBTC: {
     name: 'Wrapped BTC',
@@ -239,15 +239,15 @@ export const tokens = {
     bridge: 'native',
     documentation: 'https://docs.maiadao.io/hermes-token/understanding-hermes',
   },
-  'oldBIFI-METIS LP': {
-    name: 'oldBIFI-METIS LP',
-    symbol: 'oldBIFI-METIS LP',
+  'oldSAMI-METIS LP': {
+    name: 'oldSAMI-METIS LP',
+    symbol: 'oldSAMI-METIS LP',
     address: '0x89D433e8cCC871B3f12EA17b651ff3633DFb5DC0',
     chainId: 1088,
     decimals: 18,
     logoURI: '',
-    website: 'https://app.beefy.com/',
-    oracleId: 'netswap-bifi-metis',
+    website: 'https://app.sami.com/',
+    oracleId: 'netswap-sami-metis',
     oracle: 'lps',
   },
   smUSDT: {

@@ -10,7 +10,7 @@ const {
 
 const singlePool = [
   {
-    name: 'beefy-beopx',
+    name: 'sami-beopx',
     address: '0xEDFBeC807304951785b581dB401fDf76b4bAd1b0',
     rewardPool: '0x96f990d1aAF83B09a4BA3D22cAab0377a058C84f',
     decimals: '1e18',

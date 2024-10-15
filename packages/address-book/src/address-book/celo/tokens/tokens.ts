@@ -37,18 +37,18 @@ export const tokens = {
   FEES: WCELO,
   CELO,
   WCELO: WCELO,
-  oldBIFI: {
+  oldSAMI: {
     chainId: 42220,
     address: '0x639A647fbe20b6c8ac19E48E2de44ea792c62c5C',
     decimals: 18,
-    name: 'Beefy.Finance',
-    symbol: 'oldBIFI',
-    oracleId: 'oldBIFI',
-    website: 'https://www.beefy.finance/',
+    name: 'Sami.Finance',
+    symbol: 'oldSAMI',
+    oracleId: 'oldSAMI',
+    website: 'https://www.sami.finance/',
     description:
-      'Beefy Finance is a Decentralized, Multi-Chain Yield Optimizer platform that allows its users to earn compound interest on their crypto holdings.',
+      'Sami Finance is a Decentralized, Multi-Chain Yield Optimizer platform that allows its users to earn compound interest on their crypto holdings.',
     logoURI:
-      'https://raw.githubusercontent.com/beefyfinance/beefy-app/prod/src/images/single-assets/BIFI.png',
+      'https://raw.githubusercontent.com/samifinance/sami-app/prod/src/images/single-assets/SAMI.png',
   },
   cUSD: {
     name: 'Celo Dollar',
@@ -183,15 +183,15 @@ export const tokens = {
     ...SUSHIV1,
     symbol: 'cSUSHI',
   },
-  'oldBIFI-CELO LP': {
-    name: 'oldBIFI-CELO LP',
-    symbol: 'oldBIFI-CELO LP',
+  'oldSAMI-CELO LP': {
+    name: 'oldSAMI-CELO LP',
+    symbol: 'oldSAMI-CELO LP',
     address: '0xa9FcF373b6bc717223d9464e8c481c9AfAe3f861',
     chainId: 42220,
     decimals: 18,
     logoURI: '',
-    website: 'https://app.beefy.com/',
-    oracleId: 'sushi-celo-bifi-weth',
+    website: 'https://app.sami.com/',
+    oracleId: 'sushi-celo-sami-weth',
     oracle: 'lps',
   },
   'CSUSHI-CELO LP': {
@@ -201,7 +201,7 @@ export const tokens = {
     chainId: 42220,
     decimals: 18,
     logoURI: '',
-    website: 'https://app.beefy.com/',
+    website: 'https://app.sami.com/',
     oracleId: 'sushi-celo-csushi-celo',
     oracle: 'lps',
   },

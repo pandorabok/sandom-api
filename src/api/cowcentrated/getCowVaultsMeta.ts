@@ -11,7 +11,7 @@ import { getCowClmChains, getCowClms } from './getCowClms';
 const CACHE_KEY = 'COW_VAULTS_META';
 const INIT_DELAY = Number(process.env.COWCENTRATED_INIT_DELAY || 1000);
 const UPDATE_INTERVAL = 60000;
-const BEEFY_CLM_API = process.env.BEEFY_CLM_API || 'https://clm-api.beefy.finance';
+const SAMI_CLM_API = process.env.SAMI_CLM_API || 'https://clm-api.sami.finance';
 
 const chainToVaults: Partial<Record<ApiChain, CowClmsMeta>> = {};
 
@@ -37,7 +37,7 @@ async function fetchCowVaultsMeta(chainId: ApiChain): Promise<AnyCowClmMeta[]> {
   // ask the api to compute metrics over a longer period of time
   // to ensure we have some data to base metrics on
   const period = chainId === 'rootstock' ? '3.1d' : '1.1d';
-  const url = `${BEEFY_CLM_API}/api/v1/vaults/${chainId}/${period}`;
+  const url = `${SAMI_CLM_API}/api/v1/vaults/${chainId}/${period}`;
   const response = await fetch(url);
   if (!response.ok) {
     throw new Error(

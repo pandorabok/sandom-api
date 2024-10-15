@@ -4,5 +4,5 @@ export const joe = {
   masterchefV3: '0x188bED1968b795d5c9022F6a0bb5931Ac4c18F00',
   boostedMasterChef: '0x4483f0b6e2F5486D06958C20f8C39A7aBe87bf8F',
   boostStaker: '0x1F2A8034f444dc55F963fb5925A9b6eb744EeE2c',
-  avaxBifiLp: '0x361221991B3B6282fF3a62Bc874d018bfAF1f8C8',
+  avaxsamiLp: '0x361221991B3B6282fF3a62Bc874d018bfAF1f8C8',
 } as const;

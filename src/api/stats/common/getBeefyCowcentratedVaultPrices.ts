@@ -37,13 +37,13 @@ const v3PoolAbi = [
   },
 ] as const satisfies Abi;
 
-export const getBeefyCowcentratedVaultPrices = async (
+export const getSamiCowcentratedVaultPrices = async (
   apiChain: ApiChain,
   tokenPrices: Record<string, number>
 ): Promise<Record<string, ClmLpBreakdown>> => {
   const sources = getCowClms(apiChain);
   if (sources.length === 0) {
-    console.warn(`getBeefyCowcentratedVaultPrices: No Cowcentrated vaults found for ${apiChain}`);
+    console.warn(`getSamiCowcentratedVaultPrices: No Cowcentrated vaults found for ${apiChain}`);
     return {};
   }
 
@@ -128,7 +128,7 @@ export const getBeefyCowcentratedVaultPrices = async (
 
 const getTokenPrice = (tokenPrices, token) => {
   if (!tokenPrices.hasOwnProperty(token)) {
-    console.error(`BeefyCowcentratedVault Unknown token '${token}'. Consider adding it to .json file`);
+    console.error(`SamiCowcentratedVault Unknown token '${token}'. Consider adding it to .json file`);
     return 1;
   }
   return tokenPrices[token];

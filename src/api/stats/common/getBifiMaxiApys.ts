@@ -9,8 +9,8 @@ const { compound } = require('../../../utils/compound');
 const { DAILY_HPY } = require('../../../constants');
 const secondsPerYear = 31536000;
 
-interface BifiApyParams {
-  bifi: string; // address
+interface samiApyParams {
+  sami: string; // address
   rewardPool: string; // address
   rewardId: string; // address
   rewardDecimals: string; // 1e18
@@ -18,21 +18,21 @@ interface BifiApyParams {
   chainId: ChainId;
 }
 
-export const getBifiMaxiApys = async (params: BifiApyParams) => {
+export const getsamiMaxiApys = async (params: samiApyParams) => {
   const [yearlyRewardsInUsd, totalStakedInUsd] = await Promise.all([
     getYearlyRewardsInUsd(params),
     getTotalStakedInUsd(params),
   ]);
 
   const simpleApy = yearlyRewardsInUsd.dividedBy(totalStakedInUsd);
-  const shareAfterBeefyPerformanceFee =
-    1 - getTotalPerformanceFeeForVault(params.chain + '-bifi-maxi');
-  const apy = compound(simpleApy, DAILY_HPY, 1, shareAfterBeefyPerformanceFee);
+  const shareAfterSamiPerformanceFee =
+    1 - getTotalPerformanceFeeForVault(params.chain + '-sami-maxi');
+  const apy = compound(simpleApy, DAILY_HPY, 1, shareAfterSamiPerformanceFee);
 
-  return { [params.chain + '-bifi-maxi']: apy };
+  return { [params.chain + '-sami-maxi']: apy };
 };
 
-const getYearlyRewardsInUsd = async (params: BifiApyParams) => {
+const getYearlyRewardsInUsd = async (params: samiApyParams) => {
   const rewardPrice = await fetchPrice({ oracle: 'tokens', id: params.rewardId });
 
   const rewardPool = fetchContract(params.rewardPool, IRewardPool, params.chainId);
@@ -46,12 +46,12 @@ const getYearlyRewardsInUsd = async (params: BifiApyParams) => {
   return yearlyRewardsInUsd;
 };
 
-const getTotalStakedInUsd = async (params: BifiApyParams) => {
-  const tokenContract = fetchContract(params.bifi, ERC20Abi, params.chainId);
+const getTotalStakedInUsd = async (params: samiApyParams) => {
+  const tokenContract = fetchContract(params.sami, ERC20Abi, params.chainId);
   const totalStaked = new BigNumber(
     (await tokenContract.read.balanceOf([params.rewardPool as `0x${string}`])).toString()
   );
-  const tokenPrice = await fetchPrice({ oracle: 'tokens', id: 'oldBIFI' });
+  const tokenPrice = await fetchPrice({ oracle: 'tokens', id: 'oldSAMI' });
 
   return totalStaked.times(tokenPrice).dividedBy('1e18');
 };

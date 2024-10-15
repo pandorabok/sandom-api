@@ -52,7 +52,7 @@ export class OdosApi implements IOdosApi {
     return {
       Accept: 'application/json,*/*;q=0.8',
       'Accept-Language': 'en-US,en;q=0.9',
-      'User-Agent': 'BeefyApi',
+      'User-Agent': 'SamiApi',
       ...additionalHeaders,
     };
   }

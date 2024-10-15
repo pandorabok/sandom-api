@@ -1,8 +1,8 @@
 const getveSyncApys = require('./getveSyncApys');
-const { getBeefyzkSyncCowApys } = require('./getBeefyzkSyncCowApys');
+const { getSamizkSyncCowApys } = require('./getSamizkSyncCowApys');
 const getVenusApys = require('./getVenusApys');
 
-const getApys = [getveSyncApys, getBeefyzkSyncCowApys, getVenusApys];
+const getApys = [getveSyncApys, getSamizkSyncCowApys, getVenusApys];
 
 const getZksyncApys = async () => {
   const start = Date.now();

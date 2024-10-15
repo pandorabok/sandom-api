@@ -204,16 +204,16 @@ export const tokens = {
       'MetaDerby is the first free-to-play-and-earn horse racing metaverse where anyone can earn tokens through skilled gameplay and contribute to building the MetaDerby universe.',
   },
   beJOE: {
-    name: 'Beefy JOE',
+    name: 'Sami JOE',
     symbol: 'beJOE',
     oracleId: 'beJOE',
     address: '0x1F2A8034f444dc55F963fb5925A9b6eb744EeE2c',
     chainId: 43114,
     decimals: 18,
     logoURI: '',
-    website: 'https://beefy.com',
+    website: 'https://sami.com',
     description:
-      'beJOE is a Beefy-wrapped version of veJOE. Holding beJOE will be a great way to earn a bunch of JOE. Beefy will max out emissions on boosted farms, 5% of emissions will then be distributed to beJOE stakers on Beefy.',
+      'beJOE is a Sami-wrapped version of veJOE. Holding beJOE will be a great way to earn a bunch of JOE. Sami will max out emissions on boosted farms, 5% of emissions will then be distributed to beJOE stakers on Sami.',
   },
   YETI: {
     name: 'Yeti YETI',
@@ -841,19 +841,19 @@ export const tokens = {
     logoURI:
       'https://raw.githubusercontent.com/pangolindex/tokens/main/assets/0x8729438EB15e2C8B576fCc6AeCdA6A148776C0F5/logo.png',
   },
-  oldBIFI: {
+  oldSAMI: {
     chainId: 43114,
     address: '0xd6070ae98b8069de6B494332d1A1a81B6179D960',
     decimals: 18,
     name: 'Binance Smart Chain',
-    symbol: 'oldBIFI',
-    oracleId: 'oldBIFI',
-    website: 'https://www.beefy.finance/',
+    symbol: 'oldSAMI',
+    oracleId: 'oldSAMI',
+    website: 'https://www.sami.finance/',
     description:
-      'Beefy Finance is a Decentralized, Multi-Chain Yield Optimizer platform that allows its users to earn compound interest on their crypto holdings.',
+      'Sami Finance is a Decentralized, Multi-Chain Yield Optimizer platform that allows its users to earn compound interest on their crypto holdings.',
     logoURI:
-      'https://raw.githubusercontent.com/beefyfinance/beefy-app/prod/src/images/single-assets/BIFI.png',
-    documentation: 'https://docs.beefy.finance/',
+      'https://raw.githubusercontent.com/samifinance/sami-app/prod/src/images/single-assets/SAMI.png',
+    documentation: 'https://docs.sami.finance/',
   },
   BNB: {
     chainId: 43114,
@@ -5218,7 +5218,7 @@ export const tokens = {
     address: '0xaE64d55a6f09E4263421737397D1fdFA71896a69',
     chainId: 43114,
     decimals: 18,
-    website: 'https://app.gmx.io/#/trade/?ref=beefy',
+    website: 'https://app.gmx.io/#/trade/?ref=sami',
     description:
       'GLP consists of an index of assets used for swaps and leverage trading on GMX. GLP holders will make a profit when leverage traders make a loss and vice versa. Staked GLP also earns escrowed GMX rewards and 70% of platform fees distributed in ETH.',
     logoURI: 'https://github.com/gmx-io/gmx-assets/blob/main/GMX-Assets/SVG/GLP_LOGO%20ONLY.svg',
@@ -5231,7 +5231,7 @@ export const tokens = {
     address: '0x62edc0692BD897D2295872a9FFCac5425011c661',
     chainId: 43114,
     decimals: 18,
-    website: 'https://app.gmx.io/#/trade/?ref=beefy',
+    website: 'https://app.gmx.io/#/trade/?ref=sami',
     description:
       'GMX is the utility and governance token of the GMX decentralized spot and perpetual exchange that supports low swap fees, zero price impact trades and up to 30x leverage. Staked GMX earns escrowed GMX and 30% of platform fees in the form of ETH.',
     logoURI: 'https://github.com/gmx-io/gmx-assets/blob/main/GMX-Assets/SVG/GMX_LOGO%20ONLY.svg',

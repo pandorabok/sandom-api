@@ -6,7 +6,7 @@ const getUniswapPositionPrices = async tokenPrices => {
     pools: pools,
     tokenPrices: tokenPrices,
     chainId: 42161,
-    beefyHelper: '0x9a7006E936f5aBe8E0FAf24068e1e120fB0DB79e',
+    samiHelper: '0x9a7006E936f5aBe8E0FAf24068e1e120fB0DB79e',
     nftManager: '0xC36442b4a4522E871399CD717aBDD847Ab11FE88',
   };
 

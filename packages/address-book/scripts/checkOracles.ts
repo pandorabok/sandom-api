@@ -13,7 +13,7 @@ type Vault = {
 };
 
 async function fetchVaults(): Promise<Record<ChainId, Vault[]>> {
-  const response = await fetch('https://api.beefy.finance/vaults');
+  const response = await fetch('https://api.sami.finance/vaults');
   const vaults = (await response.json()) as Vault[];
 
   return vaults.reduce(
@@ -29,7 +29,7 @@ async function fetchVaults(): Promise<Record<ChainId, Vault[]>> {
 }
 
 async function fetchPrices(): Promise<Record<string, number>> {
-  const urls = ['https://api.beefy.finance/prices', 'https://api.beefy.finance/lps'];
+  const urls = ['https://api.sami.finance/prices', 'https://api.sami.finance/lps'];
   const responses = await Promise.all(
     urls.map(url => fetch(url).then(r => r.json() as Promise<Record<string, unknown>>))
   );

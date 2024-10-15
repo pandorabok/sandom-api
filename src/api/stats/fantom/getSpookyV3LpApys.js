@@ -43,8 +43,8 @@ const getSpookyV3LpApys = async () => {
   for (let i = 0; i < pools.length; i++) {
     const pool = pools[i];
 
-    const beefyPerformanceFee = pool.beefyFee ? pool.beefyFee : 0.095;
-    const shareAfterBeefyPerformanceFee = 1 - beefyPerformanceFee;
+    const samiPerformanceFee = pool.samiFee ? pool.samiFee : 0.095;
+    const shareAfterSamiPerformanceFee = 1 - samiPerformanceFee;
 
     const lpPrice = await fetchPrice({ oracle: 'lps', id: pool.name });
     const totalStakedInUsd = balances[i].times(lpPrice).dividedBy('1e18');
@@ -69,8 +69,8 @@ const getSpookyV3LpApys = async () => {
     const yearlyRewardsInUsd = yearlyRewardsAInUsd.plus(yearlyRewardsBInUsd);
 
     const simpleApy = yearlyRewardsInUsd.dividedBy(totalStakedInUsd);
-    const vaultApr = simpleApy.times(shareAfterBeefyPerformanceFee);
-    const vaultApy = compound(simpleApy, BASE_HPY, 1, shareAfterBeefyPerformanceFee);
+    const vaultApr = simpleApy.times(shareAfterSamiPerformanceFee);
+    const vaultApy = compound(simpleApy, BASE_HPY, 1, shareAfterSamiPerformanceFee);
 
     const tradingApr = tradingAprs[pool.address.toLowerCase()] ?? new BigNumber(0);
     const totalApy = getFarmWithTradingFeesApy(
@@ -78,7 +78,7 @@ const getSpookyV3LpApys = async () => {
       tradingApr,
       BASE_HPY,
       1,
-      shareAfterBeefyPerformanceFee
+      shareAfterSamiPerformanceFee
     );
     // console.log(pool.name, simpleApy.valueOf(), tradingApr.valueOf(), totalApy.valueOf(), totalStakedInUsd.valueOf(), yearlyRewardsInUsd.valueOf());
 
@@ -92,7 +92,7 @@ const getSpookyV3LpApys = async () => {
       [pool.name]: {
         vaultApr: vaultApr.toNumber(),
         compoundingsPerYear: BASE_HPY,
-        beefyPerformanceFee: beefyPerformanceFee,
+        samiPerformanceFee: samiPerformanceFee,
         vaultApy: vaultApy,
         lpFee: liquidityProviderFee,
         tradingApr: tradingApr.toNumber(),

@@ -5,7 +5,7 @@
     "pool": "0x3D18C836Be1674e8eCc6906224c3e871A1b3a13f",
     "decimals": "1e18",
     "chainId": 42161,
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "lp0": {
       "address": "0x93b346b6BC2548dA6A1E7d98E9a421B42541425b",
       "oracle": "tokens",
@@ -25,7 +25,7 @@
     "pool": "0xdEb066fE0e7726CbD5d0c4D5A210CfaA16ae1DDA",
     "decimals": "1e18",
     "chainId": 42161,
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "lp0": {
       "address": "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
       "oracle": "tokens",
@@ -45,7 +45,7 @@
     "pool": "0x7CF803e8d82A50504180f417B8bC7a493C0a0503",
     "decimals": "1e18",
     "chainId": 42161,
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "lp0": {
       "address": "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
       "oracle": "tokens",
@@ -65,7 +65,7 @@
     "pool": "0x09ba302A3f5ad2bF8853266e271b005A5b3716fe",
     "decimals": "1e18",
     "chainId": 42161,
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "lp0": {
       "address": "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
       "oracle": "tokens",
@@ -85,7 +85,7 @@
     "pool": "0x59D72DDB29Da32847A4665d08ffc8464A7185FAE",
     "decimals": "1e18",
     "chainId": 42161,
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "lp0": {
       "address": "0x539bdE0d7Dbd336b79148AA742883198BBF60342",
       "oracle": "tokens",
@@ -105,7 +105,7 @@
     "pool": "0x681C2a4D924223563DbE35Da64E9a0f6A4967FAe",
     "decimals": "1e18",
     "chainId": 42161,
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "lp0": {
       "address": "0x2297aEbD383787A160DD0d9F71508148769342E3",
       "oracle": "tokens",
@@ -125,7 +125,7 @@
     "pool": "0xbE3aD6a5669Dc0B8b12FeBC03608860C31E2eef6",
     "decimals": "1e18",
     "chainId": 42161,
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "lp0": {
       "address": "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
       "oracle": "tokens",
@@ -145,7 +145,7 @@
     "pool": "0x35218a1cbaC5Bbc3E57fd9Bd38219D37571b3537",
     "decimals": "1e18",
     "chainId": 42161,
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "lp0": {
       "address": "0x5979D7b546E38E414F7E9822514be443A4800529",
       "oracle": "tokens",

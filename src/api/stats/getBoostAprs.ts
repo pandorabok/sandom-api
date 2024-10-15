@@ -3,11 +3,11 @@ import { Boost } from '../boosts/types';
 import BigNumber from 'bignumber.js';
 import { fetchPrice } from '../../utils/fetchPrice';
 import { ApiChain, toChainId } from '../../utils/chain';
-import BeefyBoostAbi from '../../abis/BeefyBoost';
+import SamiBoostAbi from '../../abis/SamiBoost';
 import { fetchContract } from '../rpc/client';
 import { isFiniteNumber } from '../../utils/number';
 import { partition } from 'lodash';
-import { BeefyRewardPoolV2Config, getBeefyRewardPoolV2Aprs } from './common/getBeefyRewardPoolV2Apr';
+import { SamiRewardPoolV2Config, getSamiRewardPoolV2Aprs } from './common/getSamiRewardPoolV2Apr';
 import { getAddress } from 'viem';
 import { isDefined } from '../../utils/array';
 import { getVaultByIdOfType } from './getMultichainVaults';
@@ -20,7 +20,7 @@ const updateBoostV2AprsForChain = async (chain: ApiChain, boosts: Boost[]) => {
 
     //TODO: check boost update data frequency (/boosts already has periodFinish property) to see if periodFinish is still valid and rpc call can be avoided
 
-    const results = await getBeefyRewardPoolV2Aprs(
+    const results = await getSamiRewardPoolV2Aprs(
       chainId,
       boosts
         .map(boost => {
@@ -44,7 +44,7 @@ const updateBoostV2AprsForChain = async (chain: ApiChain, boosts: Boost[]) => {
               oracleId: vault.oracleId, // depositToken oracle
               decimals: vault.tokenDecimals || 18, // depositToken decimals
             },
-          } satisfies BeefyRewardPoolV2Config;
+          } satisfies SamiRewardPoolV2Config;
         })
         .filter(isDefined)
     );
@@ -67,15 +67,15 @@ const updateBoostV1AprsForChain = async (chain: ApiChain, boosts: Boost[]) => {
   //TODO: check boost update data frequency (/boosts already has periodFinish property) to see if periodFinish is still valid and rpc call can be avoided
 
   const totalSupplyCalls = boosts.map(boost => {
-    const contract = fetchContract(boost.contractAddress, BeefyBoostAbi, chainId);
+    const contract = fetchContract(boost.contractAddress, SamiBoostAbi, chainId);
     return contract.read.totalSupply();
   });
   const rewardRateCalls = boosts.map(boost => {
-    const contract = fetchContract(boost.contractAddress, BeefyBoostAbi, chainId);
+    const contract = fetchContract(boost.contractAddress, SamiBoostAbi, chainId);
     return contract.read.rewardRate();
   });
   const periodFinishCalls = boosts.map(boost => {
-    const contract = fetchContract(boost.contractAddress, BeefyBoostAbi, chainId);
+    const contract = fetchContract(boost.contractAddress, SamiBoostAbi, chainId);
     return contract.read.periodFinish();
   });
 

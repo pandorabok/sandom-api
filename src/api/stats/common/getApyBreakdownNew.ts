@@ -53,7 +53,7 @@ export type ApyBreakdown = AprBreakdown & {
    * % of compounding yield that goes to the protocol
    * @deprecated not used in app
    */
-  beefyPerformanceFee: number;
+  samiPerformanceFee: number;
   /**
    * underlying ALM's LP fee
    * @deprecated not used in app
@@ -80,7 +80,7 @@ type BreakdownRequestComponents = ToInputComponents<CompoundableComponent> &
 export type ApyBreakdownRequest = BreakdownRequestComponents & {
   vaultId: string;
   providerFee?: BigNumberish | null | undefined;
-  beefyFee?: BigNumberish | null | undefined;
+  samiFee?: BigNumberish | null | undefined;
   compoundingsPerYear?: BigNumberish | null | undefined;
 };
 
@@ -92,14 +92,14 @@ export interface ApyBreakdownResult {
 export function getApyBreakdownOnly(request: ApyBreakdownRequest): ApyBreakdown {
   const compoundingsPerYear = toNumber(request.compoundingsPerYear, BASE_HPY);
   const lpFee = toNumber(request.providerFee);
-  const beefyPerformanceFee = toNumber(
-    request.beefyFee,
+  const samiPerformanceFee = toNumber(
+    request.samiFee,
     getTotalPerformanceFeeForVault(request.vaultId)
   );
-  const shareAfterBeefyPerformanceFee = 1 - beefyPerformanceFee;
+  const shareAfterSamiPerformanceFee = 1 - samiPerformanceFee;
   const breakdown: ApyBreakdown = {
     compoundingsPerYear,
-    beefyPerformanceFee,
+    samiPerformanceFee,
     lpFee,
     totalApy: 0,
   };
@@ -108,7 +108,7 @@ export function getApyBreakdownOnly(request: ApyBreakdownRequest): ApyBreakdown 
   for (const component of compoundableComponents) {
     const apr = toNumber(request[component]);
     if (apr !== undefined) {
-      const aprAfterFee = apr * shareAfterBeefyPerformanceFee;
+      const aprAfterFee = apr * shareAfterSamiPerformanceFee;
       breakdown[`${component}Apr`] = aprAfterFee;
       totalCompoundable += aprAfterFee;
     }
@@ -132,7 +132,7 @@ export function getApyBreakdownOnly(request: ApyBreakdownRequest): ApyBreakdown 
     }
   }
 
-  // @dev shareAfterBeefyPerformanceFee = 1 as fee is already removed from all components
+  // @dev shareAfterSamiPerformanceFee = 1 as fee is already removed from all components
   breakdown.totalApy =
     getFarmWithTradingFeesApy(totalCompoundable, totalSpecial, compoundingsPerYear, 1, 1) +
     totalNonCompoundable;

@@ -1,7 +1,7 @@
 const zeroAddress = '0x0000000000000000000000000000000000000000';
 const hw = '0x3Eb7fB70C03eC4AEEC97C6C6C1B59B014600b7F7';
 
-export const beefyfinance = {
+export const samifinance = {
   devMultisig: zeroAddress,
   treasuryMultisig: '0xdbB72c8B7eBdD52A4813B9D262386dfDAB69c9bA',
   strategyOwner: '0x587479672077fBD7cb08EE1fd13fca6a9ef69d9e',
@@ -11,8 +11,8 @@ export const beefyfinance = {
   launchpoolOwner: hw,
   rewardPool: '0x5f7347fedfD0b374e8CE8ed19Fc839F59FB59a3B',
   treasury: '0xf4859A3f36fBcA24BF8299bf56359fB441b03034',
-  beefyFeeRecipient: '0x250EB557D7a767ee711c7C11988470669a5306BB',
+  samiFeeRecipient: '0x250EB557D7a767ee711c7C11988470669a5306BB',
   multicall: '0x2776CF9B6E2Fa7B33A37139C3CB1ee362Ff0356e',
-  bifiMaxiStrategy: '0xfdF1088F5B9Bd338D5197aCfB00b468f04bCC374',
+  samiMaxiStrategy: '0xfdF1088F5B9Bd338D5197aCfB00b468f04bCC374',
   voter: '0x5e1caC103F943Cd84A1E92dAde4145664ebf692A',
 } as const;

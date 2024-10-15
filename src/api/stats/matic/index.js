@@ -6,7 +6,7 @@ const { getAaveV3Apys } = require('./getAaveV3Apys');
 const { getGnsApys } = require('./getGnsApys');
 const getAuraPolygonApys = require('./getAuraPolygonApys');
 const { getPolygonCompoundV3Apys } = require('./getPolygonCompoundApys');
-const { getBeefyCowPolyApys } = require('./getBeefyCowPolyApys');
+const { getSamiCowPolyApys } = require('./getSamiCowPolyApys');
 const { getMorphoApys } = require('../common/morpho/getMorphoApys');
 const { POLYGON_CHAIN_ID } = require('../../../constants');
 
@@ -19,7 +19,7 @@ const getApys = [
   getGnsApys,
   getAuraPolygonApys,
   getPolygonCompoundV3Apys,
-  getBeefyCowPolyApys,
+  getSamiCowPolyApys,
   () => getMorphoApys(POLYGON_CHAIN_ID, require('../../../data/matic/morphoPools.json')),
 ];
 

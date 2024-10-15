@@ -23,7 +23,7 @@
     "./build",
     "./build-esm"
   ],
-  "repository": "beefyfinance/beefy-api",
+  "repository": "samifinance/sami-api",
   "license": "MIT",
   "scripts": {
     "addChain": "ts-node ./scripts/addChain.ts",

@@ -70,9 +70,9 @@ const getBreakdown = (poolName: string, apr: BigNumber): ApyBreakdownResult => {
   };
 
   const vaultApr = apr.toNumber();
-  const beefyPerformanceFee = getTotalPerformanceFeeForVault(poolName);
-  const shareAfterBeefyPerformanceFee = 1 - beefyPerformanceFee;
-  const vaultApy = compound(vaultApr, BASE_HPY, 1, shareAfterBeefyPerformanceFee);
+  const samiPerformanceFee = getTotalPerformanceFeeForVault(poolName);
+  const shareAfterSamiPerformanceFee = 1 - samiPerformanceFee;
+  const vaultApy = compound(vaultApr, BASE_HPY, 1, shareAfterSamiPerformanceFee);
   const totalApy = vaultApy;
 
   result.apys[poolName] = totalApy;
@@ -81,7 +81,7 @@ const getBreakdown = (poolName: string, apr: BigNumber): ApyBreakdownResult => {
     vaultApy: vaultApy,
     totalApy: totalApy,
     compoundingsPerYear: BASE_HPY,
-    beefyPerformanceFee: beefyPerformanceFee,
+    samiPerformanceFee: samiPerformanceFee,
   };
   return result;
 };

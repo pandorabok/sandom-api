@@ -1,7 +1,7 @@
-Contributing to Beefy's Address Book
+Contributing to Sami's Address Book
 =======
 
-We really appreciate and value contributions to the Beefy.Finance repositories. Please take 5' to review the items listed below to make sure that your contributions are merged as soon as possible.
+We really appreciate and value contributions to the Sami.Finance repositories. Please take 5' to review the items listed below to make sure that your contributions are merged as soon as possible.
 
 ## Creating Pull Requests (PRs)
 
@@ -13,7 +13,7 @@ As a contributor, you are expected to fork this repository, work on your own for
 
 ```
 cd address-book
-git remote add upstream https://github.com/beefyfinance/address-book.git
+git remote add upstream https://github.com/samifinance/address-book.git
 git fetch upstream
 git pull --rebase upstream master
 ```
@@ -32,17 +32,17 @@ git commit -m "Added pancakeswap addresses"
 git push origin pancakeswap
 ```
 
-4) Go to [github.com/beefyfinance/address-book](https://github.com/beefyfinance/address-book) in your web browser and issue a new pull request.
+4) Go to [github.com/samifinance/address-book](https://github.com/samifinance/address-book) in your web browser and issue a new pull request.
 
-5) Maintainers will review your code and possibly ask for changes before your code is pulled in to the main repository. We'll check that all tests pass, review the coding style, and check for general code correctness. If everything is OK, we'll merge your pull request and your code will be part of Beefy's address book.
+5) Maintainers will review your code and possibly ask for changes before your code is pulled in to the main repository. We'll check that all tests pass, review the coding style, and check for general code correctness. If everything is OK, we'll merge your pull request and your code will be part of Sami's address book.
 
-*IMPORTANT* Please pay attention to the maintainer's feedback, since its a necessary step to keep up with the standards Beefy.Finance attains to.
+*IMPORTANT* Please pay attention to the maintainer's feedback, since its a necessary step to keep up with the standards Sami.Finance attains to.
 
 ## All set!
 
-If you have any questions, feel free to post them to [github.com/beefyfinance/address-book/issues](https://github.com/beefyfinance/address-book/issues).
+If you have any questions, feel free to post them to [github.com/samifinance/address-book/issues](https://github.com/samifinance/address-book/issues).
 
-Finally, if you're looking to collaborate and want to find easy tasks to start, look at the issues we marked as ["Good first issue"](https://github.com/beefyfinance/address-book/issues?q=label%3A%22good+first+issue%22).
+Finally, if you're looking to collaborate and want to find easy tasks to start, look at the issues we marked as ["Good first issue"](https://github.com/samifinance/address-book/issues?q=label%3A%22good+first+issue%22).
 
 Thanks for your time and code!
 

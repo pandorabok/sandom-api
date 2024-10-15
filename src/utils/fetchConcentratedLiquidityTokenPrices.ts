@@ -44,11 +44,11 @@ const tokens: Partial<Record<keyof typeof ChainId, ConcentratedLiquidityToken[]>
     },
     {
       type: 'UniV3',
-      oracleId: 'BIFI',
+      oracleId: 'SAMI',
       decimalDelta: 1,
       pool: '0xfBa26C3F9C8eCeF989def3C5c8aD037487462d83',
       firstToken: 'WETH',
-      secondToken: 'BIFI',
+      secondToken: 'SAMI',
     },
     {
       type: 'UniV3',
@@ -280,10 +280,10 @@ const tokens: Partial<Record<keyof typeof ChainId, ConcentratedLiquidityToken[]>
     },
     {
       type: 'Slipstream',
-      oracleId: 'basemooBIFI',
+      oracleId: 'basemooSAMI',
       decimalDelta: 1,
       pool: '0xb378137c90444BbceCD44a1f766851fbf53D2a9E',
-      firstToken: 'basemooBIFI',
+      firstToken: 'basemooSAMI',
       secondToken: 'ETH',
     },
     {
@@ -840,10 +840,10 @@ const tokens: Partial<Record<keyof typeof ChainId, ConcentratedLiquidityToken[]>
     },
     {
       type: 'UniV3',
-      oracleId: 'smooBIFI',
+      oracleId: 'smooSAMI',
       decimalDelta: 1e-12,
       pool: '0xFD8fc59E65860e7FAaf09482e6Be4af65741DEba',
-      firstToken: 'smooBIFI',
+      firstToken: 'smooSAMI',
       secondToken: 'sUSDCe',
     },
     {

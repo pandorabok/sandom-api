@@ -177,83 +177,83 @@ const MULTICHAIN_RPC: Record<ChainId, string> = Object.fromEntries(
   Object.entries(RPCS_BY_CHAIN).map(([key, value]: [ApiChain, string[]]) => [ChainId[key], value[0]])
 ) as Record<ChainId, string>;
 
-/// Beefy Vaults Endpoints
+/// Sami Vaults Endpoints
 const BSC_VAULTS_ENDPOINT =
-  'https://raw.githubusercontent.com/beefyfinance/beefy-v2/prod/src/config/vault/bsc.json';
+  'https://raw.githubusercontent.com/samifinance/sami-v2/prod/src/config/vault/bsc.json';
 const HECO_VAULTS_ENDPOINT =
-  'https://raw.githubusercontent.com/beefyfinance/beefy-v2/prod/src/config/vault/heco.json';
+  'https://raw.githubusercontent.com/samifinance/sami-v2/prod/src/config/vault/heco.json';
 const AVAX_VAULTS_ENDPOINT =
-  'https://raw.githubusercontent.com/beefyfinance/beefy-v2/prod/src/config/vault/avax.json';
+  'https://raw.githubusercontent.com/samifinance/sami-v2/prod/src/config/vault/avax.json';
 const POLYGON_VAULTS_ENDPOINT =
-  'https://raw.githubusercontent.com/beefyfinance/beefy-v2/prod/src/config/vault/polygon.json';
+  'https://raw.githubusercontent.com/samifinance/sami-v2/prod/src/config/vault/polygon.json';
 const FANTOM_VAULTS_ENDPOINT =
-  'https://raw.githubusercontent.com/beefyfinance/beefy-v2/prod/src/config/vault/fantom.json';
+  'https://raw.githubusercontent.com/samifinance/sami-v2/prod/src/config/vault/fantom.json';
 const ONE_VAULTS_ENDPOINT =
-  'https://raw.githubusercontent.com/beefyfinance/beefy-v2/prod/src/config/vault/harmony.json';
+  'https://raw.githubusercontent.com/samifinance/sami-v2/prod/src/config/vault/harmony.json';
 const ARBITRUM_VAULTS_ENDPOINT =
-  'https://raw.githubusercontent.com/beefyfinance/beefy-v2/prod/src/config/vault/arbitrum.json';
+  'https://raw.githubusercontent.com/samifinance/sami-v2/prod/src/config/vault/arbitrum.json';
 const CELO_VAULTS_ENDPOINT =
-  'https://raw.githubusercontent.com/beefyfinance/beefy-v2/prod/src/config/vault/celo.json';
+  'https://raw.githubusercontent.com/samifinance/sami-v2/prod/src/config/vault/celo.json';
 const MOONRIVER_VAULTS_ENDPOINT =
-  'https://raw.githubusercontent.com/beefyfinance/beefy-v2/prod/src/config/vault/moonriver.json';
+  'https://raw.githubusercontent.com/samifinance/sami-v2/prod/src/config/vault/moonriver.json';
 const CRONOS_VAULTS_ENDPOINT =
-  'https://raw.githubusercontent.com/beefyfinance/beefy-v2/prod/src/config/vault/cronos.json';
+  'https://raw.githubusercontent.com/samifinance/sami-v2/prod/src/config/vault/cronos.json';
 const AURORA_VAULTS_ENDPOINT =
-  'https://raw.githubusercontent.com/beefyfinance/beefy-v2/prod/src/config/vault/aurora.json';
+  'https://raw.githubusercontent.com/samifinance/sami-v2/prod/src/config/vault/aurora.json';
 const FUSE_VAULTS_ENDPOINT =
-  'https://raw.githubusercontent.com/beefyfinance/beefy-v2/prod/src/config/vault/fuse.json';
+  'https://raw.githubusercontent.com/samifinance/sami-v2/prod/src/config/vault/fuse.json';
 const METIS_VAULTS_ENDPOINT =
-  'https://raw.githubusercontent.com/beefyfinance/beefy-v2/prod/src/config/vault/metis.json';
+  'https://raw.githubusercontent.com/samifinance/sami-v2/prod/src/config/vault/metis.json';
 const MOONBEAM_VAULTS_ENDPOINT =
-  'https://raw.githubusercontent.com/beefyfinance/beefy-v2/prod/src/config/vault/moonbeam.json';
+  'https://raw.githubusercontent.com/samifinance/sami-v2/prod/src/config/vault/moonbeam.json';
 const EMERALD_VAULTS_ENDPOINT =
-  'https://raw.githubusercontent.com/beefyfinance/beefy-v2/prod/src/config/vault/emerald.json';
+  'https://raw.githubusercontent.com/samifinance/sami-v2/prod/src/config/vault/emerald.json';
 const OPTIMISM_VAULTS_ENDPOINT =
-  'https://raw.githubusercontent.com/beefyfinance/beefy-v2/prod/src/config/vault/optimism.json';
+  'https://raw.githubusercontent.com/samifinance/sami-v2/prod/src/config/vault/optimism.json';
 const KAVA_VAULTS_ENDPOINT =
-  'https://raw.githubusercontent.com/beefyfinance/beefy-v2/prod/src/config/vault/kava.json';
+  'https://raw.githubusercontent.com/samifinance/sami-v2/prod/src/config/vault/kava.json';
 const ETHEREUM_VAULTS_ENDPOINT =
-  'https://raw.githubusercontent.com/beefyfinance/beefy-v2/prod/src/config/vault/ethereum.json';
+  'https://raw.githubusercontent.com/samifinance/sami-v2/prod/src/config/vault/ethereum.json';
 const CANTO_VAULTS_ENDPOINT =
-  'https://raw.githubusercontent.com/beefyfinance/beefy-v2/prod/src/config/vault/canto.json';
+  'https://raw.githubusercontent.com/samifinance/sami-v2/prod/src/config/vault/canto.json';
 const ZKSYNC_VAULTS_ENDPOINT =
-  'https://raw.githubusercontent.com/beefyfinance/beefy-v2/prod/src/config/vault/zksync.json';
+  'https://raw.githubusercontent.com/samifinance/sami-v2/prod/src/config/vault/zksync.json';
 const ZKEVM_VAULTS_ENDPOINT =
-  'https://raw.githubusercontent.com/beefyfinance/beefy-v2/prod/src/config/vault/zkevm.json';
+  'https://raw.githubusercontent.com/samifinance/sami-v2/prod/src/config/vault/zkevm.json';
 const BASE_VAULTS_ENDPOINT =
-  'https://raw.githubusercontent.com/beefyfinance/beefy-v2/prod/src/config/vault/base.json';
+  'https://raw.githubusercontent.com/samifinance/sami-v2/prod/src/config/vault/base.json';
 const GNOSIS_VAULTS_ENDPOINT =
-  'https://raw.githubusercontent.com/beefyfinance/beefy-v2/prod/src/config/vault/gnosis.json';
+  'https://raw.githubusercontent.com/samifinance/sami-v2/prod/src/config/vault/gnosis.json';
 const LINEA_VAULTS_ENDPOINT =
-  'https://raw.githubusercontent.com/beefyfinance/beefy-v2/prod/src/config/vault/linea.json';
+  'https://raw.githubusercontent.com/samifinance/sami-v2/prod/src/config/vault/linea.json';
 const MANTLE_VAULTS_ENDPOINT =
-  'https://raw.githubusercontent.com/beefyfinance/beefy-v2/prod/src/config/vault/mantle.json';
+  'https://raw.githubusercontent.com/samifinance/sami-v2/prod/src/config/vault/mantle.json';
 const FRAXTAL_VAULTS_ENDPOINT =
-  'https://raw.githubusercontent.com/beefyfinance/beefy-v2/prod/src/config/vault/fraxtal.json';
+  'https://raw.githubusercontent.com/samifinance/sami-v2/prod/src/config/vault/fraxtal.json';
 const MODE_VAULTS_ENDPOINT =
-  'https://raw.githubusercontent.com/beefyfinance/beefy-v2/prod/src/config/vault/mode.json';
+  'https://raw.githubusercontent.com/samifinance/sami-v2/prod/src/config/vault/mode.json';
 const MANTA_VAULTS_ENDPOINT =
-  'https://raw.githubusercontent.com/beefyfinance/beefy-v2/prod/src/config/vault/manta.json';
+  'https://raw.githubusercontent.com/samifinance/sami-v2/prod/src/config/vault/manta.json';
 const REAL_VAULTS_ENDPOINT =
-  'https://raw.githubusercontent.com/beefyfinance/beefy-v2/prod/src/config/vault/real.json';
+  'https://raw.githubusercontent.com/samifinance/sami-v2/prod/src/config/vault/real.json';
 const SEI_VAULTS_ENDPOINT =
-  'https://raw.githubusercontent.com/beefyfinance/beefy-v2/prod/src/config/vault/sei.json';
+  'https://raw.githubusercontent.com/samifinance/sami-v2/prod/src/config/vault/sei.json';
 const ROOTSTOCK_VAULTS_ENDPOINT =
-  'https://raw.githubusercontent.com/beefyfinance/beefy-v2/prod/src/config/vault/rootstock.json';
+  'https://raw.githubusercontent.com/samifinance/sami-v2/prod/src/config/vault/rootstock.json';
 const SCROLL_VAULTS_ENDPOINT =
-  'https://raw.githubusercontent.com/beefyfinance/beefy-v2/prod/src/config/vault/scroll.json';
+  'https://raw.githubusercontent.com/samifinance/sami-v2/prod/src/config/vault/scroll.json';
 const LISK_VAULTS_ENDPOINT =
-  'https://raw.githubusercontent.com/beefyfinance/beefy-v2/prod/src/config/vault/lisk.json';
+  'https://raw.githubusercontent.com/samifinance/sami-v2/prod/src/config/vault/lisk.json';
 const SONIC_VAULTS_ENDPOINT =
-  'https://raw.githubusercontent.com/beefyfinance/beefy-v2/prod/src/config/vault/sonic.json';
+  'https://raw.githubusercontent.com/samifinance/sami-v2/prod/src/config/vault/sonic.json';
 const BERACHAIN_VAULTS_ENDPOINT =
-  'https://raw.githubusercontent.com/beefyfinance/beefy-v2/prod/src/config/vault/berachain.json';
+  'https://raw.githubusercontent.com/samifinance/sami-v2/prod/src/config/vault/berachain.json';
 const UNICHAIN_VAULTS_ENDPOINT =
-  'https://raw.githubusercontent.com/beefyfinance/beefy-v2/prod/src/config/vault/unichain.json';
+  'https://raw.githubusercontent.com/samifinance/sami-v2/prod/src/config/vault/unichain.json';
 const SAGA_VAULTS_ENDPOINT =
-  'https://raw.githubusercontent.com/beefyfinance/beefy-v2/prod/src/config/vault/saga.json';
+  'https://raw.githubusercontent.com/samifinance/sami-v2/prod/src/config/vault/saga.json';
 const HYPEREVM_VAULTS_ENDPOINT =
-  'https://raw.githubusercontent.com/beefyfinance/beefy-v2/prod/src/config/vault/hyperevm.json';
+  'https://raw.githubusercontent.com/samifinance/sami-v2/prod/src/config/vault/hyperevm.json';
 
 const MULTICHAIN_ENDPOINTS: Partial<Record<ApiChain, string>> = {
   bsc: BSC_VAULTS_ENDPOINT,

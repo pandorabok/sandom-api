@@ -20,19 +20,19 @@ export const tokens = {
   FEES: FUSE,
   FUSE,
   WFUSE: FUSE,
-  oldBIFI: {
-    name: 'Beefy.Finance',
-    symbol: 'oldBIFI',
-    oracleId: 'oldBIFI',
+  oldSAMI: {
+    name: 'Sami.Finance',
+    symbol: 'oldSAMI',
+    oracleId: 'oldSAMI',
     address: '0x2bF9b864cdc97b08B6D79ad4663e71B8aB65c45c',
     chainId: 122,
     decimals: 18,
-    website: 'https://www.beefy.finance/',
+    website: 'https://www.sami.finance/',
     description:
-      'Beefy Finance is a Decentralized, Multi-Chain Yield Optimizer platform that allows its users to earn compound interest on their crypto holdings.',
+      'Sami Finance is a Decentralized, Multi-Chain Yield Optimizer platform that allows its users to earn compound interest on their crypto holdings.',
     logoURI:
-      'https://raw.githubusercontent.com/beefyfinance/beefy-app/prod/src/images/single-assets/BIFI.png',
-    documentation: 'https://docs.beefy.finance/',
+      'https://raw.githubusercontent.com/samifinance/sami-app/prod/src/images/single-assets/SAMI.png',
+    documentation: 'https://docs.sami.finance/',
   },
   agEUR: {
     name: 'Angle Protocol agEUR',
@@ -221,15 +221,15 @@ export const tokens = {
     description:
       'Tether is a stablecoin pegged to the US Dollar. A stablecoin is a type of cryptocurrency whose value is pegged to another fiat currency like the US Dollar or to a commodity like Gold. Tether is the first stablecoin to be created and it is the most popular stablecoin used in the ecosystem.',
   },
-  'oldBIFI-WFUSE LP': {
-    name: 'oldBIFI-WFUSE LP',
-    symbol: 'oldBIFI-WFUSE LP',
+  'oldSAMI-WFUSE LP': {
+    name: 'oldSAMI-WFUSE LP',
+    symbol: 'oldSAMI-WFUSE LP',
     address: '0xbD8923A4028c5D6b6B8698ad4342104302611914',
     chainId: 1666600000,
     decimals: 18,
     logoURI: '',
-    website: 'https://app.beefy.com/',
-    oracleId: 'sushi-fuse-bifi-wfuse',
+    website: 'https://app.sami.com/',
+    oracleId: 'sushi-fuse-sami-wfuse',
     oracle: 'lps',
   },
 } as const satisfies Record<string, Token>;

@@ -3,7 +3,7 @@
     "name": "uniswap-arbitrum-usdc-usdce-0.01",
     "address": "0x8e295789c9465487074a65b1ae9Ce0351172393f",
     "nftId": 663650,
-    "beefyFee": 0,
+    "samiFee": 0,
     "poolFee": 0.01,
     "chainId": 42161,
     "lp0": {
@@ -23,7 +23,7 @@
     "name": "uniswap-arbitrum-cvx-eth-0.3",
     "address": "0xb36c6868Ba826eD6f9487F6b0DA3abA37c2f51b9",
     "nftId": 208990,
-    "beefyFee": 0,
+    "samiFee": 0,
     "poolFee": 0.3,
     "chainId": 42161,
     "lp0": {

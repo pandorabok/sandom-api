@@ -79,7 +79,7 @@ const FeeABI = [
   },
   {
     inputs: [],
-    name: 'beefyFee',
+    name: 'samiFee',
     outputs: [
       {
         internalType: 'uint256',
@@ -209,7 +209,7 @@ const FeeABI = [
               },
               {
                 internalType: 'uint256',
-                name: 'beefy',
+                name: 'sami',
                 type: 'uint256',
               },
               {
@@ -234,7 +234,7 @@ const FeeABI = [
               },
             ],
             internalType: 'struct IFeeConfig.FeeCategory',
-            name: 'beefy',
+            name: 'sami',
             type: 'tuple',
           },
           {
@@ -269,7 +269,7 @@ const FeeABI = [
           },
           {
             internalType: 'uint256',
-            name: 'beefy',
+            name: 'sami',
             type: 'uint256',
           },
           {

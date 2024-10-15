@@ -48,8 +48,8 @@ function updateTreasuryAddressesByChain() {
   treasuryAddressesByChain = keysToObject(ApiChains, chain => {
     const chainAddressbook = addressBook[chain];
     const addresses = {};
-    const treasuryMultisig = chainAddressbook.platforms.beefyfinance.treasuryMultisig;
-    const treasury = chainAddressbook.platforms.beefyfinance.treasury;
+    const treasuryMultisig = chainAddressbook.platforms.samifinance.treasuryMultisig;
+    const treasury = chainAddressbook.platforms.samifinance.treasury;
 
     if (treasuryMultisig && treasuryMultisig !== ZERO_ADDRESS) {
       addresses[treasuryMultisig.toLowerCase()] = {
@@ -394,7 +394,7 @@ export async function initTreasuryService() {
   serviceEventBus.on('tokens/updated', updateAssetsByChain);
 }
 
-export function getBeefyTreasury(): TreasuryReport {
+export function getSamiTreasury(): TreasuryReport {
   return treasurySummary;
 }
 
@@ -402,9 +402,9 @@ export function getMarketMakerBalances(): MMReport {
   return marketMakerReport;
 }
 
-export function getAllBeefyHoldings() {
+export function getAllSamiHoldings() {
   return {
-    treasury: getBeefyTreasury(),
+    treasury: getSamiTreasury(),
     marketMaker: getMarketMakerBalances(),
   };
 }

@@ -2,7 +2,7 @@ const getStargateLineaApys = require('./getStargateLineaApys');
 const getMendiApys = require('./getMendiApys');
 const { getLynexApys } = require('./getLynexApys');
 const { getNileApys } = require('./getNileApys');
-const { getBeefyCowLineaApys } = require('./getBeefyCowLineaApys');
+const { getSamiCowLineaApys } = require('./getSamiCowLineaApys');
 const { getEtherexApys } = require('./getEtherexApys');
 
 const getApys = [
@@ -10,7 +10,7 @@ const getApys = [
   getMendiApys,
   getLynexApys,
   getNileApys,
-  getBeefyCowLineaApys,
+  getSamiCowLineaApys,
   getEtherexApys,
 ];
 

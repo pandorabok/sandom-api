@@ -4,7 +4,7 @@
     "address": "0xd3eE0a3B349237D68517DF30bFB66Be971f46Ad9",
     "decimals": "1e18",
     "chainId": 8453,
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "lp0": {
       "address": "0x35E5dB674D8e93a03d814FA0ADa70731efe8a4b9",
       "oracle": "tokens",
@@ -24,7 +24,7 @@
     "gauge": "0xb91F873D3fed53B21ac348Ee86DEaf924D1f3818",
     "decimals": "1e18",
     "chainId": 10,
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "lp0": {
       "address": "0x4200000000000000000000000000000000000006",
       "oracle": "tokens",
@@ -62,7 +62,7 @@
     "gauge": "0x0000000000000000000000000000000000000000",
     "decimals": "1e18",
     "chainId": 8453,
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "lp0": {
       "address": "0x4200000000000000000000000000000000000006",
       "oracle": "tokens",
@@ -82,7 +82,7 @@
     "gauge": "0x0000000000000000000000000000000000000000",
     "decimals": "1e18",
     "chainId": 8453,
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "lp0": {
       "address": "0x4200000000000000000000000000000000000006",
       "oracle": "tokens",
@@ -101,7 +101,7 @@
     "address": "0xa387A64D4E1711442FADeF1dd4C697d901DCCf05",
     "decimals": "1e18",
     "chainId": 56,
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "lp0": {
       "address": "0x08b450e4a48C04CDF6DB2bD4cf24057f7B9563fF",
       "oracle": "tokens",
@@ -120,7 +120,7 @@
     "address": "0x5Fa464CEfe8901d66C09b85d5Fcdc55b3738c688",
     "decimals": "1e18",
     "chainId": 1,
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "lp0": {
       "address": "0x2e9d63788249371f1DFC918a52f8d799F4a38C94",
       "oracle": "tokens",
@@ -140,7 +140,7 @@
     "gauge": "0x0000000000000000000000000000000000000000",
     "decimals": "1e18",
     "chainId": 8453,
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "lp0": {
       "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
       "oracle": "tokens",
@@ -155,12 +155,12 @@
     }
   },
   {
-    "name": "velodrome-v2-weth-moobifi-addoracle",
+    "name": "velodrome-v2-weth-moosami-addoracle",
     "address": "0x6Ed6Df1C23C51cb7Cc67a348cC8d9E6108EA3BFE",
     "gauge": "0xcFa050836C3E5dfA98D065d2f365Cfd78a9011F9",
     "decimals": "1e18",
     "chainId": 10,
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "lp0": {
       "address": "0x4200000000000000000000000000000000000006",
       "oracle": "tokens",
@@ -170,7 +170,7 @@
     "lp1": {
       "address": "0xc55E93C62874D8100dBd2DfE307EDc1036ad5434",
       "oracle": "tokens",
-      "oracleId": "mooBIFI",
+      "oracleId": "mooSAMI",
       "decimals": "1e18"
     }
   },
@@ -1016,7 +1016,7 @@
     }
   },
   {
-    "name": "netswap-bifi-metis",
+    "name": "netswap-sami-metis",
     "address": "0x89D433e8cCC871B3f12EA17b651ff3633DFb5DC0",
     "decimals": "1e18",
     "chainId": 1088,
@@ -1029,7 +1029,7 @@
     "lp1": {
       "address": "0xe6801928061CDbE32AC5AD0634427E140EFd05F9",
       "oracle": "tokens",
-      "oracleId": "oldBIFI",
+      "oracleId": "oldSAMI",
       "decimals": "1e18"
     }
   },
@@ -1052,7 +1052,7 @@
     }
   },
   {
-    "name": "vvs-cro-bifi",
+    "name": "vvs-cro-sami",
     "address": "0x1803e360393a472bec6e1a688bdf7048d3076b1a",
     "decimals": "1e18",
     "chainId": 25,
@@ -1065,7 +1065,7 @@
     "lp1": {
       "address": "0xe6801928061CDbE32AC5AD0634427E140EFd05F9",
       "oracle": "tokens",
-      "oracleId": "oldBIFI",
+      "oracleId": "oldSAMI",
       "decimals": "1e18"
     }
   },
@@ -1385,7 +1385,7 @@
     }
   },
   {
-    "name": "quick-bifi-eth",
+    "name": "quick-sami-eth",
     "address": "0x8b80417D92571720949fC22404200AB8FAf7775f",
     "rewardPool": "0xd79424b32E2Ef944AA9f4021d39D835fdd615B87",
     "decimals": "1e18",
@@ -1400,12 +1400,12 @@
     "lp1": {
       "address": "0xFbdd194376de19a88118e84E279b977f165d01b8",
       "oracle": "tokens",
-      "oracleId": "oldBIFI",
+      "oracleId": "oldSAMI",
       "decimals": "1e18"
     }
   },
   {
-    "name": "quick-bifi-quick",
+    "name": "quick-sami-quick",
     "address": "0xC6a23BDd628c3B17fc0dF270e6BF8E48511950e2",
     "rewardPool": "0xA2B969faCA14AAdeb6a7672c941A228260a481a2",
     "decimals": "1e18",
@@ -1420,7 +1420,7 @@
     "lp1": {
       "address": "0xFbdd194376de19a88118e84E279b977f165d01b8",
       "oracle": "tokens",
-      "oracleId": "oldBIFI",
+      "oracleId": "oldSAMI",
       "decimals": "1e18"
     }
   },
@@ -1710,7 +1710,7 @@
     "gauge": "0x2C194BeD08815787f59722bC544ecee4E3635D71",
     "decimals": "1e18",
     "chainId": 56,
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "lp0": {
       "address": "0x3F56e0c36d275367b8C502090EDF38289b3dEa0d",
       "oracle": "tokens",

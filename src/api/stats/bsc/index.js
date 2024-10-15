@@ -3,7 +3,7 @@ const getStargateApys = require('./stargate/getStargateBscApys');
 const getThenaApys = require('./getThenaApys');
 const { getPenpieApys } = require('./getPenpieApys');
 const { getEquilibriaApys } = require('../common/getEquilibriaApys');
-const { getBeefyBscCowApys } = require('./getBeefyBscCowApys');
+const { getSamiBscCowApys } = require('./getSamiBscCowApys');
 
 const getApys = [
   getOOELpApys,
@@ -11,7 +11,7 @@ const getApys = [
   getThenaApys,
   getPenpieApys,
   () => getEquilibriaApys(require('../../../data/bsc/pendlePools.json')),
-  getBeefyBscCowApys,
+  getSamiBscCowApys,
 ];
 
 const getBSCApys = async () => {

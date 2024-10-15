@@ -4,7 +4,7 @@ const getStargateApys = require('./getStargateAvaxApys');
 const { getGmxApys } = require('./getGmxApys');
 const getBalancerApys = require('./getBalancerAvaxApys');
 const getAuraAvaxApys = require('./getAuraAvaxApys');
-const { getBeefyAvaxCowApys } = require('./getBeefyAvaxCowApys');
+const { getSamiAvaxCowApys } = require('./getSamiAvaxCowApys');
 const { getEulerAvaxApys } = require('./getEulerAvaxApys');
 const { getBlackholeApys } = require('./getBlackholeApys');
 
@@ -15,7 +15,7 @@ const getApys = [
   getGmxApys,
   getJoeApy,
   getStargateApys,
-  getBeefyAvaxCowApys,
+  getSamiAvaxCowApys,
   getEulerAvaxApys,
   getBlackholeApys,
 ];

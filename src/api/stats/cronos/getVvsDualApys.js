@@ -66,10 +66,10 @@ const getVvsDualApys = async () => {
     const yearlyRewardsInUsd = yearlyRewardsAInUsd.plus(yearlyRewardsBInUsd);
 
     const simpleApy = yearlyRewardsInUsd.dividedBy(totalStakedInUsd);
-    const beefyPerformanceFee = getTotalPerformanceFeeForVault(pool.name);
-    const shareAfterBeefyPerformanceFee = 1 - beefyPerformanceFee;
-    const vaultApr = simpleApy.times(shareAfterBeefyPerformanceFee);
-    const vaultApy = compound(simpleApy, BASE_HPY, 1, shareAfterBeefyPerformanceFee);
+    const samiPerformanceFee = getTotalPerformanceFeeForVault(pool.name);
+    const shareAfterSamiPerformanceFee = 1 - samiPerformanceFee;
+    const vaultApr = simpleApy.times(shareAfterSamiPerformanceFee);
+    const vaultApy = compound(simpleApy, BASE_HPY, 1, shareAfterSamiPerformanceFee);
 
     const tradingApr = tradingAprs[pool.address.toLowerCase()] ?? new BigNumber(0);
     const totalApy = getFarmWithTradingFeesApy(
@@ -77,7 +77,7 @@ const getVvsDualApys = async () => {
       tradingApr,
       BASE_HPY,
       1,
-      shareAfterBeefyPerformanceFee
+      shareAfterSamiPerformanceFee
     );
 
     const legacyApyValue = { [pool.name]: totalApy };
@@ -88,7 +88,7 @@ const getVvsDualApys = async () => {
       [pool.name]: {
         vaultApr: vaultApr.toNumber(),
         compoundingsPerYear: BASE_HPY,
-        beefyPerformanceFee: beefyPerformanceFee,
+        samiPerformanceFee: samiPerformanceFee,
         vaultApy: vaultApy,
         lpFee: liquidityProviderFee,
         tradingApr: tradingApr.toNumber(),

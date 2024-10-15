@@ -23,17 +23,17 @@ function addChain() {
   const chainStatsPath = path.join(statsPath, chainName);
   fs.mkdirSync(chainStatsPath);
 
-  const beefyCowVaultsFile = path.join(chainPath, 'beefyCowVaults.json');
-  fs.writeFileSync(beefyCowVaultsFile, '[]');
+  const samiCowVaultsFile = path.join(chainPath, 'samiCowVaults.json');
+  fs.writeFileSync(samiCowVaultsFile, '[]');
 
   const chainIndexFile = path.join(chainStatsPath, 'index.js');
   const chainNameCapitalized = chainName.charAt(0).toUpperCase() + chainName.slice(1);
   fs.writeFileSync(
     chainIndexFile,
     `
-        const { getBeefyCow${chainNameCapitalized}Apys } = require('./getBeefyCow${chainNameCapitalized}Apys');
+        const { getSamiCow${chainNameCapitalized}Apys } = require('./getSamiCow${chainNameCapitalized}Apys');
 
-        const getApys = [getBeefyCow${chainNameCapitalized}Apys];
+        const getApys = [getSamiCow${chainNameCapitalized}Apys];
 
         const get${chainNameCapitalized}Apys = async () => {
         const start = Date.now();
@@ -120,10 +120,10 @@ function addChain() {
 
   // Add Vaults Endpoint
   const vaultsEndpointStatement = `const ${chainName.toUpperCase()}_VAULTS_ENDPOINT =
-   'https://raw.githubusercontent.com/beefyfinance/beefy-v2/prod/src/config/vault/${chainName}.json';`;
+   'https://raw.githubusercontent.com/samifinance/sami-v2/prod/src/config/vault/${chainName}.json';`;
 
   // Find the Vaults Endpoints section
-  const vaultsEndpointsRegex = /\/\/ Beefy Vaults Endpoints[\s\S]*?(?=\n\n)/;
+  const vaultsEndpointsRegex = /\/\/ Sami Vaults Endpoints[\s\S]*?(?=\n\n)/;
   const vaultsEndpointsMatch = constantsContent.match(vaultsEndpointsRegex);
 
   if (vaultsEndpointsMatch) {
@@ -251,11 +251,11 @@ const ${chainName}Chain = {
 
   // Add to MULTICALLS
   const multicallsWeb3Regex =
-    /const MULTICALLS: Record<ChainId, Pick<BeefyFinance, 'multicall'>\['multicall'\]> = {[\s\S]*?};/;
+    /const MULTICALLS: Record<ChainId, Pick<SamiFinance, 'multicall'>\['multicall'\]> = {[\s\S]*?};/;
   web3HelpersContent = web3HelpersContent.replace(multicallsWeb3Regex, match => {
     return (
       match.slice(0, -2) +
-      `  [ChainId.${chainName}]: addressBookByChainId[ChainId.${chainName}].platforms.beefyfinance.multicall,\n};`
+      `  [ChainId.${chainName}]: addressBookByChainId[ChainId.${chainName}].platforms.samifinance.multicall,\n};`
     );
   });
 

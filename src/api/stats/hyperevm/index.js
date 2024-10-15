@@ -1,7 +1,7 @@
-const { getBeefyCowHyperevmApys } = require('./getBeefyCowHyperevmApys');
+const { getSamiCowHyperevmApys } = require('./getSamiCowHyperevmApys');
 const { getKittenswapApys } = require('./getKittenswapApys');
 
-const getApys = [getBeefyCowHyperevmApys, getKittenswapApys];
+const getApys = [getSamiCowHyperevmApys, getKittenswapApys];
 
 const getHyperevmApys = async () => {
   const start = Date.now();

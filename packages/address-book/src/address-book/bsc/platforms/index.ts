@@ -2,7 +2,7 @@ export { ape } from './ape.js';
 export { babyswap } from './babyswap.js';
 export { chainlink } from './chainlink.js';
 export { bakery } from './bakery.js';
-export { beefyfinance } from './beefyfinance.js';
+export { samifinance } from './samifinance.js';
 export { pancake } from './pancake.js';
 export { ironfinance } from './ironfinance.js';
 export { farmhero } from './farmhero.js';

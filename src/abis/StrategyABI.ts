@@ -10,7 +10,7 @@ const StrategyABI = [
       { type: 'address', name: '_unirouter', internalType: 'address' },
       { type: 'address', name: '_keeper', internalType: 'address' },
       { type: 'address', name: '_strategist', internalType: 'address' },
-      { type: 'address', name: '_beefyFeeRecipient', internalType: 'address' },
+      { type: 'address', name: '_samiFeeRecipient', internalType: 'address' },
     ],
   },
   {
@@ -100,14 +100,14 @@ const StrategyABI = [
     type: 'function',
     stateMutability: 'view',
     outputs: [{ type: 'uint256', name: '', internalType: 'uint256' }],
-    name: 'beefyFee',
+    name: 'samiFee',
     inputs: [],
   },
   {
     type: 'function',
     stateMutability: 'view',
     outputs: [{ type: 'address', name: '', internalType: 'address' }],
-    name: 'beefyFeeRecipient',
+    name: 'samiFeeRecipient',
     inputs: [],
   },
   {
@@ -268,8 +268,8 @@ const StrategyABI = [
     type: 'function',
     stateMutability: 'nonpayable',
     outputs: [],
-    name: 'setBeefyFeeRecipient',
-    inputs: [{ type: 'address', name: '_beefyFeeRecipient', internalType: 'address' }],
+    name: 'setSamiFeeRecipient',
+    inputs: [{ type: 'address', name: '_samiFeeRecipient', internalType: 'address' }],
   },
   {
     type: 'function',

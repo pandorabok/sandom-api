@@ -5,7 +5,7 @@
     "pool": "0xaA9e653252ED9e87a9bD545B974eFBFB2f389F3F",
     "decimals": "1e18",
     "chainId": 42161,
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "poolId": 15,
     "extraRewards": [
       {
@@ -38,7 +38,7 @@
     "pool": "0xaA9e653252ED9e87a9bD545B974eFBFB2f389F3F",
     "decimals": "1e18",
     "chainId": 42161,
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "poolId": 14,
     "extraRewards": [
       {
@@ -71,7 +71,7 @@
     "pool": "0xC91B7b39BBB2c733f0e7459348FD0c80259c8471",
     "decimals": "1e18",
     "chainId": 42161,
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "poolId": 10,
     "extraRewards": [
       {
@@ -104,7 +104,7 @@
     "pool": "0x9F934D552476c992De3751A4873f2C1fBEB032B2",
     "decimals": "1e18",
     "chainId": 42161,
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "poolId": 13,
     "extraRewards": [
       {
@@ -137,7 +137,7 @@
     "pool": "0x655C1607F8c2E73D5b4ddAbCe9Ba8792b87592B6",
     "decimals": "1e18",
     "chainId": 42161,
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "poolId": 7,
     "lp0": {
       "address": "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
@@ -158,7 +158,7 @@
     "pool": "0xC91B7b39BBB2c733f0e7459348FD0c80259c8471",
     "decimals": "1e18",
     "chainId": 42161,
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "poolId": 9,
     "extraRewards": [
       {
@@ -191,7 +191,7 @@
     "pool": "0xcDa53B1F66614552F834cEeF361A8D12a0B8DaD8",
     "decimals": "1e18",
     "chainId": 42161,
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "poolId": 4,
     "lp0": {
       "address": "0x912CE59144191C1204E64559FE8253a0e49E6548",
@@ -212,7 +212,7 @@
     "pool": "0xB791Ad21ba45C76629003b4A2f04c0d544406e37",
     "decimals": "1e18",
     "chainId": 42161,
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "poolId": 5,
     "lp0": {
       "address": "0x912CE59144191C1204E64559FE8253a0e49E6548",
@@ -233,7 +233,7 @@
     "pool": "0x446BF9748B4eA044dd759d9B9311C70491dF8F29",
     "decimals": "1e18",
     "chainId": 42161,
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "poolId": 6,
     "lp0": {
       "address": "0x3082CC23568eA640225c2467653dB90e9250AaA0",
@@ -254,7 +254,7 @@
     "pool": "0x468b88941e7Cc0B88c1869d68ab6b570bCEF62Ff",
     "decimals": "1e18",
     "chainId": 42161,
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "poolId": 8,
     "lp0": {
       "address": "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",

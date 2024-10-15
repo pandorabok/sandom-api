@@ -2,7 +2,7 @@ import { ChainId } from '../../packages/address-book/src/types/chainid';
 import { Address } from 'viem';
 import BigNumber from 'bignumber.js';
 import { fetchContract } from '../api/rpc/client';
-import { default as BeefyPriceMulticall } from '../abis/BeefyPriceMulticall';
+import { default as SamiPriceMulticall } from '../abis/SamiPriceMulticall';
 import { batchMapRetry, isContextResultFulfilled, isContextResultRejected } from './promise';
 import { promiseTiming } from './timing';
 import { orderBy } from 'lodash';
@@ -288,7 +288,7 @@ async function fetchChainPools(chain: ChainId, pools: Pool[]): Promise<PoolData[
   if (pools.length === 0) {
     return [];
   }
-  const multicallContract = fetchContract(MULTICALLS.get(chain), BeefyPriceMulticall, chain);
+  const multicallContract = fetchContract(MULTICALLS.get(chain), SamiPriceMulticall, chain);
   const results = await batchMapRetry<Pool, PoolData>({
     items: pools,
     batchSize: BATCH_SIZE,

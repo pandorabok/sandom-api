@@ -49,7 +49,7 @@ interface FeeBatchDetail {
 
 interface PerformanceFeeCallResponse {
   total: BigNumber;
-  beefy: BigNumber;
+  sami: BigNumber;
   strategist: BigNumber;
   call: BigNumber;
 }
@@ -70,7 +70,7 @@ let vaultFees: Record<string, VaultFeeBreakdown> = {};
 
 const updateFeeBatch = async () => {
   const chainId = ChainId.ethereum;
-  const { beefyFeeRecipient: feeBatchAddress } = addressBookByChainId[chainId].platforms.beefyfinance;
+  const { samiFeeRecipient: feeBatchAddress } = addressBookByChainId[chainId].platforms.samifinance;
   const feeBatchContract = fetchContract(feeBatchAddress, feeBatchTreasurySplitMethodABI, Number(chainId));
 
   let treasurySplit;
@@ -151,7 +151,7 @@ const callHandlers = {
   call3: makeBigIntToNumberHandler('callfee'),
   call4: makeBigIntToNumberHandler('callFeeAmount'),
   maxCallFee: makeBigIntToNumberHandler('MAX_CALL_FEE'),
-  beefy: makeBigIntToNumberHandler('beefyFee'),
+  sami: makeBigIntToNumberHandler('samiFee'),
   fee: makeBigIntToNumberHandler('fee'),
   treasury: makeBigIntToNumberHandler('TREASURY_FEE'),
   rewards: makeBigIntToNumberHandler('REWARDS_FEE'),
@@ -169,7 +169,7 @@ const callHandlers = {
     const value = await contract.read.getFees();
     return {
       total: new BigNumber(value.total.toString()),
-      beefy: new BigNumber(value.beefy.toString()),
+      sami: new BigNumber(value.sami.toString()),
       call: new BigNumber(value.call.toString()),
       strategist: new BigNumber(value.strategist.toString()),
     } satisfies PerformanceFeeCallResponse;
@@ -178,10 +178,10 @@ const callHandlers = {
     const value = await contract.read.getAllFees();
     return {
       performance: {
-        total: new BigNumber(value.beefy.total.toString()),
-        beefy: new BigNumber(value.beefy.beefy.toString()),
-        call: new BigNumber(value.beefy.call.toString()),
-        strategist: new BigNumber(value.beefy.strategist.toString()),
+        total: new BigNumber(value.sami.total.toString()),
+        sami: new BigNumber(value.sami.sami.toString()),
+        call: new BigNumber(value.sami.call.toString()),
+        strategist: new BigNumber(value.sami.strategist.toString()),
       },
       deposit: new BigNumber(value.deposit.toString()),
       withdraw: new BigNumber(value.withdraw.toString()),
@@ -317,18 +317,18 @@ const legacyFeeMappings = (contractCalls: StrategyCallResponse, feeBatch: FeeBat
   let callFee = contractCalls.call ?? contractCalls.call2 ?? contractCalls.call3 ?? contractCalls.call4;
   let strategistFee = contractCalls.strategist ?? contractCalls.strategist2;
   let maxFee = contractCalls.maxFee ?? contractCalls.maxFee2 ?? contractCalls.maxFee3;
-  let beefyFee = contractCalls.beefy;
+  let samiFee = contractCalls.sami;
   let fee = contractCalls.fee;
   let treasury = contractCalls.treasury;
   let rewards = contractCalls.rewards ?? contractCalls.rewards2;
 
-  if (callFee + strategistFee + beefyFee === maxFee) {
+  if (callFee + strategistFee + samiFee === maxFee) {
     performanceFee = {
       total,
       call: (total * callFee) / maxFee,
       strategist: (total * strategistFee) / maxFee,
-      treasury: (total * feeBatch.treasurySplit * beefyFee) / maxFee,
-      stakers: (total * feeBatch.stakerSplit * beefyFee) / maxFee,
+      treasury: (total * feeBatch.treasurySplit * samiFee) / maxFee,
+      stakers: (total * feeBatch.stakerSplit * samiFee) / maxFee,
     };
   } else if (callFee + strategistFee + rewards + treasury === maxFee) {
     performanceFee = {
@@ -347,13 +347,13 @@ const legacyFeeMappings = (contractCalls: StrategyCallResponse, feeBatch: FeeBat
       treasury: 0,
       stakers: (total * fee) / maxFee,
     };
-  } else if (!isNaN(strategistFee + callFee + beefyFee)) {
+  } else if (!isNaN(strategistFee + callFee + samiFee)) {
     performanceFee = {
       total,
       call: (total * callFee) / maxFee,
       strategist: (total * strategistFee) / maxFee,
-      treasury: (total * feeBatch.treasurySplit * beefyFee) / maxFee,
-      stakers: (total * feeBatch.stakerSplit * beefyFee) / maxFee,
+      treasury: (total * feeBatch.treasurySplit * samiFee) / maxFee,
+      stakers: (total * feeBatch.stakerSplit * samiFee) / maxFee,
     };
   } else if (!isNaN(strategistFee + callFee + treasury)) {
     performanceFee = {
@@ -371,14 +371,14 @@ const legacyFeeMappings = (contractCalls: StrategyCallResponse, feeBatch: FeeBat
       treasury: (total * treasury) / maxFee,
       stakers: (total * rewards) / maxFee,
     };
-  } else if (callFee + beefyFee === maxFee) {
+  } else if (callFee + samiFee === maxFee) {
     if (contractCalls.id === 'cake-cakev2-eol') total = 0.01;
     performanceFee = {
       total,
       call: (total * callFee) / maxFee,
       strategist: 0,
-      treasury: (total * feeBatch.treasurySplit * beefyFee) / maxFee,
-      stakers: (total * feeBatch.stakerSplit * beefyFee) / maxFee,
+      treasury: (total * feeBatch.treasurySplit * samiFee) / maxFee,
+      stakers: (total * feeBatch.stakerSplit * samiFee) / maxFee,
     };
   } else if (callFee + fee === maxFee) {
     performanceFee = {
@@ -400,19 +400,19 @@ const performanceFromGetFees = (
   feeBatch: FeeBatchDetail
 ): PerformanceFee => {
   let total = fees.total.div(1e9).toNumber() / 1e9;
-  let beefy = fees.beefy.div(1e9).toNumber() / 1e9;
+  let sami = fees.sami.div(1e9).toNumber() / 1e9;
   let call = fees.call.div(1e9).toNumber() / 1e9;
   let strategist = fees.strategist.div(1e9).toNumber() / 1e9;
 
-  const feeSum = beefy + call + strategist;
-  const beefySplit = (total * beefy) / feeSum;
+  const feeSum = sami + call + strategist;
+  const samiSplit = (total * sami) / feeSum;
 
   return {
     total: total,
     call: (total * call) / feeSum,
     strategist: (total * strategist) / feeSum,
-    treasury: feeBatch.treasurySplit * beefySplit,
-    stakers: feeBatch.stakerSplit * beefySplit,
+    treasury: feeBatch.treasurySplit * samiSplit,
+    stakers: feeBatch.stakerSplit * samiSplit,
   };
 };
 
@@ -484,7 +484,7 @@ const performanceForMaxi = (contractCalls: StrategyCallResponse): PerformanceFee
       stakers: 0,
     };
   } else if ('0x87056F5E8Dce0fD71605E6E291C6a3B53cbc3818'.toLowerCase() === strategyAddress) {
-    //old bifi maxi
+    //old sami maxi
     performanceFee = {
       total: (callFee + rewards) / maxFee,
       strategist: 0,

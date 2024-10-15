@@ -4,7 +4,7 @@
     "address": "0x593000b762dE3c465855336E95c8BB46080AF064",
     "vault": "0x20dd72Ed959b6147912C2e529F0a0C651c33c9ce",
     "vaultPoolId": "0x593000b762de3c465855336e95c8bb46080af064000000000000000000000760",
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "poolId": 129,
     "oracleB": "tokens",
     "oracleIdB": "WFTM",

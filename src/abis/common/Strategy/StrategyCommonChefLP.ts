@@ -38,7 +38,7 @@ const StrategyCommonChefLPAbi = [
       },
       {
         internalType: 'address',
-        name: '_beefyFeeRecipient',
+        name: '_samiFeeRecipient',
         type: 'address',
       },
       {
@@ -262,7 +262,7 @@ const StrategyCommonChefLPAbi = [
   },
   {
     inputs: [],
-    name: 'beefyFee',
+    name: 'samiFee',
     outputs: [
       {
         internalType: 'uint256',
@@ -275,7 +275,7 @@ const StrategyCommonChefLPAbi = [
   },
   {
     inputs: [],
-    name: 'beefyFeeRecipient',
+    name: 'samiFeeRecipient',
     outputs: [
       {
         internalType: 'address',
@@ -650,11 +650,11 @@ const StrategyCommonChefLPAbi = [
     inputs: [
       {
         internalType: 'address',
-        name: '_beefyFeeRecipient',
+        name: '_samiFeeRecipient',
         type: 'address',
       },
     ],
-    name: 'setBeefyFeeRecipient',
+    name: 'setSamiFeeRecipient',
     outputs: [],
     stateMutability: 'nonpayable',
     type: 'function',

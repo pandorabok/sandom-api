@@ -1,8 +1,8 @@
 import { ChainId } from '../../../packages/address-book/src/address-book';
 import { ApiChain, toAppChain } from '../../utils/chain';
 import { fetchContract } from '../rpc/client';
-import BeefyBoostAbi from '../../abis/BeefyBoost';
-import { IBeefyRewardPool } from '../../abis/IBeefyRewardPool';
+import SamiBoostAbi from '../../abis/SamiBoost';
+import { ISamiRewardPool } from '../../abis/ISamiRewardPool';
 import { Boost, BoostEntity, BoostPromoConfig, PromoConfig } from './types';
 import { bigintRange } from '../../utils/array';
 import { bigintToNumber } from '../../utils/big-int';
@@ -12,7 +12,7 @@ function isBoostPromo(promo: PromoConfig): promo is BoostPromoConfig {
 }
 
 export const getBoosts = async (chain: ApiChain): Promise<BoostEntity[]> => {
-  const promosEndpoint = `https://raw.githubusercontent.com/beefyfinance/beefy-v2/prod/src/config/promos/chain/${toAppChain(
+  const promosEndpoint = `https://raw.githubusercontent.com/samifinance/sami-v2/prod/src/config/promos/chain/${toAppChain(
     chain
   )}.json`;
   const response = await fetch(promosEndpoint);
@@ -42,7 +42,7 @@ export const getBoostPeriodFinish = async (chain: ApiChain, boosts: BoostEntity[
   const chainId = ChainId[chain];
   const periodFinishCalls = boosts.map(async (boost): Promise<number[]> => {
     if (boost.version >= 2) {
-      const poolContract = fetchContract(boost.contractAddress, IBeefyRewardPool, chainId);
+      const poolContract = fetchContract(boost.contractAddress, ISamiRewardPool, chainId);
       const numRewards = await poolContract.read.rewardsLength();
       if (numRewards === 0n) {
         return [];
@@ -56,7 +56,7 @@ export const getBoostPeriodFinish = async (chain: ApiChain, boosts: BoostEntity[
       );
     }
 
-    const boostContract = fetchContract(boost.contractAddress, BeefyBoostAbi, chainId);
+    const boostContract = fetchContract(boost.contractAddress, SamiBoostAbi, chainId);
     return [bigintToNumber(await boostContract.read.periodFinish())];
   });
 

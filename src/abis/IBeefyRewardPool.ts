@@ -1,6 +1,6 @@
 import { Abi } from 'abitype';
 
-export const IBeefyRewardPool = [
+export const ISamiRewardPool = [
   {
     inputs: [],
     stateMutability: 'nonpayable',

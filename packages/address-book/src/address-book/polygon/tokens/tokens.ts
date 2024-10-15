@@ -334,17 +334,17 @@ export const tokens = {
       'Stader is a non-custodial smart contract-based staking platform that helps you conveniently discover and access staking solutions. We are building key staking middleware infra for multiple PoS networks for retail crypto users, exchanges and custodians.',
   },
   beQI: {
-    name: 'Beefy QI',
+    name: 'Sami QI',
     symbol: 'beQI',
     oracleId: 'beQI',
     address: '0x97bfa4b212A153E15dCafb799e733bc7d1b70E72',
     chainId: 137,
     decimals: 18,
     logoURI: '',
-    website: 'https://beefy.com',
+    website: 'https://sami.com',
     description:
-      'beQI is a Beefy-wrapped version of eQI. Holding beQI will be a great way to earn a bunch of QI. Beefy will distribute weekly QI rewards to beQI stakers. beQI holders will recieve the same rewards as max lock eQI holders',
-    documentation: 'https://docs.beefy.finance/beefy-products/beefy-escrowed-tokens/beqi',
+      'beQI is a Sami-wrapped version of eQI. Holding beQI will be a great way to earn a bunch of QI. Sami will distribute weekly QI rewards to beQI stakers. beQI holders will recieve the same rewards as max lock eQI holders',
+    documentation: 'https://docs.sami.finance/sami-products/sami-escrowed-tokens/beqi',
     bridge: 'native',
   },
   stMATIC: {
@@ -969,19 +969,19 @@ export const tokens = {
     logoURI:
       'https://raw.githubusercontent.com/ApeSwapFinance/apeswap-token-lists/main/assets/BANANA.svg',
   },
-  oldBIFI: {
-    name: 'beefy.finance',
+  oldSAMI: {
+    name: 'sami.finance',
     address: '0xFbdd194376de19a88118e84E279b977f165d01b8',
-    symbol: 'oldBIFI',
-    oracleId: 'oldBIFI',
+    symbol: 'oldSAMI',
+    oracleId: 'oldSAMI',
     decimals: 18,
     chainId: 137,
-    website: 'https://www.beefy.finance/',
+    website: 'https://www.sami.finance/',
     description:
-      'Beefy Finance is a Decentralized, Multi-Chain Yield Optimizer platform that allows its users to earn compound interest on their crypto holdings.',
+      'Sami Finance is a Decentralized, Multi-Chain Yield Optimizer platform that allows its users to earn compound interest on their crypto holdings.',
     logoURI:
-      'https://raw.githubusercontent.com/beefyfinance/beefy-app/prod/src/images/single-assets/BIFI.png',
-    documentation: 'https://docs.beefy.finance/',
+      'https://raw.githubusercontent.com/samifinance/sami-app/prod/src/images/single-assets/SAMI.png',
+    documentation: 'https://docs.sami.finance/',
   },
   DAI: {
     name: 'Dai Stablecoin',
@@ -1085,7 +1085,7 @@ export const tokens = {
     website: 'https://gainsnetwork.io/',
     description: 'Decentralized leverage trading platform on Polygon and Arbitrum.',
     logoURI:
-      'https://raw.githubusercontent.com/beefyfinance/beefy-app/prod/src/images/single-assets/GNS.png',
+      'https://raw.githubusercontent.com/samifinance/sami-app/prod/src/images/single-assets/GNS.png',
     documentation: 'https://gains-network.gitbook.io/docs-home/',
     bridge: 'layer-zero',
   },

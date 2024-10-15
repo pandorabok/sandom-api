@@ -1,7 +1,7 @@
 import BigNumber from 'bignumber.js';
 import { ChainId } from '../../packages/address-book/src/address-book';
 import { fetchContract } from '../api/rpc/client';
-import BeefyVaultV6Abi from '../abis/BeefyVault';
+import SamiVaultV6Abi from '../abis/SamiVault';
 
 export async function fetchMooPrices(
   pools: any[],
@@ -28,7 +28,7 @@ const fetchPpfs = async (pools: any[]) => {
     let filtered = pools.filter(p => p.chainId == uniqueChainIds[i]);
 
     const ppfsCalls = filtered.map(pool => {
-      const contract = fetchContract(pool.address, BeefyVaultV6Abi, uniqueChainIds[i]);
+      const contract = fetchContract(pool.address, SamiVaultV6Abi, uniqueChainIds[i]);
       return contract.read.getPricePerFullShare();
     });
 

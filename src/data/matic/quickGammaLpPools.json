@@ -5,7 +5,7 @@
     "pool": "0x5b41EEDCfC8e0AE47493d4945Aa1AE4fe05430ff",
     "decimals": "1e18",
     "chainId": 137,
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "lp0": {
       "address": "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270",
       "oracle": "tokens",
@@ -25,7 +25,7 @@
     "pool": "0x6669B4706cC152F359e947BCa68E263A87c52634",
     "decimals": "1e18",
     "chainId": 137,
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "lp0": {
       "address": "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270",
       "oracle": "tokens",
@@ -44,7 +44,7 @@
     "address": "0x3974FbDC22741A1632E024192111107b202F214f",
     "pool": "0xa6AeDF7c4Ed6e821E67a6BfD56FD1702aD9a9719",
     "decimals": "1e18",
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "poolId": 96,
     "chainId": 137,
     "extraRewards": [
@@ -72,7 +72,7 @@
     "address": "0xadc7B4096C3059Ec578585Df36E6E1286d345367",
     "pool": "0xAC4494e30a85369e332BDB5230d6d694d4259DbC",
     "decimals": "1e18",
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "poolId": 9,
     "chainId": 137,
     "lp0": {
@@ -93,7 +93,7 @@
     "address": "0x0668331b4606bEb78A1c8314e08d8B07653fbD3C",
     "pool": "0x3716b8fF0acC565971f7c7CeDC0d756b610ECd20",
     "decimals": "1e18",
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "poolId": 78,
     "chainId": 137,
     "extraRewards": [
@@ -121,7 +121,7 @@
     "address": "0x5bA383530Db75A22E028239dbc777C7Ee8CE4752",
     "pool": "0x44720A6f572649526Ac9073caE9200755cc78e0A",
     "decimals": "1e18",
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "poolId": 85,
     "chainId": 137,
     "extraRewards": [
@@ -149,7 +149,7 @@
     "address": "0x3dA7e0320C04D88b71e0ada960AaD3d21f10CAdf",
     "pool": "0xAb52931301078E2405c3a3EBB86e11ad0dFD2CfD",
     "decimals": "1e18",
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "poolId": 64,
     "chainId": 137,
     "extraRewards": [
@@ -177,7 +177,7 @@
     "address": "0x7f09bD2801A7b795dF29C273C4afbB0Ff15E2D63",
     "pool": "0x9F1A8cAF3C8e94e43aa64922d67dFf4dc3e88A42",
     "decimals": "1e18",
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "poolId": 12,
     "chainId": 137,
     "extraRewards": [
@@ -205,7 +205,7 @@
     "address": "0x5928f9f61902b139e1c40cBa59077516734ff09f",
     "pool": "0x9CEff2F5138fC59eB925d270b8A7A9C02a1810f2",
     "decimals": "1e18",
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "poolId": 26,
     "chainId": 137,
     "extraRewards": [
@@ -233,7 +233,7 @@
     "address": "0x25B186eEd64ca5FDD1bc33fc4CFfd6d34069BAec",
     "pool": "0x94d47616f45F98e1ac688326FFdAb7bf3A6be440",
     "decimals": "1e18",
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "poolId": 81,
     "chainId": 137,
     "extraRewards": [
@@ -266,7 +266,7 @@
     "address": "0xccBcaf47E87F50A338FaC9bF58e567eD1C87be2b",
     "pool": "0x64C01d2b748e5debA661CE58393E6ee0E151a1eE",
     "decimals": "1e18",
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "poolId": 15,
     "chainId": 137,
     "lp0": {
@@ -287,7 +287,7 @@
     "address": "0x8dd3BF71eF18dd88869d128BDE058C9d8c270176",
     "pool": "0x05BFE97Bf794a4DB69d3059091F064eA0a5E538E",
     "decimals": "1e18",
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "poolId": 14,
     "chainId": 137,
     "extraRewards": [
@@ -315,7 +315,7 @@
     "address": "0x795f8c9B0A0Da9Cd8dea65Fc10f9B57AbC532E58",
     "pool": "0x7B925e617aefd7FB3a93Abe3a701135D7a1Ba710",
     "decimals": "1e18",
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "poolId": 11,
     "chainId": 137,
     "extraRewards": [
@@ -343,7 +343,7 @@
     "address": "0x9E31214Db6931727B7d63a0D2b6236DB455c0965",
     "pool": "0xe7E0eB9F6bCcCfe847fDf62a3628319a092F11a2",
     "decimals": "1e18",
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "poolId": 10,
     "chainId": 137,
     "lp0": {
@@ -364,7 +364,7 @@
     "address": "0xadc7B4096C3059Ec578585Df36E6E1286d345367",
     "pool": "0xAC4494e30a85369e332BDB5230d6d694d4259DbC",
     "decimals": "1e18",
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "poolId": 9,
     "chainId": 137,
     "lp0": {
@@ -385,7 +385,7 @@
     "address": "0x4B9e26a02121a1C541403a611b542965Bd4b68Ce",
     "pool": "0xAC4494e30a85369e332BDB5230d6d694d4259DbC",
     "decimals": "1e18",
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "poolId": 8,
     "chainId": 137,
     "lp0": {
@@ -406,7 +406,7 @@
     "address": "0x3f35705479d9d77c619b2aAC9dd7a64e57151506",
     "pool": "0xA5CD8351Cbf30B531C7b11B0D9d3Ff38eA2E280f",
     "decimals": "1e18",
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "poolId": 6,
     "chainId": 137,
     "lp0": {
@@ -427,7 +427,7 @@
     "address": "0x6077177d4c41E114780D9901C9b5c784841C523f",
     "pool": "0x55CAaBB0d2b704FD0eF8192A7E35D8837e678207",
     "decimals": "1e18",
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "poolId": 5,
     "chainId": 137,
     "extraRewards": [
@@ -455,7 +455,7 @@
     "address": "0x3Cc20A6795c4b57d9817399F68E83e71C8626580",
     "pool": "0x55CAaBB0d2b704FD0eF8192A7E35D8837e678207",
     "decimals": "1e18",
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "poolId": 4,
     "chainId": 137,
     "extraRewards": [
@@ -483,7 +483,7 @@
     "address": "0x04d521E2c414E6d898c6F2599FdD863Edf49e247",
     "pool": "0xAE81FAc689A1b4b1e06e7ef4a2ab4CD8aC0A087D",
     "decimals": "1e18",
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "poolId": 2,
     "chainId": 137,
     "extraRewards": [
@@ -511,7 +511,7 @@
     "address": "0x02203f2351E7aC6aB5051205172D3f772db7D814",
     "pool": "0x479e1B71A702a595e19b6d5932CD5c863ab57ee0",
     "decimals": "1e18",
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "poolId": 0,
     "chainId": 137,
     "lp0": {
@@ -532,7 +532,7 @@
     "address": "0x81Cec323BF8C4164c66ec066F53cc053A535f03D",
     "pool": "0x479e1B71A702a595e19b6d5932CD5c863ab57ee0",
     "decimals": "1e18",
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "poolId": 1,
     "chainId": 137,
     "lp0": {

@@ -1,7 +1,7 @@
-import { getAllBeefyHoldings, getBeefyTreasury, getMarketMakerBalances } from './getTreasury';
+import { getAllSamiHoldings, getSamiTreasury, getMarketMakerBalances } from './getTreasury';
 
 export const getTreasury = ctx => {
-  const chainTokens = getBeefyTreasury();
+  const chainTokens = getSamiTreasury();
   if (chainTokens) {
     ctx.status = 200;
     ctx.body = chainTokens;
@@ -23,7 +23,7 @@ export const getMMBal = ctx => {
 };
 
 export const getAllTreasury = ctx => {
-  const chainTokens = getAllBeefyHoldings();
+  const chainTokens = getAllSamiHoldings();
   if (chainTokens) {
     ctx.status = 200;
     ctx.body = chainTokens;

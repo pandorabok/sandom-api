@@ -5,7 +5,7 @@
     "gauge": "0xd58F6FfEA0Eb4C7f1366F0c30F874d498Fe082E8",
     "decimals": "1e18",
     "chainId": 534352,
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "lp0": {
       "address": "0x5300000000000000000000000000000000000004",
       "oracle": "tokens",
@@ -25,7 +25,7 @@
     "gauge": "0x52edC4da8423266D81F5CdA947F2d1B438d479a1",
     "decimals": "1e18",
     "chainId": 534352,
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "lp0": {
       "address": "0x5300000000000000000000000000000000000004",
       "oracle": "tokens",

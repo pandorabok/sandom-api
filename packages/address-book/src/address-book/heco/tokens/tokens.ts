@@ -54,19 +54,19 @@ export const tokens = {
     decimals: 18,
     logoURI: 'https://hecoinfo.com/token/images/lendhub_32.png',
   },
-  oldBIFI: {
-    name: 'Beefy.Finance',
-    symbol: 'oldBIFI',
-    oracleId: 'oldBIFI',
+  oldSAMI: {
+    name: 'Sami.Finance',
+    symbol: 'oldSAMI',
+    oracleId: 'oldSAMI',
     address: '0x765277EebeCA2e31912C9946eAe1021199B39C61',
     chainId: 128,
     decimals: 18,
-    website: 'https://www.beefy.finance/',
+    website: 'https://www.sami.finance/',
     description:
-      'Beefy.Finance (BIFI), is a multi-chain yield optimization tool that helps maximize the return from yield farming.',
+      'Sami.Finance (SAMI), is a multi-chain yield optimization tool that helps maximize the return from yield farming.',
     logoURI:
-      'https://raw.githubusercontent.com/beefyfinance/beefy-app/prod/src/images/single-assets/BIFI.png',
-    documentation: 'https://docs.beefy.finance/',
+      'https://raw.githubusercontent.com/samifinance/sami-app/prod/src/images/single-assets/SAMI.png',
+    documentation: 'https://docs.sami.finance/',
   },
   SNX: {
     name: 'Synthetix',

@@ -49,7 +49,7 @@
     "oracleId": "BOLD",
     "decimals": "1e18",
     "chainId": 1,
-    "beefyFee": 0.095
+    "samiFee": 0.095
   },
   {
     "name": "pendle-sgho-28aug25",
@@ -60,7 +60,7 @@
     "oracleId": "GHO",
     "decimals": "1e18",
     "chainId": 1,
-    "beefyFee": 0.095
+    "samiFee": 0.095
   },
   {
     "name": "pendle-fgho-31jul25",
@@ -70,7 +70,7 @@
     "oracleId": "GHO",
     "decimals": "1e18",
     "chainId": 1,
-    "beefyFee": 0.095
+    "samiFee": 0.095
   },
   {
     "name": "pendle-medge-31jul25",
@@ -80,7 +80,7 @@
     "oracleId": "USDC",
     "decimals": "1e6",
     "chainId": 1,
-    "beefyFee": 0.095
+    "samiFee": 0.095
   },
   {
     "name": "pendle-mmev-31jul25",
@@ -90,7 +90,7 @@
     "oracleId": "USDC",
     "decimals": "1e6",
     "chainId": 1,
-    "beefyFee": 0.095
+    "samiFee": 0.095
   },
   {
     "name": "pendle-slvlusd-25sep25",
@@ -100,7 +100,7 @@
     "oracleId": "lvlUSD",
     "decimals": "1e18",
     "chainId": 1,
-    "beefyFee": 0.095
+    "samiFee": 0.095
   },
   {
     "name": "pendle-lvlusd-25sep25",
@@ -110,7 +110,7 @@
     "oracleId": "lvlUSD",
     "decimals": "1e18",
     "chainId": 1,
-    "beefyFee": 0.095
+    "samiFee": 0.095
   },
   {
     "name": "pendle-usds-14aug25",
@@ -120,7 +120,7 @@
     "oracleId": "USDS",
     "decimals": "1e18",
     "chainId": 1,
-    "beefyFee": 0.095
+    "samiFee": 0.095
   },
   {
     "name": "pendle-usd0++-27nov25",
@@ -131,7 +131,7 @@
     "oracleId": "USD0++",
     "decimals": "1e18",
     "chainId": 1,
-    "beefyFee": 0.095
+    "samiFee": 0.095
   },
   {
     "name": "pendle-susdf-25sep25",
@@ -169,7 +169,7 @@
     "oracleId": "USD0++",
     "decimals": "1e18",
     "chainId": 1,
-    "beefyFee": 0.095
+    "samiFee": 0.095
   },
   {
     "name": "pendle-usd0++-24apr25",
@@ -180,7 +180,7 @@
     "oracleId": "USD0++",
     "decimals": "1e18",
     "chainId": 1,
-    "beefyFee": 0.095
+    "samiFee": 0.095
   },
   {
     "name": "pendle-syrupusdc-24apr25",
@@ -190,7 +190,7 @@
     "oracleId": "USDC",
     "decimals": "1e6",
     "chainId": 1,
-    "beefyFee": 0.095
+    "samiFee": 0.095
   },
   {
     "name": "pendle-wstusr-27mar25",
@@ -200,7 +200,7 @@
     "oracleId": "USR",
     "decimals": "1e18",
     "chainId": 1,
-    "beefyFee": 0.095
+    "samiFee": 0.095
   },
   {
     "name": "pendle-usd0++-27mar25",
@@ -211,7 +211,7 @@
     "oracleId": "USD0++",
     "decimals": "1e18",
     "chainId": 1,
-    "beefyFee": 0.095
+    "samiFee": 0.095
   },
   {
     "name": "pendle-usds-27mar25",
@@ -221,7 +221,7 @@
     "oracleId": "USDS",
     "decimals": "1e18",
     "chainId": 1,
-    "beefyFee": 0.095
+    "samiFee": 0.095
   },
   {
     "name": "pendle-steth-25dec25",
@@ -231,6 +231,6 @@
     "oracleId": "ETH",
     "decimals": "1e18",
     "chainId": 1,
-    "beefyFee": 0.095
+    "samiFee": 0.095
   }
 ]

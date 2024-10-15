@@ -1,4 +1,4 @@
-const BeefyVaultV6Abi = [
+const SamiVaultV6Abi = [
   {
     inputs: [
       { internalType: 'contract IStrategy', name: '_strategy', type: 'address' },
@@ -259,4 +259,4 @@ const BeefyVaultV6Abi = [
   { inputs: [], name: 'withdrawAll', outputs: [], stateMutability: 'nonpayable', type: 'function' },
 ] as const;
 
-export default BeefyVaultV6Abi;
+export default SamiVaultV6Abi;

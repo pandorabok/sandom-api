@@ -16,7 +16,7 @@ export const updateArticles = async () => {
   console.log('> updating articles');
   const start = Date.now();
   try {
-    articles = await fetch('https://beefy.com/api/articles.json')
+    articles = await fetch('https://sami.com/api/articles.json')
       .then(res => res.json())
       .then((res: ArticleInterface[]) => Object.values(res));
 

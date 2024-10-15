@@ -18,15 +18,15 @@ export const getZapProviderFee = (provider: ProviderId, chain: ApiChain): ZapFee
     };
   }
 
-  const beefyPlatform = addressBook[chain].platforms.beefyfinance;
-  if (!beefyPlatform) {
-    throw new Error(`No Beefy Platform found for chain ${chain}`);
+  const samiPlatform = addressBook[chain].platforms.samifinance;
+  if (!samiPlatform) {
+    throw new Error(`No Sami Platform found for chain ${chain}`);
   }
 
   const receiver = [
-    beefyPlatform.treasurySwapper,
-    beefyPlatform.treasuryMultisig,
-    beefyPlatform.treasury,
+    samiPlatform.treasurySwapper,
+    samiPlatform.treasuryMultisig,
+    samiPlatform.treasury,
   ].find(a => !!a && a !== ZERO_ADDRESS);
 
   if (!receiver) {

@@ -1,6 +1,6 @@
-const { getBeefyCowRootstockApys } = require('./getBeefyCowRootstockApys');
+const { getSamiCowRootstockApys } = require('./getSamiCowRootstockApys');
 
-const getApys = [getBeefyCowRootstockApys];
+const getApys = [getSamiCowRootstockApys];
 
 const getRootstockApys = async () => {
   const start = Date.now();

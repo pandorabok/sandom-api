@@ -621,16 +621,16 @@ export const tokens = {
     logoURI: 'https://bnb.ripae.finance/static/media/ripae_pftm.72dccc11.svg',
   },
   beCAKE: {
-    name: 'Beefy Staked CAKE',
+    name: 'Sami Staked CAKE',
     symbol: 'beCAKE',
     oracleId: 'beCAKE',
     address: '0x42b50A901228fb4C739C19fcd38DC2182B515B66',
     chainId: 56,
     decimals: 18,
     logoURI: '',
-    website: 'https://beefy.com',
+    website: 'https://sami.com',
     description:
-      'beCAKE is a Beefy-wrapped version of CAKE. Staking beCAKE will be a great way to earn a bunch of CAKE. Beefy will deposit and timelock into the Cake Pool earning more yield than staking without timelock, in addition a portion of all pancakeswap strategies CAKE earnings get sent to the CAKE earnings pool. beCAKE pays out its yield in CAKE.',
+      'beCAKE is a Sami-wrapped version of CAKE. Staking beCAKE will be a great way to earn a bunch of CAKE. Sami will deposit and timelock into the Cake Pool earning more yield than staking without timelock, in addition a portion of all pancakeswap strategies CAKE earnings get sent to the CAKE earnings pool. beCAKE pays out its yield in CAKE.',
   },
   BUSM: {
     name: 'BUSM.Money',
@@ -2522,7 +2522,7 @@ export const tokens = {
     decimals: 18,
     website: 'https://www.blizzard.money/',
     description: 'xBLZD is the native token of Blizzard.money where users can yield their tokens.',
-    logoURI: 'https://app.beefy.finance/static/media/BLZD.fdf1fc8d.png',
+    logoURI: 'https://app.sami.finance/static/media/BLZD.fdf1fc8d.png',
   },
   BAKE: {
     name: 'Bakery Token',
@@ -2927,19 +2927,19 @@ export const tokens = {
     logoURI:
       'https://tokens.pancakeswap.finance/images/0xa1faa113cbe53436df28ff0aee54275c13b40975.png',
   },
-  oldBIFI: {
-    name: 'Beefy.finance',
-    symbol: 'oldBIFI',
-    oracleId: 'oldBIFI',
+  oldSAMI: {
+    name: 'Sami.finance',
+    symbol: 'oldSAMI',
+    oracleId: 'oldSAMI',
     address: '0xCa3F508B8e4Dd382eE878A314789373D80A5190A',
     chainId: 56,
     decimals: 18,
-    website: 'https://www.beefy.finance/',
+    website: 'https://www.sami.finance/',
     description:
-      'Beefy.Finance (BIFI), is a yield optimization tool on the Binance Smart Chain that helps maximize the return from yield farming.',
+      'Sami.Finance (SAMI), is a yield optimization tool on the Binance Smart Chain that helps maximize the return from yield farming.',
     logoURI:
       'https://tokens.pancakeswap.finance/images/0xCa3F508B8e4Dd382eE878A314789373D80A5190A.png',
-    documentation: 'https://docs.beefy.finance/',
+    documentation: 'https://docs.sami.finance/',
   },
   YFI: {
     name: 'yearn.finance',
@@ -4718,16 +4718,16 @@ export const tokens = {
     documentation: 'https://docs.stafi.io/',
     bridge: 'native',
   },
-  voldBIFI: {
-    name: 'Venus BIFI',
-    symbol: 'oldBIFI',
-    oracleId: 'voldBIFI',
+  voldSAMI: {
+    name: 'Venus SAMI',
+    symbol: 'oldSAMI',
+    oracleId: 'voldSAMI',
     address: '0xC718c51958d3fd44f5F9580c9fFAC2F89815C909',
     chainId: 56,
     decimals: 8,
     website: 'https://venus.io/',
     description:
-      'Venus wrapped BIFI. Venus is an algorithmic money market and synthetic stablecoin protocol launched exclusively on BNB Chain.',
+      'Venus wrapped SAMI. Venus is an algorithmic money market and synthetic stablecoin protocol launched exclusively on BNB Chain.',
     logoURI: '',
   },
   FIS: {

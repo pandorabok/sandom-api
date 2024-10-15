@@ -5,7 +5,7 @@
     "gauge": "0x72607BFAF86E0872beD83d794741b4d0d58474A7",
     "decimals": "1e18",
     "chainId": 56,
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "lp0": {
       "address": "0x73a325103935b0B5E7AA3acA6dba74AD22f82B03",
       "oracle": "tokens",
@@ -25,7 +25,7 @@
     "gauge": "0x6039e4cd8Ec92Bf807FD2E48aC4B05C0DD9a3f85",
     "decimals": "1e18",
     "chainId": 56,
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "lp0": {
       "address": "0x0427dF380aECdB4657b1334aB608DA16b7526Ab2",
       "oracle": "tokens",
@@ -45,7 +45,7 @@
     "gauge": "0x1560D23c5DB98d78537253332b067A6B8981E432",
     "decimals": "1e18",
     "chainId": 56,
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "lp0": {
       "address": "0x55d398326f99059fF775485246999027B3197955",
       "oracle": "tokens",
@@ -65,7 +65,7 @@
     "gauge": "0xf1FA952C2E3b2faB77F0e243544C035F14AdA63E",
     "decimals": "1e18",
     "chainId": 56,
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "lp0": {
       "address": "0x55d398326f99059fF775485246999027B3197955",
       "oracle": "tokens",
@@ -85,7 +85,7 @@
     "gauge": "0x11D54604F7BAe940D6CA106539B2986c36DaBe5E",
     "decimals": "1e18",
     "chainId": 56,
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "lp0": {
       "address": "0x55d398326f99059fF775485246999027B3197955",
       "oracle": "tokens",
@@ -105,7 +105,7 @@
     "gauge": "0xcC51Cf273D7Bf3A9318C2Db35beCAc9EB2ef7D0a",
     "decimals": "1e18",
     "chainId": 56,
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "lp0": {
       "address": "0x1bdd3Cf7F79cfB8EdbB955f20ad99211551BA275",
       "oracle": "tokens",
@@ -125,7 +125,7 @@
     "gauge": "0x37E874371024E98267878796170873B440ce5f74",
     "decimals": "1e18",
     "chainId": 56,
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "lp0": {
       "address": "0x0D8Ce2A99Bb6e3B7Db580eD848240e4a0F9aE153",
       "oracle": "tokens",
@@ -145,7 +145,7 @@
     "gauge": "0x59e0Dcb1F5EbaC448C8f30d026DDDfd8C3f65380",
     "decimals": "1e18",
     "chainId": 56,
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "lp0": {
       "address": "0x1bdd3Cf7F79cfB8EdbB955f20ad99211551BA275",
       "oracle": "tokens",
@@ -165,7 +165,7 @@
     "gauge": "0xd836D06De65fECbA04d9a9c06544D1FF948b0EDB",
     "decimals": "1e18",
     "chainId": 56,
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "lp0": {
       "address": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
       "oracle": "tokens",
@@ -185,7 +185,7 @@
     "gauge": "0x9206fF0db7a937976f08527bb8110a249fE80a2E",
     "decimals": "1e18",
     "chainId": 56,
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "lp0": {
       "address": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
       "oracle": "tokens",
@@ -205,7 +205,7 @@
     "gauge": "0x857A9531d8C1b47495336baC40FF86C0c7467b4A",
     "decimals": "1e18",
     "chainId": 56,
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "lp0": {
       "address": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
       "oracle": "tokens",

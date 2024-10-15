@@ -18,13 +18,13 @@ import { addressBook } from '../packages/address-book/src/address-book';
 import { groupBy } from 'lodash';
 
 /**
- * This script checks the beefyCowVaults.json configs against the on-chain contracts.
+ * This script checks the samiCowVaults.json configs against the on-chain contracts.
  * Will throw if the local validateCowClms fails; or if a RPC call fails.
  * Otherwise, will print out any mismatches between config and contract.
  */
 
 async function start() {
-  const clmFiles = await fg('./src/data/**/beefyCowVaults.json');
+  const clmFiles = await fg('./src/data/**/samiCowVaults.json');
 
   const errorsPerFile = await Promise.all(clmFiles.map(checkFile));
   const totalErrors = errorsPerFile.reduce((acc, { errors }) => acc + errors.length, 0);
@@ -250,7 +250,7 @@ const folderToChainId: Record<string, ApiChain> = {
 };
 
 function extractChainIdFromPath(path: string): ApiChain {
-  const matches = path.match(/\/([^\/]+)\/beefyCowVaults\.json$/);
+  const matches = path.match(/\/([^\/]+)\/samiCowVaults\.json$/);
   const folder = matches?.[1];
   if (!folder) {
     throw new Error(`Could not extract chain id from path: ${path}`);

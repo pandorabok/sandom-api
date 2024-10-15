@@ -40,8 +40,8 @@ export async function getBeSonicApy() {
   const apr = lockApr.multipliedBy(1 - penalty);
 
   return getApyBreakdown({
-    vaultId: 'beefy-besonic',
-    beefyFee: 0, // fees (beefy/dao + liquidity) are charged before being locked
+    vaultId: 'sami-besonic',
+    samiFee: 0, // fees (sami/dao + liquidity) are charged before being locked
     vault: apr,
     compoundingsPerYear: DAILY_HPY,
   });

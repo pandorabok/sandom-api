@@ -1,7 +1,7 @@
 const { getAuraApys } = require('./getAuraApys');
 const { getConvexApys } = require('./getConvexApys');
 const { getConvexCrvApy } = require('./getConvexCrvApy');
-const { getBifiMaxiApy } = require('./getBifiMaxiApy');
+const { getsamiMaxiApy } = require('./getsamiMaxiApy');
 const { getConvexCvxTokensApy } = require('./getConvexCvxTokensApy');
 const { getCurveApys } = require('./getCurveApys');
 const { getConvexCvxApy } = require('./getConvexCvxApy');
@@ -26,7 +26,7 @@ const getApys = [
   getConvexCvxApy,
   getConvexCvxTokensApy,
   getFxApys,
-  getBifiMaxiApy,
+  getsamiMaxiApy,
   getPenpieApys,
   () => getEquilibriaApys(require('../../../data/ethereum/pendlePools.json')),
   () => getMorphoApys(ETH_CHAIN_ID, require('../../../data/ethereum/morphoPools.json')),

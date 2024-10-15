@@ -19,19 +19,19 @@ export const tokens = {
   FEES: ETH,
   ETH,
   WETH: ETH,
-  oldBIFI: {
-    name: 'Beefy.Finance',
-    symbol: 'oldBIFI',
-    oracleId: 'oldBIFI',
+  oldSAMI: {
+    name: 'Sami.Finance',
+    symbol: 'oldSAMI',
+    oracleId: 'oldSAMI',
     address: '0x44AA3eEDD3214Ddd02E8b3FE1E8AE4cAC452a2E0',
     chainId: 324,
     decimals: 18,
-    website: 'https://www.beefy.finance/',
-    documentation: 'https://docs.beefy.finance/',
+    website: 'https://www.sami.finance/',
+    documentation: 'https://docs.sami.finance/',
     description:
-      'Beefy Finance is a Decentralized, Multi-Chain Yield Optimizer platform that allows its users to earn compound interest on their crypto holdings.',
+      'Sami Finance is a Decentralized, Multi-Chain Yield Optimizer platform that allows its users to earn compound interest on their crypto holdings.',
     logoURI:
-      'https://raw.githubusercontent.com/beefyfinance/beefy-app/prod/src/images/single-assets/BIFI.png',
+      'https://raw.githubusercontent.com/samifinance/sami-app/prod/src/images/single-assets/SAMI.png',
   },
   VS: {
     name: 'veSync',

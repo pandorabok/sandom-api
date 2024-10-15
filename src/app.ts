@@ -71,7 +71,7 @@ const start = async () => {
   initPointsStructureService();
 
   app.listen(port);
-  console.log(`> beefy-api running! (:${port})`);
+  console.log(`> sami-api running! (:${port})`);
 };
 
 start();

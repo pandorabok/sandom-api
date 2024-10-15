@@ -1,2 +1,2 @@
-export { beefyfinance } from './beefyfinance.js';
+export { samifinance } from './samifinance.js';
 export { sushiCelo } from './sushiCelo.js';

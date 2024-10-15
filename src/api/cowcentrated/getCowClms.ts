@@ -1,26 +1,26 @@
 import { ApiChain } from '../../utils/chain';
 import { CowClm, validateCowClms } from './types';
-import optimismPools from '../../data/optimism/beefyCowVaults.json';
-import basePools from '../../data/base/beefyCowVaults.json';
-import arbitrumPools from '../../data/arbitrum/beefyCowVaults.json';
-import moonbeamPools from '../../data/moonbeam/beefyCowVaults.json';
-import lineaPools from '../../data/linea/beefyCowVaults.json';
-import polygonPools from '../../data/matic/beefyCowVaults.json';
-import zksyncPools from '../../data/zksync/beefyCowVaults.json';
-import mantaPools from '../../data/manta/beefyCowVaults.json';
-import mantlePools from '../../data/mantle/beefyCowVaults.json';
-import seiPools from '../../data/sei/beefyCowVaults.json';
-import bscPools from '../../data/bsc/beefyCowVaults.json';
-import avaxPools from '../../data/avax/beefyCowVaults.json';
-import rootstockPools from '../../data/rootstock/beefyCowVaults.json';
-import scrollPools from '../../data/scroll/beefyCowVaults.json';
-import modePools from '../../data/mode/beefyCowVaults.json';
-import liskPools from '../../data/lisk/beefyCowVaults.json';
-import sonicPools from '../../data/sonic/beefyCowVaults.json';
-import berachainPools from '../../data/berachain/beefyCowVaults.json';
-import gnosisPools from '../../data/gnosis/beefyCowVaults.json';
-import sagaPools from '../../data/saga/beefyCowVaults.json';
-import hyperevmPools from '../../data/hyperevm/beefyCowVaults.json';
+import optimismPools from '../../data/optimism/samiCowVaults.json';
+import basePools from '../../data/base/samiCowVaults.json';
+import arbitrumPools from '../../data/arbitrum/samiCowVaults.json';
+import moonbeamPools from '../../data/moonbeam/samiCowVaults.json';
+import lineaPools from '../../data/linea/samiCowVaults.json';
+import polygonPools from '../../data/matic/samiCowVaults.json';
+import zksyncPools from '../../data/zksync/samiCowVaults.json';
+import mantaPools from '../../data/manta/samiCowVaults.json';
+import mantlePools from '../../data/mantle/samiCowVaults.json';
+import seiPools from '../../data/sei/samiCowVaults.json';
+import bscPools from '../../data/bsc/samiCowVaults.json';
+import avaxPools from '../../data/avax/samiCowVaults.json';
+import rootstockPools from '../../data/rootstock/samiCowVaults.json';
+import scrollPools from '../../data/scroll/samiCowVaults.json';
+import modePools from '../../data/mode/samiCowVaults.json';
+import liskPools from '../../data/lisk/samiCowVaults.json';
+import sonicPools from '../../data/sonic/samiCowVaults.json';
+import berachainPools from '../../data/berachain/samiCowVaults.json';
+import gnosisPools from '../../data/gnosis/samiCowVaults.json';
+import sagaPools from '../../data/saga/samiCowVaults.json';
+import hyperevmPools from '../../data/hyperevm/samiCowVaults.json';
 const chainToClms: Readonly<Partial<Record<ApiChain, CowClm[]>>> = {
   optimism: validateCowClms(optimismPools),
   base: validateCowClms(basePools),

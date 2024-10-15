@@ -204,17 +204,17 @@
     "address": "0x03BdAf7eb1b109E3C3348ee98cde734a82aea8FD",
     "lpAddress": "0xFD8fc59E65860e7FAaf09482e6Be4af65741DEba",
     "tokens": ["0x29219dd400f2Bf60E5a23d13Be72B486D4038894", "0xc55E93C62874D8100dBd2DfE307EDc1036ad5434"],
-    "tokenOracleIds": ["sUSDCe", "smooBIFI"],
+    "tokenOracleIds": ["sUSDCe", "smooSAMI"],
     "decimals": [6, 18],
-    "oracleId": "shadow-cow-sonic-usdc.e-moobifi",
+    "oracleId": "shadow-cow-sonic-usdc.e-moosami",
     "providerId": "shadow",
     "rewardPool": {
       "address": "0x270c72285aa76233AdAd07b6C20ac81d4fE68F8e",
-      "oracleId": "shadow-cow-sonic-usdc.e-moobifi-rp"
+      "oracleId": "shadow-cow-sonic-usdc.e-moosami-rp"
     },
     "vault": {
       "address": "0xAFFcd41595f83918A3cF360C5909C577E8F74b77",
-      "oracleId": "shadow-cow-sonic-usdc.e-moobifi-vault"
+      "oracleId": "shadow-cow-sonic-usdc.e-moosami-vault"
     }
   },
   {

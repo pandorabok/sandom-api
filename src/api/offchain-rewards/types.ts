@@ -25,9 +25,9 @@ export type CampaignVault = Vault & {
   apr: number;
 };
 
-export type BeefyCampaignType = 'test' | 'arb-ltipp' | 'op-gov-fund' | 'zap-v3' | 'mode-grant' | 'other';
+export type SamiCampaignType = 'test' | 'arb-ltipp' | 'op-gov-fund' | 'zap-v3' | 'mode-grant' | 'other';
 export type ExternalCampaignType = 'external';
-export type CampaignType = BeefyCampaignType | ExternalCampaignType;
+export type CampaignType = SamiCampaignType | ExternalCampaignType;
 
 type MakeCampaign<TProvider extends ProviderId, TExtra extends object = {}> = {
   providerId: TProvider;

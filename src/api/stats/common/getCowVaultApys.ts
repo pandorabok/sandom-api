@@ -8,7 +8,7 @@ import {
   isCowClmWithVaultMeta,
 } from '../../cowcentrated/types';
 import { isDefined } from '../../../utils/array';
-import { getBeefyRewardPoolV2Apr } from './getBeefyRewardPoolV2Apr';
+import { getSamiRewardPoolV2Apr } from './getSamiRewardPoolV2Apr';
 import { ApyBreakdownRequest, ApyBreakdownResult, getApyBreakdown } from './getApyBreakdownNew';
 import { partition } from 'lodash';
 import { DAILY_HPY } from '../../../constants';
@@ -161,7 +161,7 @@ function getCowRewardPoolApyBreakdown(
 
         return {
           vaultId: clm.rewardPool.oracleId,
-          beefyFee: 0,
+          samiFee: 0,
           rewardPool: poolApr?.rewardPool || 0,
           rewardPoolTrading: poolApr?.rewardPoolTrading || undefined,
           clm: clmBreakdown?.clmApr || undefined, // after fee from CLM; reward pool fee = 0; so this works
@@ -192,7 +192,7 @@ const getCowRewardPoolApr = async (
   clm: CowClmWithRewardPoolMeta
 ): Promise<RewardPoolApr | undefined> => {
   try {
-    const rewardPoolData = await getBeefyRewardPoolV2Apr(chainId, {
+    const rewardPoolData = await getSamiRewardPoolV2Apr(chainId, {
       oracleId: clm.rewardPool.oracleId,
       address: clm.rewardPool.address,
       stakedToken: {
@@ -209,7 +209,7 @@ const getCowRewardPoolApr = async (
 
     if (!rewardPoolData) {
       console.error(
-        `> getCowRewardPoolApr Error for ${clm.rewardPool.oracleId}: getBeefyRewardPoolV2Apr returned undefined`
+        `> getCowRewardPoolApr Error for ${clm.rewardPool.oracleId}: getSamiRewardPoolV2Apr returned undefined`
       );
       return result;
     }

@@ -7,7 +7,7 @@ const getRamsesApys = require('./getRamsesApys');
 const getAuraArbitrumApys = require('./getAuraArbitrumApys');
 const { getArbCompoundV3Apys } = require('./getArbCompoundV3Apys');
 const { getEquilibriaApys } = require('../common/getEquilibriaApys');
-const { getBeefyArbCowApys } = require('./getBeefyArbCowApys');
+const { getSamiArbCowApys } = require('./getSamiArbCowApys');
 const { getAaveV3Apys } = require('./getAaveV3Apys');
 const { getPenpieApys } = require('./getPenpieApys');
 const { getMimApys } = require('./getMimApys');
@@ -30,7 +30,7 @@ const getApys = [
   getBalancerArbApys,
   getRamsesApys,
   getArbCompoundV3Apys,
-  getBeefyArbCowApys,
+  getSamiArbCowApys,
   getAaveV3Apys,
   getVenusApys,
   getStargateArbApys,

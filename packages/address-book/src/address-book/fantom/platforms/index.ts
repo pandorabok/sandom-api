@@ -1,4 +1,4 @@
-export { beefyfinance } from './beefyfinance.js';
+export { samifinance } from './samifinance.js';
 export { beethovenx } from './beethovenx.js';
 export { spookyswap } from './spookyswap.js';
 export { spiritswap } from './spiritswap.js';

@@ -190,7 +190,7 @@
     }
   },
   {
-    "name": "ramses-eth-bifi",
+    "name": "ramses-eth-sami",
     "address": "0xf9C642d206e7974d7d01758568D3e30019c7F022",
     "gauge": "0xa2f6e1BF57617bBC9ef0D57F03C0284C72Ef85D2",
     "decimals": "1e18",
@@ -204,7 +204,7 @@
     "lp1": {
       "address": "0x99C409E5f62E4bd2AC142f17caFb6810B8F0BAAE",
       "oracle": "tokens",
-      "oracleId": "oldBIFI",
+      "oracleId": "oldSAMI",
       "decimals": "1e18"
     }
   },

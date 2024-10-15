@@ -5,7 +5,7 @@ import { beSonicAbi } from '../../abis/sonic/beSonicAbi';
 import BigNumber from 'bignumber.js';
 import { EXCLUDED_IDS_FROM_TVL } from '../../constants';
 import { fetchContract } from '../rpc/client';
-import BeefyVaultV6Abi from '../../abis/BeefyVault';
+import SamiVaultV6Abi from '../../abis/SamiVault';
 import ERC20Abi from '../../abis/ERC20Abi';
 
 const getChainTvl = async chain => {
@@ -109,7 +109,7 @@ const getVaultBalances = async (chainId, vaults) => {
     throw new Error(`getVaultBalances: undefined vaults passed for ${chainId}`);
   }
   const calls = vaults.map(vault => {
-    const contract = fetchContract(vault.earnContractAddress, BeefyVaultV6Abi, chainId);
+    const contract = fetchContract(vault.earnContractAddress, SamiVaultV6Abi, chainId);
     return contract.read.balance();
   });
   const res = await Promise.all(calls);

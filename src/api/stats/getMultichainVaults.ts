@@ -24,7 +24,7 @@ import { Address } from 'viem';
 import { ChainId } from '../../../packages/address-book/src/types/chainid';
 import { fetchContract, getMulticallClientForChain } from '../rpc/client';
 import { HARVESTABLE_VAULT_TYPES, sortVaults, VAULT_TYPES } from '../vaults/helpers';
-import BeefyVaultV6Abi from '../../abis/BeefyVault';
+import SamiVaultV6Abi from '../../abis/SamiVault';
 
 const CACHE_KEY = 'VAULTS_BY_TYPE_CHAIN';
 const CACHE_VERSION = 1;
@@ -432,14 +432,14 @@ const vaultTypeHandlers: VaultTypeHandlers = {
 
 async function getStrategyAddress(chain: ApiChain, vaultAddress: Address): Promise<Address> {
   const chainId = ChainId[chain];
-  const vaultContract = fetchContract(vaultAddress, BeefyVaultV6Abi, chainId);
+  const vaultContract = fetchContract(vaultAddress, SamiVaultV6Abi, chainId);
   const strategyAddress = await vaultContract.read.strategy();
   return strategyAddress;
 }
 
 async function getPricePerFullShare(chain: ApiChain, vaultAddress: Address): Promise<BigNumber> {
   const chainId = ChainId[chain];
-  const vaultContract = fetchContract(vaultAddress, BeefyVaultV6Abi, chainId);
+  const vaultContract = fetchContract(vaultAddress, SamiVaultV6Abi, chainId);
   const result = await vaultContract.read.getPricePerFullShare();
   const ppfs = new BigNumber(result.toString(10));
   return ppfs;
@@ -471,7 +471,7 @@ async function getLastHarvest(chain: ApiChain, strategyAddress: Address): Promis
 
 async function getTotalSupply(chain: ApiChain, vaultAddress: Address): Promise<number> {
   const chainId = ChainId[chain];
-  const vaultContract = fetchContract(vaultAddress, BeefyVaultV6Abi, chainId);
+  const vaultContract = fetchContract(vaultAddress, SamiVaultV6Abi, chainId);
   const totalSupply = await vaultContract.read.totalSupply();
   return Number(totalSupply.toString(10));
 }

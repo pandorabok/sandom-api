@@ -1,5 +1,5 @@
 import { getCowApys } from '../common/getCowVaultApys';
 
-export const getBeefyCowPolyApys = async () => {
+export const getSamiCowPolyApys = async () => {
   return await getCowApys('polygon');
 };

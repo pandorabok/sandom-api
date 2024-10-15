@@ -4,11 +4,11 @@ import { fetchPrice } from '../../utils/fetchPrice';
 const { API_BASE_URL, BSC_RPC } = require('../../constants');
 
 const vaults_json = require('../../data/cmc.json');
-const BeefyVault = require('../../abis/BeefyVault.ts');
+const SamiVault = require('../../abis/SamiVault.ts');
 
 const fetchVaultTvl = async ({ vault }) => {
   const provider = new ethers.providers.JsonRpcProvider(BSC_RPC);
-  const vaultContract = new ethers.Contract(vault.contract, BeefyVault, provider);
+  const vaultContract = new ethers.Contract(vault.contract, SamiVault, provider);
   const vaultBalance = await vaultContract.balance();
 
   const price = await fetchPrice({ oracle: vault.oracle, id: vault.oracleId });

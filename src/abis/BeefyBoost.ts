@@ -1,4 +1,4 @@
-const BeefyBoostAbi = [
+const SamiBoostAbi = [
   {
     constant: true,
     inputs: [
@@ -458,4 +458,4 @@ const BeefyBoostAbi = [
   },
 ] as const;
 
-export default BeefyBoostAbi;
+export default SamiBoostAbi;

@@ -62,7 +62,7 @@ const IOOEStaking = [
   {
     constant: true,
     inputs: [],
-    name: 'bifi',
+    name: 'sami',
     outputs: [{ internalType: 'contract IERC20', name: '', type: 'address' }],
     payable: false,
     stateMutability: 'view',

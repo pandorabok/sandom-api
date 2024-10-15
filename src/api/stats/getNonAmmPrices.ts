@@ -68,27 +68,27 @@ import getLynexStablePrices from './linea/getLynexStablePrices';
 import getNileStablePrices from './linea/getNileStablePrices';
 import getEtherexStablePrices from './linea/getEtherexStablePrices';
 import { getMimSwapPrices } from './arbitrum/getMimSwapPrices';
-import { getBeefyCowArbPrices } from './arbitrum/getBeefyCowArbPrices';
-import { getBeefyCowOPPrices } from './optimism/getBeefyCowOPPrices';
-import { getBeefyCowBasePrices } from './base/getBeefyCowBasePrices';
-import { getBeefyCowMoonbeamPrices } from './moonbeam/getBeefyCowMoonbeamPricis';
-import { getBeefyCowLineaPrices } from './linea/getBeefyLineaCowPrices';
+import { getSamiCowArbPrices } from './arbitrum/getSamiCowArbPrices';
+import { getSamiCowOPPrices } from './optimism/getSamiCowOPPrices';
+import { getSamiCowBasePrices } from './base/getSamiCowBasePrices';
+import { getSamiCowMoonbeamPrices } from './moonbeam/getSamiCowMoonbeamPricis';
+import { getSamiCowLineaPrices } from './linea/getSamiLineaCowPrices';
 import getOptimismSiloPrices from './optimism/getOptimismSiloPrices';
-import { getBeefyCowPolyPrices } from './matic/getBeefyPolyCowPrices';
-import { getBeefyCowZkSyncPrices } from './zksync/getBeefyCowZkSyncPrices';
-import { getBeefyCowMantaPrices } from './manta/getBeefyMantaCowPrices';
-import { getBeefyCowMantlePrices } from './mantle/getBeefyMantleCowPrices';
-import { getBeefyCowSeiPrices } from './sei/getBeefySeiCowPrices';
-import { getBeefyCowBscPrices } from './bsc/getBeefyCowBscPrices';
-import { getBeefyCowAvaxPrices } from './avax/getBeefyCowAvaxPrices';
-import { getBeefyCowRootstockPrices } from './rootstock/getBeefyRootstockCowPrices';
-import { getBeefyCowScrollPrices } from './scroll/getBeefyScrollCowPrices';
-import { getBeefyCowModePrices } from './mode/getBeefyModeCowPrices';
-import { getBeefyCowLiskPrices } from './lisk/getBeefyLiskCowPrices';
-import { getBeefyCowBerachainPrices } from './berachain/getBeefyBerachainCowPrices';
-import { getBeefyCowGnosisPrices } from './gnosis/getBeefyGnosisCowPrices';
-import { getBeefyCowSagaPrices } from './saga/getBeefySagaCowPrices';
-import { getBeefyCowHyperevmPrices } from './hyperevm/getBeefyHyperevmCowPrices';
+import { getSamiCowPolyPrices } from './matic/getSamiPolyCowPrices';
+import { getSamiCowZkSyncPrices } from './zksync/getSamiCowZkSyncPrices';
+import { getSamiCowMantaPrices } from './manta/getSamiMantaCowPrices';
+import { getSamiCowMantlePrices } from './mantle/getSamiMantleCowPrices';
+import { getSamiCowSeiPrices } from './sei/getSamiSeiCowPrices';
+import { getSamiCowBscPrices } from './bsc/getSamiCowBscPrices';
+import { getSamiCowAvaxPrices } from './avax/getSamiCowAvaxPrices';
+import { getSamiCowRootstockPrices } from './rootstock/getSamiRootstockCowPrices';
+import { getSamiCowScrollPrices } from './scroll/getSamiScrollCowPrices';
+import { getSamiCowModePrices } from './mode/getSamiModeCowPrices';
+import { getSamiCowLiskPrices } from './lisk/getSamiLiskCowPrices';
+import { getSamiCowBerachainPrices } from './berachain/getSamiBerachainCowPrices';
+import { getSamiCowGnosisPrices } from './gnosis/getSamiGnosisCowPrices';
+import { getSamiCowSagaPrices } from './saga/getSamiSagaCowPrices';
+import { getSamiCowHyperevmPrices } from './hyperevm/getSamiHyperevmCowPrices';
 import { getPendleCommonPrices } from './common/getPendleCommonPrices';
 import { getMellowVeloPrices } from './common/getMellowVeloPrices';
 import { getBunniPrices } from './common/getBunniPrices';
@@ -98,7 +98,7 @@ import getVenusArbPrices from './arbitrum/getVenusArbPrices';
 import getVenusZkPrices from './zksync/getVenusZkPrices';
 import getTokemakEthPrices from './ethereum/getTokemakEthPrices';
 import getTokemakBasePrices from './base/getTokemakBasePrices';
-import { getBeefyCowSonicPrices } from './sonic/getBeefySonicCowPrices';
+import { getSamiCowSonicPrices } from './sonic/getSamiSonicCowPrices';
 import { getMorphoPrices } from './common/morpho/getMorphoPrices';
 import { getIchiPrices } from './common/getIchiPrices';
 import { getEulerPrices } from './common/euler/getEulerPrices';
@@ -188,27 +188,27 @@ export async function getNonAmmPrices(
     getGammaLineaPrices(tokenPrices),
     getLynexStablePrices(tokenPrices),
     getNileStablePrices(tokenPrices),
-    getBeefyCowArbPrices(tokenPrices),
-    getBeefyCowOPPrices(tokenPrices),
-    getBeefyCowBasePrices(tokenPrices),
-    getBeefyCowMoonbeamPrices(tokenPrices),
-    getBeefyCowLineaPrices(tokenPrices),
-    getBeefyCowPolyPrices(tokenPrices),
-    getBeefyCowZkSyncPrices(tokenPrices),
-    getBeefyCowMantaPrices(tokenPrices),
-    getBeefyCowMantlePrices(tokenPrices),
-    getBeefyCowSeiPrices(tokenPrices),
-    getBeefyCowBscPrices(tokenPrices),
-    getBeefyCowAvaxPrices(tokenPrices),
-    getBeefyCowRootstockPrices(tokenPrices),
-    getBeefyCowScrollPrices(tokenPrices),
-    getBeefyCowModePrices(tokenPrices),
-    getBeefyCowLiskPrices(tokenPrices),
-    getBeefyCowSonicPrices(tokenPrices),
-    getBeefyCowBerachainPrices(tokenPrices),
-    getBeefyCowGnosisPrices(tokenPrices),
-    getBeefyCowSagaPrices(tokenPrices),
-    getBeefyCowHyperevmPrices(tokenPrices),
+    getSamiCowArbPrices(tokenPrices),
+    getSamiCowOPPrices(tokenPrices),
+    getSamiCowBasePrices(tokenPrices),
+    getSamiCowMoonbeamPrices(tokenPrices),
+    getSamiCowLineaPrices(tokenPrices),
+    getSamiCowPolyPrices(tokenPrices),
+    getSamiCowZkSyncPrices(tokenPrices),
+    getSamiCowMantaPrices(tokenPrices),
+    getSamiCowMantlePrices(tokenPrices),
+    getSamiCowSeiPrices(tokenPrices),
+    getSamiCowBscPrices(tokenPrices),
+    getSamiCowAvaxPrices(tokenPrices),
+    getSamiCowRootstockPrices(tokenPrices),
+    getSamiCowScrollPrices(tokenPrices),
+    getSamiCowModePrices(tokenPrices),
+    getSamiCowLiskPrices(tokenPrices),
+    getSamiCowSonicPrices(tokenPrices),
+    getSamiCowBerachainPrices(tokenPrices),
+    getSamiCowGnosisPrices(tokenPrices),
+    getSamiCowSagaPrices(tokenPrices),
+    getSamiCowHyperevmPrices(tokenPrices),
     getPendleCommonPrices(ARB_CHAIN_ID, require('../../data/arbitrum/equilibriaPools.json'), tokenPrices),
     getPendleCommonPrices(ARB_CHAIN_ID, require('../../data/arbitrum/pendlePools.json'), tokenPrices, {}),
     getPendleCommonPrices(ETH_CHAIN_ID, require('../../data/ethereum/pendlePools.json'), tokenPrices, {}),

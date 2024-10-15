@@ -1,3 +1,6 @@
+init.sh
+end.sh
+update.sh
 # Global
 .DS_Store
 node_modules

@@ -25,7 +25,7 @@ interface Pool {
   address: string;
   gauge: string;
   tokens: Token[];
-  beefyFee?: number;
+  samiFee?: number;
   status?: string;
   lsIndex?: number | number[];
   cmpIndex?: number;

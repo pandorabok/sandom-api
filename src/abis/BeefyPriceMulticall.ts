@@ -1,4 +1,4 @@
-const BeefyPriceMulticall = [
+const SamiPriceMulticall = [
   {
     inputs: [{ internalType: 'address[][]', name: 'pools', type: 'address[][]' }],
     name: 'getLpInfo',
@@ -8,4 +8,4 @@ const BeefyPriceMulticall = [
   },
 ] as const;
 
-export default BeefyPriceMulticall;
+export default SamiPriceMulticall;

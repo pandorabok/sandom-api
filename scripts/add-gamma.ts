@@ -164,7 +164,7 @@ async function main() {
     gauge: farm.newGauge,
     decimals: `1e${lp.decimals}`,
     chainId: chainId,
-    beefyFee: 0.095,
+    samiFee: 0.095,
     lp0: {
       address: token0.address,
       oracle: 'tokens',
@@ -185,7 +185,7 @@ async function main() {
     pool: lpPool.pool,
     decimals: `1e${lp.decimals}`,
     chainId: chainId,
-    beefyFee: 0.095,
+    samiFee: 0.095,
     lp0: {
       address: token0.address,
       oracle: 'tokens',

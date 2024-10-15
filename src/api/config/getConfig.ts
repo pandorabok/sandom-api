@@ -1,13 +1,13 @@
 import { addressBook } from '../../../packages/address-book/src/address-book';
 import { omitBy } from 'lodash';
 import { ZERO_ADDRESS } from '../../utils/address';
-import { BeefyFinance } from '../../../packages/address-book/src/types/beefyfinance';
+import { SamiFinance } from '../../../packages/address-book/src/types/samifinance';
 
-const configsByChain: Record<string, BeefyFinance> = {};
+const configsByChain: Record<string, SamiFinance> = {};
 
 export const initConfigService = () => {
   Object.keys(addressBook).forEach(chain => {
-    const config = addressBook[chain].platforms.beefyfinance;
+    const config = addressBook[chain].platforms.samifinance;
     // Prune ab fields
     configsByChain[chain] = omitBy(
       config,

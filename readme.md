@@ -1,6 +1,6 @@
-# Beefy API
+# Sami API
 
-API that powers [Beefy Finance](https://app.beefy.finance). You can find the repo for the frontend [here](https://github.com/beefyfinance/beefy-app).
+API that powers [Sami Finance](https://app.sami.finance). You can find the repo for the frontend [here](https://github.com/samifinance/sami-app).
 
 ---
 
@@ -29,7 +29,7 @@ http://localhost:3000/
 
 ---
 
-### Consumed by the [app](https://app.beefy.finance)
+### Consumed by the [app](https://app.sami.finance)
 
 #### **/apy**
 
@@ -37,7 +37,7 @@ The main endpoint used by the frontend. It returns the APY of all the vaults in 
 
 ```
 {
-	"bifi-maxi": 0.22448469479728606, // 22%
+	"sami-maxi": 0.22448469479728606, // 22%
 	"cake-cake": 2.8002377054263174, // 280%
 	"cake-smart": 2.8002377054263174, // 280%
 	"cake-swingby-bnb": 21.85102752680053 // 2185%
@@ -52,13 +52,13 @@ The new version of the APY endpoint, broken down into component parts when they 
 
 ```json
 {
-  "bifi-maxi": {
+  "sami-maxi": {
     "totalApy": 0.07598675804818633
   },
   "cometh-must-eth": {
     "vaultApr": 1.186973388240745,
     "compoundingsPerYear": 2190,
-    "beefyPerformanceFee": 0.045,
+    "samiPerformanceFee": 0.045,
     "vaultApy": 2.1057844292858614,
     "lpFee": 0.005,
     "tradingApr": 0.22324214039526927,
@@ -73,8 +73,8 @@ Each of these fields within the structure are:
 
 - **vaultApr** - Yearly rewards in USD divided by total staked in USD.
 - **compoundingsPerYear** - The estimated compounding events. This is an internal field and references the value used within the calculation for this project.
-- **beefyPerformanceFee** - The flat Beefy performance fee included in the calculation. This is an internal field for reference.
-- **vaultApy** - The vaultApr compounded, using compoundingsPerYear and beefyPerformanceFee in the calculation.
+- **samiPerformanceFee** - The flat Sami performance fee included in the calculation. This is an internal field for reference.
+- **vaultApy** - The vaultApr compounded, using compoundingsPerYear and samiPerformanceFee in the calculation.
 - **lpFee** - The Liquidity Provider (LP) fee per trade. This is an internal field for reference.
 - **tradingApr** - Annual interest from trading fees, not compounded.
 - **totalApy** - The known Total APY. Where fields are available to calculate the Total APY including trading fees, this is calculated. The final calculation is totalApy = (1 + vaultApy) * (1 + tradingApr) - 1.
@@ -89,11 +89,11 @@ Each of these fields within the structure are:
 
 ---
 
-### Consumed by the [dashboard](https://dashboard.beefy.finance)
+### Consumed by the [dashboard](https://dashboard.sami.finance)
 
 #### **/earnings**: Used to display the total and daily earnings of the platform
 
-#### **/holders**: Used to display the total number of holders. This calc takes into account users with 0 BIFI in their wallet, but BIFI staked in the reward pool
+#### **/holders**: Used to display the total number of holders. This calc takes into account users with 0 SAMI in their wallet, but SAMI staked in the reward pool
 
 ---
 
@@ -101,7 +101,7 @@ Each of these fields within the structure are:
 
 #### **/cmc**: Custom endpoint required by [CoinMarketCap](https://coinmarketcap.com/) to display our vaults in their yield farming section
 
-#### **/supply**: Used by [Coingecko](https://coingecko.com) to display BIFI's total supply and circulating supply
+#### **/supply**: Used by [Coingecko](https://coingecko.com) to display SAMI's total supply and circulating supply
 
 ---
 
@@ -109,7 +109,7 @@ Each of these fields within the structure are:
 
 ## Further Information
 
-For further information on the range of endpoints currently supported by the Beefy API, check out the latest version of our [API documentation](https://docs.beefy.finance/developer-documentation/beefy-api).
+For further information on the range of endpoints currently supported by the Sami API, check out the latest version of our [API documentation](https://docs.sami.finance/developer-documentation/sami-api).
 
 ---
 
@@ -117,7 +117,7 @@ For further information on the range of endpoints currently supported by the Bee
 
 ## Contribute
 
-Beefy.Finance exists thanks to its contributors. There are many ways you can participate and help build high quality software. Check out the [contribution guide](CONTRIBUTING.md)!
+Sami.Finance exists thanks to its contributors. There are many ways you can participate and help build high quality software. Check out the [contribution guide](CONTRIBUTING.md)!
 
 ---
 

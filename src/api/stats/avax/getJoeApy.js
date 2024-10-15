@@ -31,19 +31,19 @@ const getJoeApy = async () => {
 
   const totalStakedInUsd = totalStaked.times(joePrice).dividedBy(joeDecimals);
 
-  const beefyPerformanceFee = getTotalPerformanceFeeForVault(pool.name);
-  const shareAfterBeefyPerformanceFee = 1 - beefyPerformanceFee;
+  const samiPerformanceFee = getTotalPerformanceFeeForVault(pool.name);
+  const shareAfterSamiPerformanceFee = 1 - samiPerformanceFee;
 
   const simpleApr = yearlyRemittedUsd.dividedBy(totalStakedInUsd);
-  const vaultApr = simpleApr.times(shareAfterBeefyPerformanceFee);
-  const vaultApy = compound(simpleApr, DAILY_HPY, 1, shareAfterBeefyPerformanceFee);
+  const vaultApr = simpleApr.times(shareAfterSamiPerformanceFee);
+  const vaultApy = compound(simpleApr, DAILY_HPY, 1, shareAfterSamiPerformanceFee);
   const apys = { [pool.name]: vaultApy };
 
   const apyBreakdowns = {
     [pool.name]: {
       vaultApr: vaultApr.toNumber(),
       compoundingsPerYear: DAILY_HPY,
-      beefyPerformanceFee: beefyPerformanceFee,
+      samiPerformanceFee: samiPerformanceFee,
       vaultApy: vaultApy,
       lpFee: liquidityProviderFee,
       tradingApr: 0,

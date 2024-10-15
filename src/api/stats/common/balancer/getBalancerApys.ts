@@ -22,7 +22,7 @@ interface Pool {
   name: string;
   address: string;
   tokens: Token[];
-  beefyFee?: number;
+  samiFee?: number;
   status?: string;
   lsIndex?: number;
   cmpIndex?: number;

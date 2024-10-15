@@ -13,7 +13,7 @@ export type { ApyBreakdownResult };
  * @see getApyBreakdownNew.ts
  * */
 export const getApyBreakdown = (
-  pools: { name: string; address: string; beefyFee?: number }[],
+  pools: { name: string; address: string; samiFee?: number }[],
   tradingAprs?: Record<string, BigNumber> | undefined,
   farmAprs?: BigNumber[] | undefined,
   providerFee?: number | BigNumber[] | undefined,
@@ -34,7 +34,7 @@ export const getApyBreakdown = (
   pools.forEach((pool, i) => {
     const breakdown = getApyBreakdownNew({
       vaultId: pool.name,
-      beefyFee: pool.beefyFee,
+      samiFee: pool.samiFee,
       compoundingsPerYear: BASE_HPY,
       providerFee: typeof providerFee === 'number' ? providerFee : providerFee[i],
       trading: tradingAprs?.[pool.address.toLowerCase()],

@@ -43,7 +43,7 @@ export class KyberApi implements IKyberApi {
     return {
       Accept: 'application/json,*/*;q=0.8',
       'Accept-Language': 'en-US,en;q=0.9',
-      'User-Agent': 'BeefyApi',
+      'User-Agent': 'SamiApi',
       'x-client-id': this.clientId,
       ...additionalHeaders,
     };

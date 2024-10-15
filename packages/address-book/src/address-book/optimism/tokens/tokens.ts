@@ -19,33 +19,33 @@ export const tokens = {
   FEES: ETH,
   ETH,
   WETH: ETH,
-  mooBIFI: {
-    name: 'Bridged BIFI Vault Receipt',
-    symbol: 'mooBIFI',
-    oracleId: 'opmooBIFI',
+  mooSAMI: {
+    name: 'Bridged SAMI Vault Receipt',
+    symbol: 'mooSAMI',
+    oracleId: 'opmooSAMI',
     address: '0xc55E93C62874D8100dBd2DfE307EDc1036ad5434',
     chainId: 10,
     decimals: 18,
-    website: 'https://beefy.com',
+    website: 'https://sami.com',
     description:
-      "The incentive-bearing Beefy Token (mooBIFI) applies the magic of Beefy's autocompounding technology to the BIFI token. It is the vault token for the BIFI Vault, which automatically claims and swaps governance incentives into more BIFI, and redeposits to unlock exponential growth. On chains other than Ethereum, mooBIFI is a bridged copy of the native Ethereum token, and cannot be returned to BIFI without first bridging back to Ethereum. mooBIFI holders on all chains retain their full voting power corresponding to the underlying amount of BIFI deposited and compounding on Ethereum.",
-    logoURI: 'https://beefy.com/icons/128/mooBIFI.png',
-    documentation: 'https://docs.beefy.finance/',
-    bridge: 'beefy',
+      "The incentive-bearing Sami Token (mooSAMI) applies the magic of Sami's autocompounding technology to the SAMI token. It is the vault token for the SAMI Vault, which automatically claims and swaps governance incentives into more SAMI, and redeposits to unlock exponential growth. On chains other than Ethereum, mooSAMI is a bridged copy of the native Ethereum token, and cannot be returned to SAMI without first bridging back to Ethereum. mooSAMI holders on all chains retain their full voting power corresponding to the underlying amount of SAMI deposited and compounding on Ethereum.",
+    logoURI: 'https://sami.com/icons/128/mooSAMI.png',
+    documentation: 'https://docs.sami.finance/',
+    bridge: 'sami',
   },
-  oldBIFI: {
-    name: 'Beefy.Finance',
-    symbol: 'oldBIFI',
-    oracleId: 'oldBIFI',
+  oldSAMI: {
+    name: 'Sami.Finance',
+    symbol: 'oldSAMI',
+    oracleId: 'oldSAMI',
     address: '0x4E720DD3Ac5CFe1e1fbDE4935f386Bb1C66F4642',
     chainId: 10,
     decimals: 18,
-    website: 'https://beefy.com',
+    website: 'https://sami.com',
     description:
-      'Beefy Finance is a Decentralized, Multi-Chain Yield Optimizer platform that allows its users to earn compound interest on their crypto holdings.',
+      'Sami Finance is a Decentralized, Multi-Chain Yield Optimizer platform that allows its users to earn compound interest on their crypto holdings.',
     logoURI:
-      'https://raw.githubusercontent.com/beefyfinance/beefy-app/prod/src/images/single-assets/BIFI.png',
-    documentation: 'https://docs.beefy.finance/',
+      'https://raw.githubusercontent.com/samifinance/sami-app/prod/src/images/single-assets/SAMI.png',
+    documentation: 'https://docs.sami.finance/',
   },
   omultiwUSDR: {
     name: 'Real USD',
@@ -62,7 +62,7 @@ export const tokens = {
     logoURI: '',
   },
   beOPX: {
-    name: 'Beefy Escrowed OPX',
+    name: 'Sami Escrowed OPX',
     symbol: 'beOPX',
     oracleId: 'beOPX',
     address: '0xEDFBeC807304951785b581dB401fDf76b4bAd1b0',
@@ -70,7 +70,7 @@ export const tokens = {
     decimals: 18,
     website: 'https://www.opx.finance/',
     description:
-      'Beefy Escrowed OPX is a liquid staking solution to earn maximum governance rewards from the OPX platform using the highest tier NFT and maximum lock.',
+      'Sami Escrowed OPX is a liquid staking solution to earn maximum governance rewards from the OPX platform using the highest tier NFT and maximum lock.',
     logoURI: '',
   },
   OPX: {
@@ -486,17 +486,17 @@ export const tokens = {
       'Hundred Finance is a decentralized application (dApp) that enables the lending and borrowing of cryptocurrencies.',
   },
   beVELO: {
-    name: 'Beefy Velo ',
+    name: 'Sami Velo ',
     symbol: 'beVELO',
     oracleId: 'BeVELO',
     address: '0xfDeFFc7Ad816BF7867C642dF7eBC2CC5554ec265',
     chainId: 10,
     decimals: 18,
     logoURI: '',
-    website: 'https://beefy.com',
+    website: 'https://sami.com',
     description:
-      'beVELO is Beefy-wrapped VELO that earns more VELO over time. Beefy distributes trading fees and bribe rewards weekly to beVELO holders, swapping VELO to beVELO. beVELO holders receive the same rewards as max-locked veNFT VELO holders.',
-    documentation: 'https://docs.beefy.finance/beefy-products/beefy-escrowed-tokens/bevelo',
+      'beVELO is Sami-wrapped VELO that earns more VELO over time. Sami distributes trading fees and bribe rewards weekly to beVELO holders, swapping VELO to beVELO. beVELO holders receive the same rewards as max-locked veNFT VELO holders.',
+    documentation: 'https://docs.sami.finance/sami-products/sami-escrowed-tokens/bevelo',
     bridge: 'native',
   },
   EURA: {
@@ -1063,7 +1063,7 @@ export const tokens = {
     address: '0xB280D03909Cc18640621955Cb3bC30948DF2Fa9a',
     chainId: 10,
     decimals: 18,
-    website: 'https://app.mummy.finance/#/trade?ref=beefy',
+    website: 'https://app.mummy.finance/#/trade?ref=sami',
     description:
       'MLP consists of an index of assets used for swaps and leverage trading on Mummy Finance. MLP holders will make a profit when leverage traders make a loss and vice versa. Staked MLP also earns escrowed MMY rewards and 60% of platform fees distributed in ETH.',
     logoURI: 'https://app.mummy.finance/static/media/ic_mlp_40.92637cb6.svg',

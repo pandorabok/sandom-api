@@ -1,7 +1,7 @@
-const { getBeefyCowLiskApys } = require('./getBeefyCowLiskApys');
+const { getSamiCowLiskApys } = require('./getSamiCowLiskApys');
 const getVelodromeLiskApys = require('./getVelodromeLiskApys');
 
-const getApys = [getBeefyCowLiskApys, getVelodromeLiskApys];
+const getApys = [getSamiCowLiskApys, getVelodromeLiskApys];
 
 const getLiskApys = async () => {
   const start = Date.now();

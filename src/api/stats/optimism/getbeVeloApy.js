@@ -16,7 +16,7 @@ const getbeVeloApy = async () => {
   const simpleApy = yearlyRewardsInUsd.dividedBy(totalStakedInUsd);
   const apy = compound(simpleApy, DAILY_HPY, 1, 1);
 
-  return { 'beefy-bevelo': apy };
+  return { 'sami-bevelo': apy };
 };
 
 const getYearlyRewardsInUsd = async () => {

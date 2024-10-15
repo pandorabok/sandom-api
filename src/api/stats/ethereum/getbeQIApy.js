@@ -1,4 +1,4 @@
-import { IBeefyRewardPool } from '../../../abis/IBeefyRewardPool';
+import { ISamiRewardPool } from '../../../abis/ISamiRewardPool';
 import { fetchContract } from '../../rpc/client';
 import ERC20Abi from '../../../abis/ERC20Abi';
 import { addressBook } from '../../../../packages/address-book/src/address-book';
@@ -33,14 +33,14 @@ export const getbeQIApy = async () => {
 
   return getApyBreakdown({
     vaultId: 'beqiv2-pool',
-    beefyFee: 0,
+    samiFee: 0,
     rewardPool: apr,
   });
 };
 
 const getYearlyRewardsInUsd = async () => {
   let yearlyRewards = new BigNumber(0);
-  const rewardPoolContract = fetchContract(rewardPool, IBeefyRewardPool, ETH_CHAIN_ID);
+  const rewardPoolContract = fetchContract(rewardPool, ISamiRewardPool, ETH_CHAIN_ID);
   for (let i = 0; i < rewards.length; ++i) {
     const rewardPrice = await fetchPrice({ oracle: 'tokens', id: rewards[i].symbol });
     const rewardInfo = await rewardPoolContract.read.rewardInfo([rewards[i].id]);

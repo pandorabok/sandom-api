@@ -71,17 +71,17 @@ export const ${chainName} = {
 
   console.log(`Added ${chainName} to index.ts`);
 
-  // Create platforms folder and beefyfinance.ts file
+  // Create platforms folder and samifinance.ts file
   const platformsFolder = path.join(newChainPath, 'platforms');
   fs.mkdirSync(platformsFolder);
 
-  const beefyfinancePath = path.join(platformsFolder, 'beefyfinance.ts');
+  const samifinancePath = path.join(platformsFolder, 'samifinance.ts');
   const platformsIndexPath = path.join(platformsFolder, 'index.ts');
-  const beefyfinanceContent = `
+  const samifinanceContent = `
 const treasuryMultisig = '0x0000000000000000000000000000000000000000';
 const devMultisig = '0x0000000000000000000000000000000000000000';
 
-export const beefyfinance = {
+export const samifinance = {
   devMultisig,
   treasuryMultisig,
   strategyOwner: '0x0000000000000000000000000000000000000000',
@@ -91,10 +91,10 @@ export const beefyfinance = {
   launchpoolOwner: devMultisig,
   rewardPool: '0x0000000000000000000000000000000000000000',
   treasury: '0x0000000000000000000000000000000000000000',
-  beefyFeeRecipient: '0x02Ae4716B9D5d48Db1445814b0eDE39f5c28264B',
+  samiFeeRecipient: '0x02Ae4716B9D5d48Db1445814b0eDE39f5c28264B',
   multicall: '0x0000000000000000000000000000000000000000',
   voter: '0x5e1caC103F943Cd84A1E92dAde4145664ebf692A',
-  beefyFeeConfig: '0x0000000000000000000000000000000000000000',
+  samiFeeConfig: '0x0000000000000000000000000000000000000000',
   vaultFactory: '0x0000000000000000000000000000000000000000',
   strategyFactory: '0x0000000000000000000000000000000000000000',
   zap: '0x0000000000000000000000000000000000000000',
@@ -105,23 +105,23 @@ export const beefyfinance = {
   clmStrategyFactory: '0x0000000000000000000000000000000000000000',
   clmRewardPoolFactory: '0x0000000000000000000000000000000000000000',
 
-  /// Beefy Swapper Contracts
-  beefySwapper: '0x0000000000000000000000000000000000000000',
-  beefyOracle: '0x0000000000000000000000000000000000000000',
-  beefyOracleChainlink: '0x0000000000000000000000000000000000000000',
-  beefyOracleChainlinkEthBase: '0x0000000000000000000000000000000000000000',
-  beefyOracleUniswapV3: '0x0000000000000000000000000000000000000000',
-  beefyOracleSolidly: '0x0000000000000000000000000000000000000000',
-  beefyOracleAlgebra: '0x0000000000000000000000000000000000000000',
+  /// Sami Swapper Contracts
+  samiSwapper: '0x0000000000000000000000000000000000000000',
+  samiOracle: '0x0000000000000000000000000000000000000000',
+  samiOracleChainlink: '0x0000000000000000000000000000000000000000',
+  samiOracleChainlinkEthBase: '0x0000000000000000000000000000000000000000',
+  samiOracleUniswapV3: '0x0000000000000000000000000000000000000000',
+  samiOracleSolidly: '0x0000000000000000000000000000000000000000',
+  samiOracleAlgebra: '0x0000000000000000000000000000000000000000',
 } as const;
 `;
 
   const indexPathContent = `
-export * from './beefyfinance.js';
+export * from './samifinance.js';
 `;
 
   fs.writeFileSync(platformsIndexPath, indexPathContent);
-  fs.writeFileSync(beefyfinancePath, beefyfinanceContent);
+  fs.writeFileSync(samifinancePath, samifinanceContent);
 
   // Create tokens folder and tokens.ts file
   const tokensFolder = path.join(newChainPath, 'tokens');

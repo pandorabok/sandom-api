@@ -15,8 +15,8 @@ const StratUniV3 = [
           { internalType: 'address', name: 'unirouter', type: 'address' },
           { internalType: 'address', name: 'keeper', type: 'address' },
           { internalType: 'address', name: 'strategist', type: 'address' },
-          { internalType: 'address', name: 'beefyFeeRecipient', type: 'address' },
-          { internalType: 'address', name: 'beefyFeeConfig', type: 'address' },
+          { internalType: 'address', name: 'samiFeeRecipient', type: 'address' },
+          { internalType: 'address', name: 'samiFeeConfig', type: 'address' },
         ],
         internalType: 'struct StratFeeManager.CommonAddresses',
         name: '_commonAddresses',
@@ -30,7 +30,7 @@ const StratUniV3 = [
     anonymous: false,
     inputs: [
       { indexed: false, internalType: 'uint256', name: 'callFees', type: 'uint256' },
-      { indexed: false, internalType: 'uint256', name: 'beefyFees', type: 'uint256' },
+      { indexed: false, internalType: 'uint256', name: 'samiFees', type: 'uint256' },
       { indexed: false, internalType: 'uint256', name: 'strategistFees', type: 'uint256' },
     ],
     name: 'ChargedFees',
@@ -69,8 +69,8 @@ const StratUniV3 = [
   },
   {
     anonymous: false,
-    inputs: [{ indexed: false, internalType: 'address', name: 'beefyFeeConfig', type: 'address' }],
-    name: 'SetBeefyFeeConfig',
+    inputs: [{ indexed: false, internalType: 'address', name: 'samiFeeConfig', type: 'address' }],
+    name: 'SetSamiFeeConfig',
     type: 'event',
   },
   {
@@ -79,11 +79,11 @@ const StratUniV3 = [
       {
         indexed: false,
         internalType: 'address',
-        name: 'beefyFeeRecipient',
+        name: 'samiFeeRecipient',
         type: 'address',
       },
     ],
-    name: 'SetBeefyFeeRecipient',
+    name: 'SetSamiFeeRecipient',
     type: 'event',
   },
   {
@@ -215,14 +215,14 @@ const StratUniV3 = [
   },
   {
     inputs: [],
-    name: 'beefyFeeConfig',
+    name: 'samiFeeConfig',
     outputs: [{ internalType: 'contract IFeeConfig', name: '', type: 'address' }],
     stateMutability: 'view',
     type: 'function',
   },
   {
     inputs: [],
-    name: 'beefyFeeRecipient',
+    name: 'samiFeeRecipient',
     outputs: [{ internalType: 'address', name: '', type: 'address' }],
     stateMutability: 'view',
     type: 'function',
@@ -275,7 +275,7 @@ const StratUniV3 = [
       {
         components: [
           { internalType: 'uint256', name: 'total', type: 'uint256' },
-          { internalType: 'uint256', name: 'beefy', type: 'uint256' },
+          { internalType: 'uint256', name: 'sami', type: 'uint256' },
           { internalType: 'uint256', name: 'call', type: 'uint256' },
           { internalType: 'uint256', name: 'strategist', type: 'uint256' },
           { internalType: 'string', name: 'label', type: 'string' },
@@ -479,15 +479,15 @@ const StratUniV3 = [
     type: 'function',
   },
   {
-    inputs: [{ internalType: 'address', name: '_beefyFeeConfig', type: 'address' }],
-    name: 'setBeefyFeeConfig',
+    inputs: [{ internalType: 'address', name: '_samiFeeConfig', type: 'address' }],
+    name: 'setSamiFeeConfig',
     outputs: [],
     stateMutability: 'nonpayable',
     type: 'function',
   },
   {
-    inputs: [{ internalType: 'address', name: '_beefyFeeRecipient', type: 'address' }],
-    name: 'setBeefyFeeRecipient',
+    inputs: [{ internalType: 'address', name: '_samiFeeRecipient', type: 'address' }],
+    name: 'setSamiFeeRecipient',
     outputs: [],
     stateMutability: 'nonpayable',
     type: 'function',

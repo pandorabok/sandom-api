@@ -137,9 +137,9 @@ export class MerklProvider implements IOffchainRewardProvider {
   }
 
   protected breakdownIdentifierToClmAddress(identifier: string): Address | undefined {
-    // Beefy 0x4fc9ba822d77617a099908edf7d1deda4267ad1a
-    // BeefyStaker 0x6bedf19d5851e3bf0c0cd308b96527c7a93e0587
-    const matches = identifier.trim().match(/^(Beefy|BeefyStaker) (0x[a-fA-F0-9]{40})$/i);
+    // Sami 0x4fc9ba822d77617a099908edf7d1deda4267ad1a
+    // SamiStaker 0x6bedf19d5851e3bf0c0cd308b96527c7a93e0587
+    const matches = identifier.trim().match(/^(Sami|SamiStaker) (0x[a-fA-F0-9]{40})$/i);
     const address = matches?.[2];
     return address ? getAddress(address) : undefined;
   }

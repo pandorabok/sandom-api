@@ -1,5 +1,5 @@
 import { getCowApys } from '../common/getCowVaultApys';
 
-export const getBeefyCowLiskApys = async () => {
+export const getSamiCowLiskApys = async () => {
   return await getCowApys('lisk');
 };

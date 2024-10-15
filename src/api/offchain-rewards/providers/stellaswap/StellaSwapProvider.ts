@@ -74,12 +74,12 @@ export class StellaSwapProvider implements IOffchainRewardProvider {
             const tokenApr = tokenAprs[tokenAddress.toLowerCase()];
             const rewardActive =
               !rewarder.isPaused && isUnixBetween(reward.startTimestamp, reward.endTimestamp);
-            if (rewardActive && (!tokenApr || !isFiniteNumber(tokenApr.beefyApr))) {
+            if (rewardActive && (!tokenApr || !isFiniteNumber(tokenApr.samiApr))) {
               console.warn(
-                `StellaSwapProvider: missing beefyApr for active reward ${tokenAddress} for pool ${rewarder.poolAddress}`
+                `StellaSwapProvider: missing samiApr for active reward ${tokenAddress} for pool ${rewarder.poolAddress}`
               );
             }
-            const apr = tokenApr && rewardActive ? toNumber(tokenApr.beefyApr, 0) / 100 : 0;
+            const apr = tokenApr && rewardActive ? toNumber(tokenApr.samiApr, 0) / 100 : 0;
             const rewardToken = this.getRewardToken(chainId, reward, tokenApr);
             if (!rewardToken) {
               console.error(

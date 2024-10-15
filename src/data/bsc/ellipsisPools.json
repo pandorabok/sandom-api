@@ -5,7 +5,7 @@
     "minter": "0xFD4afeAc39DA03a05f61844095A75c4fB7D766DA",
     "oracleId": "BNBx",
     "volatile": true,
-    "beefyFee": 0.095,
+    "samiFee": 0.095,
     "tokens": [
       {
         "address": "0x1bdd3Cf7F79cfB8EdbB955f20ad99211551BA275",
