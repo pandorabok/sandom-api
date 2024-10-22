@@ -493,3 +493,6 @@ async function main() {
   );
 
   console.log(newPool);
+}
+
+main();
