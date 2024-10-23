@@ -489,3 +489,7 @@ async function main() {
 
   fs.writeFileSync(
     path.resolve(__dirname, poolsJsonFile),
+    JSON.stringify(newPools, null, 2) + '\n'
+  );
+
+  console.log(newPool);
