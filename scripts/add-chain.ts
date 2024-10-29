@@ -486,3 +486,6 @@ async function main() {
   });
 
   const newPools = [newPool, ...poolsJson];
+
+  fs.writeFileSync(
+    path.resolve(__dirname, poolsJsonFile),
