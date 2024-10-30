@@ -485,3 +485,4 @@ async function main() {
     }
   });
 
+  const newPools = [newPool, ...poolsJson];
