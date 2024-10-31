@@ -483,3 +483,5 @@ async function main() {
     if (pool.name === newPoolName) {
       throw Error(`Duplicate: pool with name ${newPoolName} already exists`);
     }
+  });
+
