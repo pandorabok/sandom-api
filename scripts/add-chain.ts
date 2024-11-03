@@ -478,3 +478,8 @@ async function main() {
       decimals: `1e${token.decimals}`,
     })),
   };
+
+  poolsJson.forEach(pool => {
+    if (pool.name === newPoolName) {
+      throw Error(`Duplicate: pool with name ${newPoolName} already exists`);
+    }
