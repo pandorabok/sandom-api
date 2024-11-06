@@ -476,3 +476,5 @@ async function main() {
       address: token.address,
       oracleId: token.symbol,
       decimals: `1e${token.decimals}`,
+    })),
+  };
