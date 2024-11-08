@@ -473,3 +473,6 @@ async function main() {
     decimals: `1e18`,
     rewards: rewards,
     tokens: tokenData.map(token => ({
+      address: token.address,
+      oracleId: token.symbol,
+      decimals: `1e${token.decimals}`,
