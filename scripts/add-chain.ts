@@ -471,3 +471,5 @@ async function main() {
     gauge: '',
     vaultPoolId: poolId,
     decimals: `1e18`,
+    rewards: rewards,
+    tokens: tokenData.map(token => ({
