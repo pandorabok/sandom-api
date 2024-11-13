@@ -468,3 +468,6 @@ async function main() {
     name: newPoolName,
     address: poolData.address,
     vault: vaultAddress,
+    gauge: '',
+    vaultPoolId: poolId,
+    decimals: `1e18`,
