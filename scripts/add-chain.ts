@@ -464,3 +464,7 @@ async function main() {
     ];
   }
 
+  const newPool = {
+    name: newPoolName,
+    address: poolData.address,
+    vault: vaultAddress,
