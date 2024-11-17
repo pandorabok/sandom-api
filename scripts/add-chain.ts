@@ -461,3 +461,6 @@ async function main() {
         oracleId: '',
         decimals: '',
       },
+    ];
+  }
+
