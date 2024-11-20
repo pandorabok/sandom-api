@@ -459,3 +459,5 @@ async function main() {
       {
         rewardGauge: '',
         oracleId: '',
+        decimals: '',
+      },
