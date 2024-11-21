@@ -454,3 +454,8 @@ async function main() {
         oracleId: '',
       },
     ];
+  } else {
+    rewards = [
+      {
+        rewardGauge: '',
+        oracleId: '',
