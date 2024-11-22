@@ -452,3 +452,5 @@ async function main() {
         stream: '',
         rewardToken: '',
         oracleId: '',
+      },
+    ];
