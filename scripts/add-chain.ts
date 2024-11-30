@@ -448,3 +448,5 @@ async function main() {
         stream: '',
         oracleId: 'BAL',
       },
+      {
+        stream: '',
