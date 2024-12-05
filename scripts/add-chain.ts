@@ -444,3 +444,7 @@ async function main() {
   if (poolPrefix.startsWith('balancer-')) {
     rewards = [
       {
+        newGauge: true,
+        stream: '',
+        oracleId: 'BAL',
+      },
