@@ -440,3 +440,7 @@ async function main() {
     .map(token => token.symbol.toLowerCase())
     .join('-')}`;
 
+  let rewards;
+  if (poolPrefix.startsWith('balancer-')) {
+    rewards = [
+      {
