@@ -435,3 +435,8 @@ async function main() {
 
   const tokenDataPromises = poolData.tokens.map(fetchToken);
   const tokenData = await Promise.all(tokenDataPromises);
+
+  const newPoolName = `${poolPrefix}-${tokenData
+    .map(token => token.symbol.toLowerCase())
+    .join('-')}`;
+
