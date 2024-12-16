@@ -432,3 +432,6 @@ async function fetchToken(tokenAddress) {
 
 async function main() {
   const poolData = await fetchPoolData(vaultAddress, poolId);
+
+  const tokenDataPromises = poolData.tokens.map(fetchToken);
+  const tokenData = await Promise.all(tokenDataPromises);
