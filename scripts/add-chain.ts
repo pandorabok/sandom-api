@@ -430,3 +430,5 @@ async function fetchToken(tokenAddress) {
   return token;
 }
 
+async function main() {
+  const poolData = await fetchPoolData(vaultAddress, poolId);
