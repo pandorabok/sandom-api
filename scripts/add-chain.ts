@@ -421,3 +421,8 @@ async function fetchToken(tokenAddress) {
     chainId: chainId,
     decimals: await tokenContract.decimals(),
     logoURI: '',
+    website: '',
+    description: '',
+    documentation: '',
+    bridge: '',
+  };
