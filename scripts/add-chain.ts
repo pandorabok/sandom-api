@@ -418,3 +418,6 @@ async function fetchToken(tokenAddress) {
     symbol: await tokenContract.symbol(),
     oracleId: await tokenContract.symbol(),
     address: checksummedTokenAddress,
+    chainId: chainId,
+    decimals: await tokenContract.decimals(),
+    logoURI: '',
