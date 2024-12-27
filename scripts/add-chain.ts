@@ -414,3 +414,7 @@ async function fetchToken(tokenAddress) {
   const tokenContract = new ethers.Contract(tokenAddress, ERC20ABI, provider);
   const checksummedTokenAddress = ethers.utils.getAddress(tokenAddress);
   const token = {
+    name: await tokenContract.name(),
+    symbol: await tokenContract.symbol(),
+    oracleId: await tokenContract.symbol(),
+    address: checksummedTokenAddress,
