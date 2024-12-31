@@ -411,3 +411,6 @@ async function fetchPoolData(vaultAddress, poolId) {
 }
 
 async function fetchToken(tokenAddress) {
+  const tokenContract = new ethers.Contract(tokenAddress, ERC20ABI, provider);
+  const checksummedTokenAddress = ethers.utils.getAddress(tokenAddress);
+  const token = {
