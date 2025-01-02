@@ -407,3 +407,7 @@ async function fetchPoolData(vaultAddress, poolId) {
   return {
     address: poolAddress,
     tokens: tokens.map(token => ethers.utils.getAddress(token)),
+  };
+}
+
+async function fetchToken(tokenAddress) {
