@@ -404,3 +404,6 @@ async function fetchPoolData(vaultAddress, poolId) {
   const [poolAddress] = await vaultContract.getPool(poolId);
   const [tokens] = await vaultContract.getPoolTokens(poolId);
 
+  return {
+    address: poolAddress,
+    tokens: tokens.map(token => ethers.utils.getAddress(token)),
