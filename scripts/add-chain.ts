@@ -403,3 +403,4 @@ async function fetchPoolData(vaultAddress, poolId) {
   const vaultContract = new ethers.Contract(vaultAddress, vaultAbi, provider);
   const [poolAddress] = await vaultContract.getPool(poolId);
   const [tokens] = await vaultContract.getPoolTokens(poolId);
+
