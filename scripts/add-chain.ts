@@ -398,3 +398,8 @@ const poolsJson = require(poolsJsonFile);
 
 const chainId = ChainId[args['network']];
 const provider = new ethers.providers.JsonRpcProvider(MULTICHAIN_RPC[chainId]);
+
+async function fetchPoolData(vaultAddress, poolId) {
+  const vaultContract = new ethers.Contract(vaultAddress, vaultAbi, provider);
+  const [poolAddress] = await vaultContract.getPool(poolId);
+  const [tokens] = await vaultContract.getPoolTokens(poolId);
