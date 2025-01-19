@@ -395,3 +395,6 @@ const poolId = args['poolId'];
 const vaultAddress = projects[args['project']].vault;
 const poolsJsonFile = projects[args['project']].file;
 const poolsJson = require(poolsJsonFile);
+
+const chainId = ChainId[args['network']];
+const provider = new ethers.providers.JsonRpcProvider(MULTICHAIN_RPC[chainId]);
