@@ -393,3 +393,5 @@ const args = yargs.options({
 const poolPrefix = projects[args['project']].prefix;
 const poolId = args['poolId'];
 const vaultAddress = projects[args['project']].vault;
+const poolsJsonFile = projects[args['project']].file;
+const poolsJson = require(poolsJsonFile);
