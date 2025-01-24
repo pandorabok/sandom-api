@@ -390,3 +390,6 @@ const args = yargs.options({
   },
 }).argv;
 
+const poolPrefix = projects[args['project']].prefix;
+const poolId = args['poolId'];
+const vaultAddress = projects[args['project']].vault;
