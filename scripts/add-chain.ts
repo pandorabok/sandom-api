@@ -385,3 +385,8 @@ const args = yargs.options({
   },
   poolId: {
     type: 'string',
+    demandOption: true,
+    describe: 'poolId from the Vault contract',
+  },
+}).argv;
+
