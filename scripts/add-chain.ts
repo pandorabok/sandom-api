@@ -384,3 +384,4 @@ const args = yargs.options({
     choices: Object.keys(projects),
   },
   poolId: {
+    type: 'string',
