@@ -378,3 +378,6 @@ const args = yargs.options({
     choices: Object.keys(ChainId),
   },
   project: {
+    type: 'string',
+    demandOption: true,
+    describe: 'project name',
