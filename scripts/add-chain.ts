@@ -375,3 +375,6 @@ const args = yargs.options({
     type: 'string',
     demandOption: true,
     describe: 'blockchain network',
+    choices: Object.keys(ChainId),
+  },
+  project: {
