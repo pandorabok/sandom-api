@@ -374,3 +374,4 @@ const args = yargs.options({
   network: {
     type: 'string',
     demandOption: true,
+    describe: 'blockchain network',
