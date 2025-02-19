@@ -370,3 +370,7 @@ const projects = {
   },
 };
 
+const args = yargs.options({
+  network: {
+    type: 'string',
+    demandOption: true,
