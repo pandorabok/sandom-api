@@ -368,3 +368,5 @@ const projects = {
     file: '../src/data/arbitrum/balancerArbLpPools.json',
     vault: balancer.router,
   },
+};
+
