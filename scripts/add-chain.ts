@@ -364,3 +364,7 @@ const projects = {
     vault: balancer.router,
   },
   'balancer-arb': {
+    prefix: 'balancer-arb',
+    file: '../src/data/arbitrum/balancerArbLpPools.json',
+    vault: balancer.router,
+  },
