@@ -363,3 +363,4 @@ const projects = {
     file: '../src/data/matic/auraLpPools.json',
     vault: balancer.router,
   },
+  'balancer-arb': {
