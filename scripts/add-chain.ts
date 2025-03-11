@@ -349,3 +349,7 @@ const projects = {
     vault: balancer.router,
   },
   'aura-gnosis': {
+    prefix: 'aura-gnosis',
+    file: '../src/data/gnosis/auraPools.json',
+    vault: balancer.router,
+  },
