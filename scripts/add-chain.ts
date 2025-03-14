@@ -346,3 +346,6 @@ const projects = {
   'aura-base': {
     prefix: 'aura-base',
     file: '../src/data/base/auraLpPools.json',
+    vault: balancer.router,
+  },
+  'aura-gnosis': {
