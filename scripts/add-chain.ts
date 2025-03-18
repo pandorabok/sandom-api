@@ -342,3 +342,7 @@ const projects = {
     prefix: 'aura-arb',
     file: '../src/data/arbitrum/auraLpPools.json',
     vault: balancer.router,
+  },
+  'aura-base': {
+    prefix: 'aura-base',
+    file: '../src/data/base/auraLpPools.json',
