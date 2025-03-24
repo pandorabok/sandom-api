@@ -336,3 +336,8 @@ const {
     platforms: { balancer },
   },
 } = addressBook;
+
+const projects = {
+  'aura-arb': {
+    prefix: 'aura-arb',
+    file: '../src/data/arbitrum/auraLpPools.json',
