@@ -333,3 +333,6 @@ import ERC20ABI from '../src/abis/ERC20.json';
 
 const {
   base: {
+    platforms: { balancer },
+  },
+} = addressBook;
