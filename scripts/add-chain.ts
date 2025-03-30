@@ -332,3 +332,4 @@ import vaultAbi from '../src/abis/IBalancerVault';
 import ERC20ABI from '../src/abis/ERC20.json';
 
 const {
+  base: {
