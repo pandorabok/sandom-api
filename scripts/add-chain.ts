@@ -327,3 +327,8 @@ import fs from 'fs';
 import path from 'path';
 
 import { ethers } from 'ethers';
+import { MULTICHAIN_RPC } from '../src/constants';
+import vaultAbi from '../src/abis/IBalancerVault';
+import ERC20ABI from '../src/abis/ERC20.json';
+
+const {
