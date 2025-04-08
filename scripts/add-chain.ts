@@ -321,3 +321,4 @@ const ${chainName}Chain = {
 }
 
 Promise.resolve(addChain()).catch(console.error);
+import { ChainId, addressBook } from '../packages/address-book/src/address-book';
